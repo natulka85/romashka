@@ -38,7 +38,6 @@
       content: '';
       background-image: url("../img//header/top-icons-sprite.svg");
       background-repeat: no-repeat;
-      -webkit-background-size: 100%;
       background-size: 100%;
       height: 27px;
       width: 23px;
@@ -91,7 +90,6 @@
     width: 21px;
     background-image: url("../img//icon-phone.svg");
     background-repeat: no-repeat;
-    -webkit-background-size: 100%;
     background-size: 100%;
     margin-right: 10px;
     position: relative;
@@ -104,9 +102,6 @@
   .top-contacts__phone a:hover, .footer-contacts a:hover {
     border-bottom: 1px solid transparent;
     -webkit-transition: border-bottom 0.2s;
-    -moz-transition: border-bottom 0.2s;
-    -ms-transition: border-bottom 0.2s;
-    -o-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s; }
 
 .top-contacts .button-m, .top-contacts .btn-color, .top-contacts .btn-border-color, .top-contacts .btn-border-color-thin, .top-contacts .btn-full-size {
@@ -180,7 +175,6 @@
   cursor: pointer;
   background-image: url("../img/video-icon-play.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
   background-size: 100%; }
 
 .btn-full-size {
@@ -214,6 +208,7 @@ label[for="custom-checkbox"] {
   left: 0;
   width: 42px;
   height: 22px;
+  -webkit-border-radius: 18px;
   border-radius: 18px;
   /*background: #CDD1DA;*/ }
 
@@ -225,8 +220,10 @@ label[for="custom-checkbox"] {
   margin-right: 4px;
   width: 15px;
   height: 15px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #ffffff;
+  -webkit-transition: all .2s;
   transition: all .2s; }
 
 .custom-checkbox:checked + label:after {
@@ -234,12 +231,15 @@ label[for="custom-checkbox"] {
 
 .form-standart input[type='textarea'], .form-subscribe input[type='textarea'],
 .form-standart input[type='text'], .form-subscribe input[type='text'] {
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
+  -webkit-border-radius: 0;
   border-radius: 0;
   padding: 25px; }
 
 .form-standart input[type='submit'], .form-subscribe input[type='submit'] {
+  -webkit-border-radius: none;
   border-radius: none; }
 
 .form-standart input[type='textarea'], .form-subscribe input[type='textarea'] {
@@ -315,6 +315,9 @@ html.swipebox-html.swipebox-touch {
   left: 0;
   z-index: 99999 !important;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none; }
 
 #swipebox-container {
@@ -323,7 +326,10 @@ html.swipebox-html.swipebox-touch {
   height: 100%; }
 
 #swipebox-slider {
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   height: 100%;
   left: 0;
   top: 0;
@@ -361,6 +367,7 @@ html.swipebox-html.swipebox-touch {
       max-height: 100%;
       width: 100%;
       padding: 5%;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       #swipebox-slider .slide .swipebox-video-container .swipebox-video {
         width: 100%;
@@ -379,6 +386,7 @@ html.swipebox-html.swipebox-touch {
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
   left: 0;
@@ -389,11 +397,13 @@ html.swipebox-html.swipebox-touch {
 #swipebox-bottom-bar {
   bottom: -50px; }
   #swipebox-bottom-bar.visible-bars {
+    -webkit-transform: translate3d(0, -50px, 0);
     transform: translate3d(0, -50px, 0); }
 
 #swipebox-top-bar {
   top: -50px; }
   #swipebox-top-bar.visible-bars {
+    -webkit-transform: translate3d(0, 50px, 0);
     transform: translate3d(0, 50px, 0); }
 
 #swipebox-title {
@@ -442,13 +452,17 @@ html.swipebox-html.swipebox-touch {
   opacity: 0.3; }
 
 .swipebox-no-touch #swipebox-overlay.rightSpring #swipebox-slider {
+  -webkit-animation: rightSpring 0.3s;
   animation: rightSpring 0.3s; }
 
 .swipebox-no-touch #swipebox-overlay.leftSpring #swipebox-slider {
+  -webkit-animation: leftSpring 0.3s;
   animation: leftSpring 0.3s; }
 
 .swipebox-touch #swipebox-container:before, .swipebox-touch #swipebox-container:after {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   content: ' ';
   position: absolute;
@@ -460,10 +474,12 @@ html.swipebox-html.swipebox-touch {
 
 .swipebox-touch #swipebox-container:before {
   left: 0;
+  -webkit-box-shadow: inset 10px 0px 10px -8px #656565;
   box-shadow: inset 10px 0px 10px -8px #656565; }
 
 .swipebox-touch #swipebox-container:after {
   right: 0;
+  -webkit-box-shadow: inset -10px 0px 10px -8px #656565;
   box-shadow: inset -10px 0px 10px -8px #656565; }
 
 .swipebox-touch #swipebox-overlay.leftSpringTouch #swipebox-container:before {
@@ -472,11 +488,27 @@ html.swipebox-html.swipebox-touch {
 .swipebox-touch #swipebox-overlay.rightSpringTouch #swipebox-container:after {
   opacity: 1; }
 
+@-webkit-keyframes rightSpring {
+  0% {
+    left: 0; }
+  50% {
+    left: -30px; }
+  100% {
+    left: 0; } }
+
 @keyframes rightSpring {
   0% {
     left: 0; }
   50% {
     left: -30px; }
+  100% {
+    left: 0; } }
+
+@-webkit-keyframes leftSpring {
+  0% {
+    left: 0; }
+  50% {
+    left: 30px; }
   100% {
     left: 0; } }
 
@@ -516,10 +548,10 @@ html.swipebox-html.swipebox-touch {
 .slick-slider {
   position: relative;
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -542,9 +574,7 @@ html.swipebox-html.swipebox-touch {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
 .slick-track {
@@ -919,17 +949,12 @@ html.swipebox-html.swipebox-touch {
 .block-video__item:hover .block-video__item-bg {
   display: none;
   -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  -ms-transition: all 2s;
-  -o-transition: all 2s;
   transition: all 2s; }
 
 .block-video__item:hover .block-video__img {
+  -webkit-filter: none;
   filter: none;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .block-video__img {
@@ -966,7 +991,6 @@ html.swipebox-html.swipebox-touch {
     padding-left: 63px;
     background-image: url("../img/icon-email.svg");
     background-repeat: no-repeat;
-    -webkit-background-size: 100%;
     background-size: 100%;
     background-size: inherit;
     cursor: pointer; }
@@ -1093,7 +1117,6 @@ html.swipebox-html.swipebox-touch {
       height: 40px;
       background-image: url("../img/icon-present.svg");
       background-repeat: no-repeat;
-      -webkit-background-size: 100%;
       background-size: 100%;
       display: block;
       margin: auto; }
@@ -1139,7 +1162,6 @@ html.swipebox-html.swipebox-touch {
     width: 20%;
     font-size: 1.875em;
     background-position: left bottom;
-    -webkit-background-size: 80%;
     background-size: 80%;
     background-repeat: no-repeat; }
     .price-table__param strong {
@@ -1180,7 +1202,9 @@ html.swipebox-html.swipebox-touch {
   position: relative;
   margin: 21px auto; }
   .search-bar__input, .search-bar__input:focus {
+    -webkit-border-radius: 30px;
     border-radius: 30px;
+    -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid #d1d3d4;
     height: 30px; }
@@ -1193,7 +1217,6 @@ html.swipebox-html.swipebox-touch {
     right: 8px;
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
-    -webkit-background-size: 100%;
     background-size: 100%;
     cursor: pointer; }
 
@@ -1203,7 +1226,6 @@ html.swipebox-html.swipebox-touch {
   height: 27px;
   background-image: url("../img/icon-social-sprite.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
   background-size: 100%; }
 
 .success-story .columns {
@@ -1292,10 +1314,13 @@ input {
 
 .container {
   max-width: 1280px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: auto; }
 
 .two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
   column-count: 2; }
 
 .small-text {
@@ -1304,4 +1329,5 @@ input {
   padding: 12px 0; }
 
 div {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
