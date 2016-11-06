@@ -1,0 +1,116 @@
+h1, h2 {
+  color: #32c7ac; }
+
+.btn-border-color {
+  border-color: #32c7ac;
+  color: #32c7ac; }
+  .btn-border-color:hover {
+    border-color: #32c7ac;
+    background-color: #32c7ac; }
+
+.btn-border-color-thin {
+  border-color: #32c7ac;
+  color: #32c7ac; }
+  .btn-border-color-thin:hover {
+    border-color: #32c7ac;
+    background-color: #32c7ac;
+    color: #ffffff; }
+
+.btn-full-size {
+  background-color: #32c7ac;
+  border-color: #32c7ac;
+  color: #ffffff; }
+  .btn-full-size:hover {
+    color: #32c7ac;
+    background-color: #ffffff; }
+
+.top-height {
+  background-color: #32c7ac; }
+  .top-height__menu-item.active, .top-height__menu-item:hover {
+    background-color: #1fb09a; }
+
+.top-menu {
+  border-top-color: #32c7ac;
+  border-bottom-color: #32c7ac; }
+
+.about__block-items {
+  border-color: #32c7ac; }
+  .about__block-items:before {
+    border-bottom-color: #32c7ac; }
+
+.about__block-item-counts:after {
+  background-image: url("../../img/about/about-icon-sprite.svg");
+  color: #32c7ac; }
+
+.about__block-item-description {
+  color: #32c7ac; }
+
+.price-table__param {
+  border-bottom-color: #32c7ac; }
+
+#swipebox-prev,
+#swipebox-next,
+#swipebox-close {
+  background-color: #32c7ac; }
+
+.block-video__item-bg {
+  background-color: #32c7ac;
+  opacity: 0.5; }
+
+.expirience__block-text:hover {
+  border-color: #32c7ac; }
+
+.expirience__block-text.left:before {
+  border-left-color: #32c7ac; }
+
+.expirience__block-text.right:before {
+  border-right-color: #32c7ac; }
+
+.custom-checkbox:checked + label:before,
+.custom-checkbox:not(checked) + label:before {
+  background: #32c7ac; }
+
+.loupe {
+  background-image: url("../../img/loupe-green.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%; }
+
+.slick-dots li.slick-active button:before,
+.slick-dots li:hover button::before {
+  color: #32c7ac; }
+
+.block-order__form-wrap {
+  background-color: #32c7ac; }
+
+.block-subscribe__form-wrap {
+  border-color: #32c7ac; }
+  .block-subscribe__form-wrap:before {
+    border-bottom-color: #32c7ac; }
+
+.form-standart.form-subscribe input[type='textarea'],
+.form-standart.form-subscribe input[type='text'] {
+  border-color: #32c7ac; }
+
+.block-payment__items {
+  border-top-color: #32c7ac;
+  border-bottom-color: #32c7ac; }
+  .block-payment__items span {
+    color: #32c7ac; }
+
+.footer-main-menu__item.active a {
+  border-color: #32c7ac; }
+
+.footer-main-menu__link {
+  color: #32c7ac; }
+
+.footer-height {
+  background-color: #32c7ac; }
+  .footer-height__menu-item.active, .footer-height__menu-item:hover {
+    background-color: #1fb09a; }
+
+.authorization__item:first-child {
+  border-right-color: #1fb09a; }
+
+.authorization__item a {
+  color: #1fb09a; }

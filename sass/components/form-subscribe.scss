@@ -1,0 +1,34 @@
+.form-subscribe {
+  @extend .form-standart;
+  margin-left: 30px;
+
+  .form-standart {
+
+   &__field{
+     input[type='textarea'],
+     input[type='text'] {
+       border: 1px solid transparent;
+     }
+   }
+
+    &__field:nth-child(1),
+    &__field:nth-child(2),
+    &__field:nth-child(3) {
+      display: inline-block;
+      width: 28%;
+    }
+
+    &__field:nth-child(1),
+    &__field:nth-child(2) {
+      display: inline-block;
+      width: 38%;
+      margin-right: 4%;
+      margin-bottom: 27px;
+    }
+
+    &__field:nth-child(3) {
+      width: 15%;
+    }
+
+  }
+}

@@ -1,0 +1,209 @@
+@import "_mixins";
+
+
+
+.block-price{
+  &__button-wrap{
+    text-align: center;
+  }
+
+  .button-m.btn-border-color-thin{
+    width: 166px;
+  }
+}
+
+
+
+.footer-height {
+  width: 100%;
+  height: 55px;
+
+  &__menu {
+    margin: 0;
+  }
+
+  &__menu-item {
+    display: inline-block;
+    text-align: center;
+    width: 16.6%;
+
+    a {
+      line-height: 55px;
+      color: $cl-real-white;
+    }
+
+  }
+}
+@import "_mixins";
+
+.top-height {
+  width: 100%;
+  height: 50px;
+
+  &__menu {
+    margin: 0;
+    margin-left: -20px;
+
+  }
+
+  &__menu-item {
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 50px;
+
+    &:before{
+      content: '';
+      @include bgsvg('/header/top-icons-sprite.svg');
+      height:27px;
+      width: 23px;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    a {
+      font-family: 'Arial', sans-serif;
+      font-weight:bold;
+      color: $cl-real-white;
+
+    }
+
+  }
+
+
+  #clining:before {
+    background-position: 0px -10px;
+  }
+
+  #desinfekciya:before {
+    background-position: 0px -62px;
+  }
+
+  #expertizy:before {
+    background-position: 0px -116px;
+  }
+
+  #ventilyaciya:before {
+    background-position: 0px -174px;
+  }
+
+}
+
+.top-menu {
+  max-width: 1280px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+
+  &__item {
+    a {
+      text-transform: uppercase;
+      color: #000;
+
+    }
+  }
+
+  &__item:first-child {
+    a {
+      padding-left: 0;
+
+    }
+  }
+}
+
+.top-contacts{
+
+  &__btn-wrap{
+    position: relative;
+    width: 100%;
+    height: 72px;
+  }
+
+  &__phone {
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    text-align: right;
+    padding:5px 0;
+
+    nobr {
+      font-size: (24/16)+em;
+      font-weight: bold;
+      display: block;
+      color: $cl-black-brown;
+    }
+
+    nobr:before {
+      content: '';
+      display: inline-block;
+      height: 22px;
+      width: 21px;
+      @include bgsvg('/icon-phone.svg');
+      margin-right: 10px;
+      position: relative;
+      top: 5px;
+    }
+
+    a {
+      color: $cl-black-brown;
+      text-decoration: none;
+      border-bottom: 1px solid $cl-light-grey;
+      display: inline-block;
+    }
+
+    a:hover {
+      border-bottom: 1px solid transparent;
+      -webkit-transition: border-bottom 0.2s;
+      -moz-transition: border-bottom 0.2s;
+      -ms-transition: border-bottom 0.2s;
+      -o-transition: border-bottom 0.2s;
+      transition: border-bottom 0.2s;
+    }
+
+  }
+
+  .button-m {
+    position: absolute;
+    top: 50%;
+    right: 260px;
+    margin-top: -20px;
+  }
+
+  &__logo{
+    max-width: 240px;
+    margin: 0;
+
+    img{
+      height:71px;
+    }
+  }
+}
+
+
+.header-slider{
+
+  &__title{
+    text-align: center;
+    position: absolute;
+    margin-top: 30px;
+    width: 100%;
+
+    h1{
+      line-height: 1.1em;
+    }
+  }
+
+  &__checkbox-wrap{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  &__item{
+    position: relative;
+    text-align: center;
+    img{
+      width: 100%;
+    }
+  }
+}
+

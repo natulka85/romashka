@@ -1,0 +1,28 @@
+.authorization {
+  text-align: right;
+
+  &__items{
+    margin:0;
+    padding: 7px 0;
+  }
+
+  &__item {
+    display: inline-block;
+    a {
+      font-size: (14/16)+em;
+    }
+  }
+
+  &__item:first-child {
+    border-right: 1px solid transparent;
+    a{
+      margin-right: 18px;
+    }
+  }
+  &__item:last-child {
+    a{
+      margin-left: 18px;
+    }
+
+  }
+}

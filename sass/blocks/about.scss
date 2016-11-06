@@ -1,0 +1,60 @@
+
+.about{
+
+  &__title{
+    text-align: center;
+    margin-top:80px;
+    margin-bottom: 25px;
+  }
+
+  &__block-items{
+    @include bord;
+    padding: 40px 20px;
+    position: relative;
+
+   @include cornerTop;
+
+  }
+
+  &__block-item{
+    text-align: center;
+
+  }
+
+  &__block-item-counts{
+    font-size: (84/16)+em;
+    line-height: 1em;
+    font-weight: bold;
+    color: $cl-moderate-orange-yellow;
+    display: block;
+
+    &:after{
+      content: '';
+      height: 74px;
+      width: 80px;
+      background-image: url('../img/about/about-icon-sprite.svg');
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-size: 100%;
+      margin-left: 10px;
+    }
+  }
+
+  #clean:after{
+    content: 'м²';
+    background-position: 0 -146px;
+
+  }
+  #review:after{
+    background-position: 0 -2px;
+  }
+  #garbage:after{
+    background-position: 0 -290px;
+  }
+
+  &__block-item-description{
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+}

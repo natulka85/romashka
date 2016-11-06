@@ -1,0 +1,55 @@
+.block-video{
+&__wrap {
+  @include bg2('layout-2.png', no-repeat);
+  position: relative;
+  background-size: 100%;
+  background-position: center bottom;
+}
+
+  &__item{
+    max-width: 608px;
+    margin:auto;
+
+  }
+
+  &__item-bg{
+    position: absolute;
+    max-width: 608px;
+    height:400px;
+    top: 0;
+    
+  }
+
+  &__item:hover {
+
+    .block-video__item-bg {
+      display: none;
+      -webkit-transition: all 2s ;
+      -moz-transition: all 2s ;
+      -ms-transition: all 2s ;
+      -o-transition: all 2s ;
+      transition: all 2s ;
+
+    }
+
+    .block-video__img{
+      filter: none;
+      -webkit-transition: all 0.3s ;
+      -moz-transition: all 0.3s ;
+      -ms-transition: all 0.3s ;
+      -o-transition: all 0.3s ;
+      transition: all 0.3s ;
+
+    }
+  }
+
+  &__img{
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+}
+

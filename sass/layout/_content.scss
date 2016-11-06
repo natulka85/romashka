@@ -1,0 +1,15 @@
+@import "_mixins";
+
+
+
+.block-price{
+  &__button-wrap{
+    text-align: center;
+  }
+
+  .button-m.btn-border-color-thin{
+    width: 166px;
+  }
+}
+
+

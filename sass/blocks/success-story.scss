@@ -1,0 +1,40 @@
+.success-story{
+
+  .columns{
+    padding: 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 38px;
+    margin-bottom: 40px;
+  }
+
+  &__carousel{
+    margin: 0;
+    padding: 0 10px;
+    overflow: hidden;
+    .slick-prev, .slick-next{
+      top:35%;
+    }
+  }
+
+  &__carousel-item{
+    margin:0 15px;
+    padding: 5px 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  &__carousel-item:nth-child(3n){
+
+  }
+
+  .small-text{
+    width: 92%;
+    padding:20px 0;
+  }
+
+}

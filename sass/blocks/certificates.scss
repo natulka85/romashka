@@ -1,0 +1,22 @@
+.certificates{
+  &__title{
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  &__carousel{
+    text-align: center;
+    position: relative;
+    margin: 0 20px;
+  }
+
+  &__carousel-item{
+    display: inline-block;
+    margin: 27px 37px;
+    outline: none;
+
+    img{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.block-payment{
+  &__items{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  &__item{
+    display: inline-block;
+    max-width: 140px;
+    margin: 0 1.2%;
+    vertical-align: middle;
+
+    img{
+      height: 66px;
+    }
+
+
+    span{
+      text-transform: uppercase;
+      font-weight:bold;
+      font-size: (14/16)+em;
+      display: block;
+      margin-top:-8px;
+    }
+  }
+
+  &__item:first-child{
+    margin-left: 0;
+  }
+  &__item:last-child{
+    margin-right: 0;
+  }
+
+  #cash{
+    max-width: 85px;
+    img{
+      margin-top:38px;
+    }
+  }
+
+  #paypal,
+  #mts,
+  #okpay
+  {
+    max-width: 95px;
+  }
+
+}

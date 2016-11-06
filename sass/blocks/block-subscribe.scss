@@ -1,0 +1,26 @@
+.block-subscribe{
+  margin-bottom: 50px;
+
+  &__title{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom:25px;
+  }
+
+  &__form-wrap{
+    position: relative;
+    @include bord;
+    @include cornerTop;
+    padding: 0 50px;
+    
+    span{
+      font-size: (84/16)+em;
+      color: $cl-moderate-orange-yellow;
+      font-weight:bold;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+}

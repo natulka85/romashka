@@ -1,0 +1,24 @@
+
+// Responsive from large to small
+$media-imac: "screen and (min-width: 2200px)"; // 2200+
+$media-megascreen: "screen and (min-width: 1800px)"; // 1600+
+$media-hugescreen: "screen and (min-width: 1600px)"; // 1600+
+$media-largescreen: "screen and (min-width: 1400px)"; // 1400+
+$media-desktop: "screen and (max-width: 1280px)"; // 1024-1280
+$media-tablet: "screen and (max-width: 1023px)"; // 768-1024
+$media-phone-landscape: "screen and (max-width: 767px)"; // 480-767 (large phones included, ipad vertical - not)
+$media-phone: "screen and (max-width: 479px)"; // 320-479 (iphone 4 landscape not included)
+
+$cl-real-white: #ffffff;
+$cl-real-black: #000000;
+$cl-shamrock-crayola: #32c7ac;
+$cl-bright-green-sea: #1fb09a;
+$cl-moderate-orange-yellow: #f7a62e;
+$cl-light-grey: #d7d6d6;
+$cl-black-brown: #231f20;
+$cl-motherblackberry: #6d6e71;
+$cl-very-pale-blue: #bcbec0;
+$cl-very-pale-blue: #d1d3d4;
+
+
+

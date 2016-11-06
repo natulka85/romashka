@@ -1,0 +1,22 @@
+.copyright{
+  text-align: left;
+  &__logo{
+    max-width: 185px;
+    margin: 30px 0 22px 0;
+  }
+
+  &__date {
+    margin-bottom: 38px;
+  }
+
+  &__contacts{
+    padding-left: 63px;
+    @include bgsvg('icon-email.svg');
+    background-size: inherit;
+    cursor: pointer;
+  }
+  
+  a{
+    color: $cl-black-brown;
+  }
+}

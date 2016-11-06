@@ -1,0 +1,8 @@
+
+.footer-contacts{
+  @extend  .top-contacts__phone;
+
+  nobr{
+    font-size:(24/16)+em;
+  }
+}

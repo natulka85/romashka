@@ -1,0 +1,38 @@
+.top-slider{
+
+  .columns{
+    padding: 0;
+  }
+
+  &__title {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: (24/16)+em;
+    line-height: 25px;
+  }
+
+  &__carousel{
+    margin: 50px 0 0 0;
+    padding: 0 10px;
+    overflow: hidden;
+    .slick-prev, .slick-next{
+      top:40%;
+    }
+  }
+
+  &__carousel-item{
+    margin:0;
+    padding: 5px 0;
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+
+    img{
+      max-width: 165px;
+      margin: auto;
+    }
+  }
+
+}

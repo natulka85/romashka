@@ -1,0 +1,83 @@
+.expirience{
+  .columns{
+    padding: 0;
+  }
+
+  &__title{
+    text-align: center;
+    margin-top:77px;
+    margin-bottom: 44px;
+  }
+
+
+  &__block-text{
+    padding: 6% 19%;
+    position: relative;
+    @include bord;
+  }
+
+  &__block-text.left{
+    @include cornerRight;
+  }
+
+  &__block-text.right{
+    @include cornerLeft;
+  }
+
+
+  &__block-text.left,
+  &__block-text.right
+  {
+    &:before{
+      display: none;
+    }
+  }
+
+  &__block-text.left:hover,
+  &__block-text.right:hover
+  {
+    &:before{
+      display: block;
+    }
+
+  }
+
+  &__block-text.left{
+    &:after{
+      right: -42px;
+    }
+  }
+
+  &__block-text.left:hover{
+    &:after{
+      right: -31px;
+    }
+  }
+
+  &__block-text.right{
+    &:after{
+      left: -42px;
+    }
+  }
+
+
+  &__block-text.right:hover{
+    &:after{
+      left: -31px;
+    }
+  }
+
+
+  &__block-pic{
+    img{
+      width: 100%;
+    }
+  }
+
+  h3{
+    color: $cl-moderate-orange-yellow;
+    text-transform: uppercase;
+    font-size: (18/16)+em;
+  }
+
+}

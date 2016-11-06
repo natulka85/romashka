@@ -1,0 +1,32 @@
+.our-clients{
+  .columns{
+    padding: 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  &__carousel{
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  &__carousel-item{
+    margin:0 15px;
+    padding: 5px 0;
+
+    img{
+      margin: auto;
+    }
+  }
+
+  .slick-prev,
+  .slick-next{
+    margin-top: 0;
+  }
+
+}
+

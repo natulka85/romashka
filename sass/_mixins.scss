@@ -1,0 +1,398 @@
+@import "_variables";
+
+@mixin font-face-full($fontfamily,$font,$width,$style){
+    $file: "../fonts/" + $fontfamily + "/" + $font;
+    @include font-face-normal($fontfamily, $file, $width, $style);
+}
+
+
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face-normal($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+
+    $extmods: (
+            eot: "?",
+            svg: "#" + str-replace($name, " ", "_")
+    );
+
+    $formats: (
+            otf: "opentype",
+            ttf: "truetype"
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+
+
+$separ:1;
+@mixin direct-padding($param, $separ) {
+  @if $param == all {
+
+    padding: 25/$separ + px;
+
+    @media #{$media-desktop} {
+      padding: 18/$separ + px;
+
+    }
+    @media #{$media-tablet} {
+      padding: 15/$separ + px;
+
+    }
+    @media #{$media-phone} {
+      padding: 12/$separ + px;
+
+    }
+    @media #{$media-largescreen} {
+      padding: 35/$separ + px;
+
+    }
+    @media #{$media-imac} {
+      padding: 50/$separ + px;
+
+    }
+  } @else {
+    padding-#{$param}: 25/$separ + px;
+
+    @media #{$media-desktop} {
+      padding-#{$param}: 18/$separ + px;
+
+    }
+    @media #{$media-tablet} {
+      padding-#{$param}: 15/$separ + px;
+
+    }
+    @media #{$media-phone} {
+      padding-#{$param}: 12/$separ + px;
+
+    }
+    @media #{$media-largescreen} {
+      padding-#{$param}: 35/$separ + px;
+
+    }
+    @media #{$media-imac} {
+      padding-#{$param}: 50/$separ + px;
+
+    }
+  }
+
+}
+$separ:1;
+@mixin direct-margin($param, $separ) {
+  @if $param == all {
+
+    margin: 25/$separ + px;
+
+    @media #{$media-desktop} {
+      margin: 18/$separ + px;
+
+    }
+    @media #{$media-tablet} {
+      margin: 15/$separ + px;
+
+    }
+    @media #{$media-phone} {
+      margin: 12/$separ + px;
+
+    }
+    @media #{$media-largescreen} {
+      margin: 35/$separ + px;
+
+    }
+    @media #{$media-imac} {
+      margin: 50/$separ + px;
+
+    }
+  } @else {
+    margin-#{$param}: 25/$separ + px;
+
+    @media #{$media-desktop} {
+      margin-#{$param}: 18/$separ + px;
+
+    }
+    @media #{$media-tablet} {
+      margin-#{$param}: 15/$separ + px;
+
+    }
+    @media #{$media-phone} {
+      margin-#{$param}: 12/$separ + px;
+
+    }
+    @media #{$media-largescreen} {
+      margin-#{$param}: 35/$separ + px;
+
+    }
+    @media #{$media-imac} {
+      margin-#{$param}: 50/$separ + px;
+
+    }
+  }
+
+}
+
+@mixin dubl-margin($param, $mnog) {
+  @if $param == all {
+
+    margin: 25*$mnog + px;
+
+    @media #{$media-desktop} {
+      margin: 18*$mnog + px;
+
+    }
+    @media #{$media-tablet} {
+      margin: 15*$mnog + px;
+
+    }
+    @media #{$media-phone} {
+      margin: 12*$mnog + px;
+
+    }
+    @media #{$media-largescreen} {
+      margin: 35*$mnog + px;
+
+    }
+    @media #{$media-imac} {
+      margin: 50*$mnog + px;
+
+    }
+  } @else {
+    margin-#{$param}: 25*$mnog + px;
+
+    @media #{$media-desktop} {
+      margin-#{$param}: 18*$mnog + px;
+
+    }
+    @media #{$media-tablet} {
+      margin-#{$param}: 15*$mnog + px;
+
+    }
+    @media #{$media-phone} {
+      margin-#{$param}: 12*$mnog + px;
+
+    }
+    @media #{$media-largescreen} {
+      margin-#{$param}: 35*$mnog + px;
+
+    }
+    @media #{$media-imac} {
+      margin-#{$param}: 50*$mnog + px;
+
+    }
+  }
+
+}
+
+
+@mixin dubl-padding($param, $mnog) {
+  @if $param == all {
+
+    padding: 25*$mnog + px;
+
+    @media #{$media-desktop} {
+      padding: 18*$mnog + px;
+
+    }
+    @media #{$media-tablet} {
+      padding: 15*$mnog + px;
+
+    }
+    @media #{$media-phone} {
+      padding: 12*$mnog + px;
+
+    }
+    @media #{$media-largescreen} {
+      padding: 35*$mnog + px;
+
+    }
+    @media #{$media-imac} {
+      padding: 50*$mnog + px;
+
+    }
+  } @else {
+    padding-#{$param}: 25*$mnog + px;
+
+    @media #{$media-desktop} {
+      padding-#{$param}: 18*$mnog + px;
+
+    }
+    @media #{$media-tablet} {
+      padding-#{$param}: 15*$mnog + px;
+
+    }
+    @media #{$media-phone} {
+      padding-#{$param}: 12*$mnog + px;
+
+    }
+    @media #{$media-largescreen} {
+      padding-#{$param}: 35*$mnog + px;
+
+    }
+    @media #{$media-imac} {
+      padding-#{$param}: 50*$mnog + px;
+
+    }
+  }
+
+}
+
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)";
+
+
+@mixin retina-bg($file, $type) {
+  background-image: url($file + '.' + $type);
+  @media #{$retina} {
+    background-image: url($file + '@2x.' + $type);
+  }
+}
+
+@mixin bord(){
+  border: 8px solid transparent;
+}
+
+
+@mixin retinabg($url, $url2x, $size, $position, $repeat) {
+  $prefix:"images/";
+  background-image: url($prefix + $url);
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+  @media #{$retina} {
+    background-image: url($prefix + $url2x);
+    background-size: $size;
+  }
+}
+
+
+
+@mixin bg($url, $size, $position, $repeat) {
+  $prefix:"../img/";
+  background-image: url($prefix + $url);
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+@mixin bg2($url, $repeat) {
+  $prefix:"../img/";
+  background-image: url($prefix + $url);
+  background-repeat: $repeat;
+}
+
+@mixin bgsvg($url) {
+  $prefix:"../img/";
+  background-image: url($prefix + $url);
+  background-repeat: no-repeat;
+  -webkit-background-size:100%;
+  background-size:100%;
+}
+
+
+@mixin bgsvg-theme($url) {
+  $prefix:"../../img/";
+  background-image: url($prefix + $url);
+  background-repeat: no-repeat;
+  -webkit-background-size:100%;
+  background-size:100%;
+}
+
+@mixin cornerTop{
+  &:after,
+  &:before{
+    content: ' ';
+    left: 50%;
+    top: -26px;
+    margin-left: -18px;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+
+  &:after{
+    border: 18px solid transparent;
+    border-bottom: 18px solid white;
+  }
+
+  &:before{
+    border: 18px solid transparent;
+    border-bottom: 18px solid black;
+    top: -36px;
+  }
+}
+
+
+@mixin cornerRight{
+  &:after,
+  &:before{
+    content: ' ';
+    right: -31px;
+    top: 50%;
+    margin-top: -18px;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+
+  &:after{
+    border: 18px solid transparent;
+    border-left: 18px solid white;
+  }
+
+  &:before{
+    border: 18px solid transparent;
+    border-left: 18px solid black;
+    right: -41px;
+  }
+}
+
+
+
+@mixin cornerLeft{
+  &:after,
+  &:before{
+    content: ' ';
+    left: -31px;
+    top: 50%;
+    margin-top: -18px;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+
+  &:after{
+    border: 18px solid transparent;
+    border-right: 18px solid white;
+  }
+
+  &:before{
+    border: 18px solid transparent;
+    border-right: 18px solid black;
+    left: -41px;
+  }
+}

@@ -1,0 +1,71 @@
+@import "_mixins";
+@import "_fonts";
+@import "_layout";
+@import "_components";
+@import "_vendor";
+@import "_blocks";
+
+
+
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: $cl-black-brown;
+
+}
+
+ul li{
+  list-style-type: none;
+}
+
+h1{
+  font-family: 'Arial Black', sans-serif;
+}
+
+
+h2,
+h3{
+  font-family:'Arial', sans-serif;
+}
+
+h1,
+h2,
+h3{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a{
+  outline: none;
+}
+
+input{
+  outline: none;
+}
+
+.container{
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.two-columns{
+  column-count: 2;
+}
+
+.small-text{
+  font-family: 'RobotoLight', sans-serif;
+  color: $cl-motherblackberry;
+  padding: 12px 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+
+
