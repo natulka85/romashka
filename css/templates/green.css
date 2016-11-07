@@ -48,6 +48,9 @@ h1, h2 {
 .price-table__param {
   border-bottom-color: #32c7ac; }
 
+.price-table tr:nth-child(2) {
+  box-shadow: inset 0 -8px 0px -4px #32c7ac; }
+
 #swipebox-prev,
 #swipebox-next,
 #swipebox-close {
@@ -114,3 +117,9 @@ h1, h2 {
 
 .authorization__item a {
   color: #1fb09a; }
+
+.block-gallery__picture:hover {
+  outline-color: #1fb09a; }
+
+.block-gallery__loupe {
+  background-color: #1fb09a; }

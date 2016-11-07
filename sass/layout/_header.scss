@@ -72,9 +72,16 @@
 
     }
   }
-  .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
-    border: none;
 
+  //rewrite foundation
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+    display: block;
+    background-image: url('../img/header/menu-top-arrow.png');
+    width: 9px;
+    height: 4px;
+    right: 5px;
+    margin-top: -1px;
+    border: none;
   }
 
 }
@@ -154,7 +161,8 @@
     text-align: center;
     position: absolute;
     margin-top: 30px;
-    width: 100%;
+    width: 90%;
+    left: 5%;
 
     h1{
       line-height: 1.1em;

@@ -81,6 +81,12 @@ h1, h2 {
   &__param {
     border-bottom-color: $cl-shamrock-crayola;
   }
+
+  tr:nth-child(2){
+    box-shadow: inset 0 -8px 0px -4px $cl-shamrock-crayola;
+  }
+
+
 }
 
 #swipebox-prev,
@@ -204,3 +210,16 @@ h1, h2 {
   }
 }
 
+.block-gallery {
+  &__picture {
+
+    &:hover {
+
+      outline-color: $cl-bright-green-sea;
+    }
+  }
+
+  &__loupe{
+    background-color: $cl-bright-green-sea;
+  }
+}

@@ -103,6 +103,40 @@
 
   }
 
+  &__picture{
+    outline: 8px solid transparent;
+    outline-offset: -8px;
+    cursor: pointer;
+    position: relative;
+    margin-top:30px;
+
+    &:hover{
+.block-gallery__loupe{
+  display: block;
+}
+    }
+    img{
+      width: 100%;
+    }
+  }
+
+  &__loupe{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    @include bgsvg('loupe-white.svg');
+    background-position: center center;
+    -webkit-background-size: 60%;
+    background-size: 60%;
+    margin: auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    display: none;
+
+  }
+
 }
 .block-order{
   &__title{
@@ -491,12 +525,12 @@
 }
 
 
-.price-table{
+.price-table {
   text-align: center;
-  margin-top:65px;
+  margin-top: 65px;
   margin-bottom: 70px;
 
-  &__title{
+  &__title {
     text-align: left;
     text-transform: uppercase;
     font-weight: bold;
@@ -505,27 +539,36 @@
     color: $cl-moderate-orange-yellow;
   }
 
-.test{
+  tbody {
+    border: none;
+    tr {
+      background-color: transparent !important;
+    }
+  }
 
-}
-  &__param{
+  tr:nth-child(2){
+    box-shadow: inset 0 -8px 0px -4px transparent;
+  }
+
+  .test {
+
+  }
+  &__param {
     padding: 88px 0 17px 0;
     width: 20%;
 
     font-size: (30/16)+em;
     background-position: left bottom;
-    -webkit-background-size:80%;
-    background-size:80%;
+    -webkit-background-size: 80%;
+    background-size: 80%;
     background-repeat: no-repeat;
-
 
     strong {
       position: relative;
       left: -15%;
     }
 
-
-    span{
+    span {
       font-size: (18/30)+em;
       font-weight: bold;
     }
@@ -533,14 +576,17 @@
 
   &__param:nth-child(1) {
     background-image: url('../img/price/price-icon-1.svg');
-
+    -webkit-background-size:75%;
+    background-size:75%;
 
   }
 
   &__param:nth-child(2) {
     background-image: url('../img/price/price-icon-2.svg');
+    -webkit-background-size:90%;
+    background-size:95%;
 
-    strong{
+    strong {
       left: -10%;
     }
 
@@ -549,37 +595,57 @@
   &__param:nth-child(3) {
     background-image: url('../img/price/price-icon-3.svg');
     background-size: 63%;
+    background-position: center bottom;
+
+    strong{
+      left: 0;
+    }
 
   }
 
   &__param:nth-child(4) {
     background-image: url('../img/price/price-icon-4.svg');
-    background-size: 88%;
+    background-size: 79%;
+    background-position: center bottom;
+
+    strong{
+      left:-7%;
+    }
 
   }
 
   &__param:nth-child(5) {
     background-image: url('../img/price/price-icon-5.svg');
     background-position: right bottom;
-    background-size: 85%;
-
+    background-size: 90%;
 
     strong {
       left: 8%;
     }
   }
 
-
-  &__price{
+  &__price {
     font-size: (30/16)+em;
-    span{
+    span {
       position: relative;
       left: -14%;
     }
   }
 
-  &__price:last-child{
+  &__price:nth-child(3){
     span{
+      left: 0;
+    }
+  }
+
+  &__price:nth-child(4){
+    span{
+      left: -7%;
+    }
+  }
+
+  &__price:last-child {
+    span {
       left: 0;
     }
   }

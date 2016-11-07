@@ -40,9 +40,6 @@ gulp.task('jade:watch', function () {
     gulp.watch('./**/*.jade', ['jade']);
 });
 
-gulp.task('default', function () {
-
-});
 
 
 gulp.task('concat:scss', function() {
@@ -71,10 +68,10 @@ gulp.task('prefix', function () {
         }))
         .pipe(gulp.dest('./css/'));
 });
-
-gulp.task('prefix:watch', function (){
-    gulp.watch('./css/global.css', ['prefix']);
-});
+//
+// gulp.task('prefix:watch', function (){
+//     gulp.watch('./css/global.css', ['prefix']);
+// });
 
 gulp.task('default', function(callback) {
     runSequence(
@@ -83,7 +80,7 @@ gulp.task('default', function(callback) {
         'jade',
         'sass:watch',
         'jade:watch',
-        'prefix:watch',
+        'prefix',
 
 
         callback);
