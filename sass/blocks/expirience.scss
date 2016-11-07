@@ -80,4 +80,22 @@
     font-size: (18/16)+em;
   }
 
+  .btn-full-size{
+    position: relative;
+
+    &:after{
+      content: ' ';
+      top: 31px;
+      left: 50%;
+      margin-left: -13px;
+      border: solid transparent;
+      height: 0;
+      width: 0;
+      border: 13px solid transparent;
+      border-top: 13px solid white;
+      position: absolute;
+  }
+
+  }
+
 }

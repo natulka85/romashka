@@ -69,6 +69,9 @@ h1, h2 {
 .expirience__block-text.right:before {
   border-right-color: #32c7ac; }
 
+.expirience .btn-full-size:after {
+  border-top-color: #32c7ac; }
+
 .custom-checkbox:checked + label:before,
 .custom-checkbox:not(checked) + label:before {
   background: #32c7ac; }
@@ -128,5 +131,5 @@ h1, h2 {
   border-color: #1fb09a; }
 
 .top-slider__carousel-item:hover {
-  background: url("../../img/top-slider/bubble-green.svg") 6% 10% no-repeat, url("../../img/top-slider/bubble-grey.svg") 16% 2% no-repeat, url("../../img/top-slider/bubble-grey.svg") 88% 55% no-repeat;
+  background: url("../../img/top-slider/bubble-green.svg") 0% 9% no-repeat, url("../../img/top-slider/bubble-grey.svg") 12% 2% no-repeat, url("../../img/top-slider/bubble-grey.svg") 90% 55% no-repeat;
   background-size: 33px, 18px, 23px; }

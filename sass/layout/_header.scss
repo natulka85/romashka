@@ -12,7 +12,7 @@
 
   &__menu-item {
     display: inline-block;
-    padding: 0 16px;
+    padding: 0 10px;
     line-height: 50px;
 
     &:before{
@@ -84,6 +84,12 @@
     border: none;
   }
 
+  .menu > li > a{
+    padding: 1rem 0.7rem;
+  }
+
+  //rewrite foundation END
+
 }
 
 .top-contacts{
@@ -142,6 +148,7 @@
     top: 50%;
     right: 260px;
     margin-top: -20px;
+    min-width: 165px;
   }
 
   &__logo{

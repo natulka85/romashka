@@ -32,6 +32,10 @@ h3{
   text-transform: uppercase;
 }
 
+h2{
+  line-height: 1.1em;
+}
+
 a{
   outline: none;
 }
@@ -48,6 +52,9 @@ input{
 
 .two-columns{
   column-count: 2;
+  -webkit-column-gap:33px;
+  -moz-column-gap:33px;
+  column-gap: 33px;
 }
 
 .small-text{

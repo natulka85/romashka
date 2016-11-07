@@ -82,10 +82,9 @@ h1, h2 {
     border-bottom-color: $cl-shamrock-crayola;
   }
 
-  tr:nth-child(2){
+  tr:nth-child(2) {
     box-shadow: inset 0 -8px 0px -4px $cl-shamrock-crayola;
   }
-
 
 }
 
@@ -119,6 +118,15 @@ h1, h2 {
     &:before {
       border-right-color: $cl-shamrock-crayola;
     }
+  }
+
+  .btn-full-size {
+
+    &:after {
+      border-top-color: $cl-shamrock-crayola;
+
+    }
+
   }
 
 }
@@ -198,13 +206,13 @@ h1, h2 {
 
 .authorization {
 
-  &__item:first-child{
+  &__item:first-child {
     border-right-color: $cl-bright-green-sea;
   }
 
   &__item {
 
-    a{
+    a {
       color: $cl-bright-green-sea;
     }
   }
@@ -219,30 +227,27 @@ h1, h2 {
     }
   }
 
-  &__loupe{
+  &__loupe {
     background-color: $cl-bright-green-sea;
   }
 }
 
+.top-slider {
 
-.top-slider{
+  &__carousel-item {
 
-  &__carousel-item{
-
-    img:hover{
+    img:hover {
 
       border-color: $cl-bright-green-sea;
 
     }
 
-
   }
 
-  &__carousel-item:hover{
-    background:
-            url('../../img/top-slider/bubble-green.svg') 6% 10% no-repeat,
-            url('../../img/top-slider/bubble-grey.svg') 16% 2% no-repeat,
-            url('../../img/top-slider/bubble-grey.svg') 88% 55% no-repeat;
+  &__carousel-item:hover {
+    background: url('../../img/top-slider/bubble-green.svg') 0% 9% no-repeat,
+    url('../../img/top-slider/bubble-grey.svg') 12% 2% no-repeat,
+    url('../../img/top-slider/bubble-grey.svg') 90% 55% no-repeat;
     background-size: 33px, 18px, 23px;
   }
 

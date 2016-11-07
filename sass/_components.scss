@@ -133,7 +133,8 @@ label[for="custom-checkbox"]{
     box-shadow: none;
     border: none;
     border-radius: 0;
-    padding: 25px;
+    padding: 20px;
+    margin: 0 0 0 0.7rem;
 
   }
 
@@ -181,7 +182,7 @@ label[for="custom-checkbox"]{
     top:0;
     color: $cl-motherblackberry;
     width: 100%;
-    padding: 12px 25px;
+    padding: 6px 25px;
     font-size: (18/16)+em;
 
   }

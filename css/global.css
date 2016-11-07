@@ -445,8 +445,8 @@ button {
     margin-right: -0.625rem; }
     @media screen and (min-width: 40em) {
       .row .row {
-        margin-left: -0.9375rem;
-        margin-right: -0.9375rem; } }
+        margin-left: -0.78125rem;
+        margin-right: -0.78125rem; } }
     .row .row.collapse {
       margin-left: 0;
       margin-right: 0; }
@@ -463,8 +463,8 @@ button {
   padding-right: 0.625rem; }
   @media screen and (min-width: 40em) {
     .column, .columns {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
+      padding-left: 0.78125rem;
+      padding-right: 0.78125rem; } }
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: right; }
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
@@ -947,8 +947,8 @@ button {
     margin-left: 0;
     margin-right: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 0.78125rem;
+    padding-right: 0.78125rem; }
   .medium-centered {
     margin-left: auto;
     margin-right: auto; }
@@ -1160,8 +1160,8 @@ button {
     margin-left: 0;
     margin-right: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 0.78125rem;
+    padding-right: 0.78125rem; }
   .large-centered {
     margin-left: auto;
     margin-right: auto; }
@@ -3501,6 +3501,9 @@ h3 {
   font-weight: bold;
   text-transform: uppercase; }
 
+h2 {
+  line-height: 1.1em; }
+
 a {
   outline: none; }
 
@@ -3513,7 +3516,10 @@ input {
   margin: auto; }
 
 .two-columns {
-  column-count: 2; }
+  column-count: 2;
+  -webkit-column-gap: 33px;
+  -moz-column-gap: 33px;
+  column-gap: 33px; }
 
 .small-text {
   font-family: 'RobotoLight', sans-serif;
@@ -3540,7 +3546,8 @@ div {
     width: 16.6%; }
     .footer-height__menu-item a {
       line-height: 55px;
-      color: #ffffff; }
+      color: #ffffff;
+      font-size: 0.875em; }
 
 .top-height {
   width: 100%;
@@ -3550,7 +3557,7 @@ div {
     margin-left: -20px; }
   .top-height__menu-item {
     display: inline-block;
-    padding: 0 16px;
+    padding: 0 10px;
     line-height: 50px; }
     .top-height__menu-item:before {
       content: '';
@@ -3593,6 +3600,8 @@ div {
     right: 5px;
     margin-top: -1px;
     border: none; }
+  .top-menu .menu > li > a {
+    padding: 1rem 0.7rem; }
 
 .top-contacts__btn-wrap {
   position: relative;
@@ -3639,7 +3648,8 @@ div {
   position: absolute;
   top: 50%;
   right: 260px;
-  margin-top: -20px; }
+  margin-top: -20px;
+  min-width: 165px; }
 
 .top-contacts__logo {
   max-width: 240px;
@@ -3747,7 +3757,8 @@ label[for="custom-checkbox"] {
   box-shadow: none;
   border: none;
   border-radius: 0;
-  padding: 25px; }
+  padding: 20px;
+  margin: 0 0 0 0.7rem; }
 
 .form-standart input[type='submit'], .form-subscribe input[type='submit'] {
   border-radius: none; }
@@ -3781,7 +3792,7 @@ label[for="custom-checkbox"] {
   top: 0;
   color: #6d6e71;
   width: 100%;
-  padding: 12px 25px;
+  padding: 6px 25px;
   font-size: 1.125em; }
 
 .form-standart .btn-color, .form-subscribe .btn-color {
@@ -4189,14 +4200,13 @@ html.swipebox-html.swipebox-touch {
   margin-bottom: 30px; }
 
 .slick-dots {
-  position: absolute;
   bottom: -25px;
   list-style: none;
   display: block;
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 0px;
   width: 100%; }
   .slick-dots li {
     position: relative;
@@ -4230,7 +4240,7 @@ html.swipebox-html.swipebox-touch {
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 32px;
+        font-size: 26px;
         line-height: 20px;
         text-align: center;
         color: #d1d3d4;
@@ -4243,7 +4253,7 @@ html.swipebox-html.swipebox-touch {
 
 .about__title {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 25px; }
 
 .about__block-items {
@@ -4266,20 +4276,22 @@ html.swipebox-html.swipebox-touch {
     border: 18px solid transparent;
     border-bottom: 18px solid black;
     top: -36px; }
+  .about__block-items .columns {
+    padding: 5px; }
 
 .about__block-item {
   text-align: center; }
 
 .about__block-item-counts {
-  font-size: 5.25em;
+  font-size: 4.625em;
   line-height: 1em;
   font-weight: bold;
   color: #f7a62e;
   display: block; }
   .about__block-item-counts:after {
     content: '';
-    height: 74px;
-    width: 80px;
+    height: 75px;
+    width: 72px;
     background-image: url("../img/about/about-icon-sprite.svg");
     background-repeat: no-repeat;
     display: inline-block;
@@ -4287,21 +4299,21 @@ html.swipebox-html.swipebox-touch {
     margin-left: 10px; }
 
 .about #clean:after {
-  content: 'м²';
-  background-position: 0 -146px; }
+  background-position: 0 -140px; }
 
 .about #review:after {
-  background-position: 0 -2px; }
+  background-position: 0 0px; }
 
 .about #garbage:after {
-  background-position: 0 -290px; }
+  background-position: 0 -281px; }
 
 .about__block-item-description {
   text-transform: uppercase;
   font-weight: bold; }
 
 .authorization {
-  text-align: right; }
+  text-align: right;
+  font-size: 95%; }
   .authorization__items {
     margin: 0;
     padding: 7px 0; }
@@ -4318,8 +4330,8 @@ html.swipebox-html.swipebox-touch {
 
 .block-gallery__title {
   text-align: center;
-  margin-top: 77px;
-  margin-bottom: 25px; }
+  margin-top: 10px;
+  margin-bottom: 20px; }
 
 .block-gallery__big-image img {
   width: 100%; }
@@ -4355,7 +4367,7 @@ html.swipebox-html.swipebox-touch {
 
 .block-order__title {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 30px; }
 
 .block-order__form-wrap {
@@ -4405,7 +4417,7 @@ html.swipebox-html.swipebox-touch {
   max-width: 95px; }
 
 .block-subscribe {
-  margin-bottom: 50px; }
+  margin-bottom: 90px; }
   .block-subscribe__title {
     text-align: center;
     margin-top: 70px;
@@ -4589,6 +4601,20 @@ html.swipebox-html.swipebox-touch {
   text-transform: uppercase;
   font-size: 1.125em; }
 
+.expirience .btn-full-size {
+  position: relative; }
+  .expirience .btn-full-size:after {
+    content: ' ';
+    top: 31px;
+    left: 50%;
+    margin-left: -13px;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    border: 13px solid transparent;
+    border-top: 13px solid white;
+    position: absolute; }
+
 .footer-certificates {
   text-align: right; }
   .footer-certificates__items {
@@ -4643,7 +4669,7 @@ html.swipebox-html.swipebox-touch {
 .header-slider__title {
   text-align: center;
   position: absolute;
-  margin-top: 30px;
+  margin-top: 15px;
   width: 90%;
   left: 5%;
   z-index: 1; }
@@ -4651,9 +4677,10 @@ html.swipebox-html.swipebox-touch {
     line-height: 1.1em; }
 
 .header-slider__checkbox-wrap {
-  width: 80%;
+  width: 95%;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  margin-top: 16px; }
 
 .header-slider__items {
   max-width: 1560px;
@@ -4759,7 +4786,7 @@ html.swipebox-html.swipebox-touch {
 
 .our-clients__title {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 30px; }
 
 .our-clients__carousel {
@@ -4775,6 +4802,11 @@ html.swipebox-html.swipebox-touch {
 .our-clients .slick-prev,
 .our-clients .slick-next {
   margin-top: 0; }
+
+.block-price__title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px; }
 
 .price-table {
   text-align: center;
@@ -4885,7 +4917,7 @@ html.swipebox-html.swipebox-touch {
 .success-story__title {
   text-align: center;
   margin-top: 38px;
-  margin-bottom: 40px; }
+  margin-bottom: 30px; }
 
 .success-story__carousel {
   margin: 0;
@@ -4902,7 +4934,7 @@ html.swipebox-html.swipebox-touch {
 
 .success-story .small-text {
   width: 92%;
-  padding: 20px 0; }
+  padding: 15px 0; }
 
 .top-slider .columns {
   padding: 0; }
@@ -4912,7 +4944,7 @@ html.swipebox-html.swipebox-touch {
   margin-bottom: 12px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.375em;
   line-height: 25px; }
 
 .top-slider__carousel {
@@ -4930,7 +4962,7 @@ html.swipebox-html.swipebox-touch {
   display: inline-block;
   text-align: center; }
   .top-slider__carousel-item img {
-    max-width: 173px;
+    max-width: 200px;
     margin: auto;
     border: 8px solid transparent;
     border-radius: 50%; }
