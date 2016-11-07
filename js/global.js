@@ -177,7 +177,7 @@ $(window).load(function () {
         $(this).find('.s-height').outerHeight(generalHeight);
         });
     });
-})
+
 
 /** block-expirience END*/
 
@@ -194,5 +194,29 @@ footerMenu.on('mouseout', function () {
 /** footer-main-menu END*/
 
 
+
+/** top header slder*/
+$('.custom-checkbox').on('change', function(){
+console.log('gg');
+    $('.header-slider__item').each(function () {
+        if($(this).hasClass('active')){
+            $(this).removeClass('active')
+        }
+        else{
+            $(this).addClass('active')
+        }
+    });
+});
+
+    $('.menu-icon').on('mouseover', function () {
+        $(this).next().show('slow');
+    } );
+
+    $('.header-slider__menu-item').on('mouseout', function () {
+        $(this).children('a').hide('slow');
+    } );
+/** top header slder END*/
+
+})
 
 
