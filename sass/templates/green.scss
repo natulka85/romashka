@@ -223,3 +223,27 @@ h1, h2 {
     background-color: $cl-bright-green-sea;
   }
 }
+
+
+.top-slider{
+
+  &__carousel-item{
+
+    img:hover{
+
+      border-color: $cl-bright-green-sea;
+
+    }
+
+
+  }
+
+  &__carousel-item:hover{
+    background:
+            url('../../img/top-slider/bubble-green.svg') 6% 10% no-repeat,
+            url('../../img/top-slider/bubble-grey.svg') 16% 2% no-repeat,
+            url('../../img/top-slider/bubble-grey.svg') 88% 55% no-repeat;
+    background-size: 33px, 18px, 23px;
+  }
+
+}

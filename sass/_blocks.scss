@@ -501,6 +501,7 @@
     margin-top: 30px;
     width: 90%;
     left: 5%;
+    z-index:1;
 
     h1{
       line-height: 1.1em;
@@ -553,11 +554,13 @@
     height: 45px;
     position: relative;
     z-index: 2;
+
   }
 
   &__menu-item{
     position: absolute;
-    width: 201px;
+    max-width: 201px;
+    cursor: pointer;
 
     a{
       position: absolute;
@@ -572,6 +575,7 @@
       padding: 8px 8px 8px 25px;
       width: 181px;
       display: none;
+
     }
     
     span{
@@ -579,13 +583,62 @@
     }
   }
 
-  &__menu-item.i-1{
 
-    left: 16%;
-    top: 12%;
 
-    .menu-icon{
-      @include bgsvg('/header/kl-icon-1.svg');
+  .kl{
+
+    .header-slider__menu-item.i-1{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-1.svg');
+      }
+    }
+
+    .header-slider__menu-item.i-2{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-2.svg');
+      }
+    }
+
+    .header-slider__menu-item.i-3{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-3.svg');
+      }
+    }
+
+    .header-slider__menu-item.i-4{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-4.svg');
+      }
+    }
+
+    .header-slider__menu-item.i-5{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-5.svg');
+      }
+    }
+
+    .header-slider__menu-item.i-6{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-6.svg');
+      }
+    }
+
+    .header-slider__menu-item.i-7{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-7.svg');
+      }
+    }
+
+    .header-slider__menu-item.i-8{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-8.svg');
+      }
+    }
+
+    .header-slider__menu-item.i-9{
+      .menu-icon{
+        @include bgsvg('header/kl-icon-9.svg');
+      }
     }
 
   }
@@ -843,7 +896,7 @@
   }
 
   &__carousel{
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
     padding: 0 10px;
     overflow: hidden;
     .slick-prev, .slick-next{
@@ -854,14 +907,19 @@
   &__carousel-item{
     margin:0;
     padding: 5px 0;
+    padding-top: 20px;
     width: 20%;
     display: inline-block;
     text-align: center;
 
+
     img{
-      max-width: 165px;
+      max-width: 173px;
       margin: auto;
+      border: 8px solid transparent;
+      border-radius: 50%;
     }
   }
+
 
 }

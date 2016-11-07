@@ -14,7 +14,7 @@
   }
 
   &__carousel{
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
     padding: 0 10px;
     overflow: hidden;
     .slick-prev, .slick-next{
@@ -25,14 +25,19 @@
   &__carousel-item{
     margin:0;
     padding: 5px 0;
+    padding-top: 20px;
     width: 20%;
     display: inline-block;
     text-align: center;
 
+
     img{
-      max-width: 165px;
+      max-width: 173px;
       margin: auto;
+      border: 8px solid transparent;
+      border-radius: 50%;
     }
   }
+
 
 }
