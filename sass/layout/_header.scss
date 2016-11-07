@@ -72,6 +72,11 @@
 
     }
   }
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+    border: none;
+
+  }
+
 }
 
 .top-contacts{

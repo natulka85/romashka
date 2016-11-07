@@ -11,7 +11,9 @@ var autoprefixer = require('gulp-autoprefixer')
 
 gulp.task('sass', function () {
     gulp.src('./sass/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            includePaths: './foundation-sites/scss/'
+        }).on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 
     gulp.src('./sass/templates/**/*.scss')
