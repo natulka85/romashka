@@ -398,11 +398,11 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
 }
 
 
-@mixin cornerBottomWhite($width, $top){
+@mixin cornerBottomWhite($width, $bottom){
   &:after{
     content: ' ';
     left: 50%;
-    top: $top + px;
+    bottom: $bottom + px;
     margin-left: - $width + px;
     border: $width + px solid transparent;
     border-top: $width + px solid white;

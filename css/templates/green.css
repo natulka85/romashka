@@ -134,10 +134,15 @@ h1, h2 {
   background: url("../../img/top-slider/bubble-green.svg") 0% 9% no-repeat, url("../../img/top-slider/bubble-grey.svg") 12% 2% no-repeat, url("../../img/top-slider/bubble-grey.svg") 90% 55% no-repeat;
   background-size: 33px, 18px, 23px; }
 
-.tab-menu__item.active {
+.tab-menu .tab-menu__icon-per,
+.tab-menu .tab-menu__icon-comp {
+  background-image: url("../../img/services/per-comp-icon-sprite.svg"); }
+
+.tab-menu__item.active a {
   background-color: #32c7ac; }
-  .tab-menu__item.active:after {
-    border-top-color: #32c7ac; }
+
+.tab-menu__item.active:after {
+  border-top-color: #32c7ac; }
 
 .tab-menu__list {
   background-color: #32c7ac; }
@@ -148,3 +153,14 @@ h1, h2 {
 .form-subscribe-sidebar .form-standart__field input[type='textarea'],
 .form-subscribe-sidebar .form-standart__field input[type='text'] {
   border-color: #32c7ac; }
+
+.pagination-m__previous, .pagination-m__next {
+  background-color: #32c7ac; }
+
+.pagination-m__num:hover {
+  outline: 3px solid #32c7ac;
+  outline-offset: -3px;
+  color: #32c7ac; }
+
+.pagination-m__num.is-current {
+  background-color: #32c7ac; }

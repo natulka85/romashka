@@ -45,11 +45,16 @@ h2{
 }
 
 a{
-  outline: none;
+  outline: 0;
+  color: $cl-black-brown;
+
+  &:hover{
+    color: $cl-black-brown;
+  }
 }
 
 input{
-  outline: none;
+  outline: 0;
 }
 
 .container{
@@ -73,4 +78,12 @@ input{
 
 div {
   box-sizing: border-box;
+}
+
+.main-content__title{
+  h1{
+    font-family: 'Arial', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+  }
 }

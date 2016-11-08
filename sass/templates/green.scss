@@ -253,12 +253,19 @@ h1, h2 {
 
 }
 
-.tab-menu{
+.tab-menu {
 
-  &__item.active{
-    background-color: $cl-shamrock-crayola;
+  .tab-menu__icon-per,
+  .tab-menu__icon-comp{
+    background-image: url('../../img/services/per-comp-icon-sprite.svg');
+  }
 
-    &:after{
+  &__item.active {
+    a{
+      background-color: $cl-shamrock-crayola;
+    }
+
+    &:after {
       border-top-color: $cl-shamrock-crayola;
     }
 
@@ -269,9 +276,9 @@ h1, h2 {
   }
 }
 
-.block-subscribe-sidebar{
+.block-subscribe-sidebar {
 
-  &__form-wrap{
+  &__form-wrap {
     border-color: $cl-shamrock-crayola;
   }
 
@@ -287,4 +294,30 @@ h1, h2 {
     }
   }
 }
+
+.pagination-m {
+
+  &__previous,
+  &__next {
+
+    background-color: $cl-shamrock-crayola;
+
+  }
+
+  &__num {
+
+    &:hover {
+      outline: 3px solid $cl-shamrock-crayola;
+      outline-offset: -3px;
+      color: $cl-shamrock-crayola;
+    }
+  }
+
+  &__num.is-current {
+    background-color: $cl-shamrock-crayola;
+
+  }
+
+}
+
 

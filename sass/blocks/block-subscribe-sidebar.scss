@@ -1,5 +1,5 @@
 .block-subscribe-sidebar{
-  margin-top: 40px;
+  margin-top: 80px;
 
   &__title{
     text-align: center;
@@ -10,7 +10,7 @@
   }
 
   &__form-wrap{
-    padding: 23px 17px;
+    padding: 15px 9px;
     @include bord;
     
     span{

@@ -270,3 +270,86 @@ label[for="custom-checkbox"]{
 .loupe-color{
 
 }
+
+.pagination-m {
+
+  &__items {
+    margin: 0;
+    font-size: (18/16)+em;
+  }
+
+  &__num,
+  &__previous,
+  &__next {
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px 11px;
+    font-weight: bold;
+
+    a{
+      padding: 5px
+    }
+  }
+
+  &__previous,
+  &__next{
+    color: $cl-real-white;
+    background-color: transparent;
+    padding: 7px 14px;
+
+    a,
+    a:hover{
+      color: $cl-real-white;
+    }
+
+  }
+
+  &__previous{
+    margin-right: 27px;
+
+    &:before{
+      content: $fa-var-angle-double-left;
+      font-family: 'FontAwesome', sans-serif;
+    }
+  }
+
+  &__next{
+    margin-left: 27px;
+
+    &:after{
+      content: $fa-var-angle-double-right;
+      font-family: 'FontAwesome', sans-serif;
+    }
+  }
+
+
+  &__num{
+    background-color: $cl-gainsborough;
+    color: $cl-grafit-black;
+    margin: 0 2.5px;
+
+    &:hover{
+      outline: 3px solid transparent;
+      outline-offset: -3px;
+      background-color: $cl-real-white;
+      color: transparent;
+    }
+  }
+
+  &__num.is-current{
+    background-color: transparent;
+    color: $cl-real-white;
+
+    span{
+      padding:5px;
+
+    }
+    span:hover{
+      color: $cl-real-white;
+    }
+
+  }
+
+}
+
+

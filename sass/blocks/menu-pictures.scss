@@ -1,0 +1,27 @@
+.menu-pictures{
+  padding-bottom: 30px;
+
+
+  &__items{
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between
+  }
+
+  &__img{
+    width: 100%;
+    max-width: 106px;
+    min-width: 106px;
+    display: block;
+    margin: auto;
+    margin-bottom:20px;
+  }
+
+  &__link{
+    font-size: (18/16)+em;
+    font-weight:bold;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+}

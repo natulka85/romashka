@@ -10,23 +10,50 @@
   &__items{
     margin:0;
   }
+
+  .tab-menu__icon-per,
+  .tab-menu__icon-comp{
+    height: 65px;
+    width: 100%;
+    -webkit-background-size:38px auto;
+    background-size: 38px auto;
+    background-repeat: no-repeat;
+
+  }
+
+  .tab-menu__icon-per{
+    background-position: center 28.68%;
+  }
+
+  .tab-menu__icon-comp{
+    background-position: center 66.6%;
+  }
   
 
   &__item{
     width: 49%;
     display: inline-block;
-    line-height:1em;
     text-align: center;
-    padding: 6px 8px;
     position: relative;
-    background: $cl-pale-blue;
 
     a{
-      font-size:(12/16)+em;    
+      font-size:(12/16)+em;
+      display: block;
+      padding: 7px 8px;
+      line-height:1.4em;
+      background: $cl-pale-blue;
     }
   }
   &__item.active{
-    @include cornerBottomWhite(7, 45);
+    @include cornerBottomWhite(7, -13);
+
+    .tab-menu__icon-per{
+      background-position: center -5%;
+    }
+    .tab-menu__icon-comp{
+      background-position: center 106%;
+    }
+
   }
 
   &__item:last-child{
@@ -48,7 +75,7 @@
     padding: 15px 0;
     border-bottom: 1px solid $cl-real-white;
     position: relative;
-    @include cornerBottomWhite(7, 43);
+    @include cornerBottomWhite(7, -15);
     line-height: 1em;
     height: 43px;
 
@@ -91,7 +118,6 @@
   &__content-item.no-scroller:target + .tab-menu__list.is-opened{
       position: relative;
     }
-    
 
   
 }
