@@ -40,18 +40,23 @@
       display: inline-block;
       background-size: 100%;
       margin-left: 10px;
+
+      @media #{$media-tablet} {
+        height:45px;
+        width: 45px;
+      }
     }
   }
 
   #clean:after{
-    background-position: 0 -140px;
+    background-position: 0 50%;
 
   }
   #review:after{
-    background-position: 0 0px;
+    background-position: 0 1%;
   }
   #garbage:after{
-    background-position: 0 -281px;
+    background-position: 0 99%;
   }
 
   &__block-item-description{

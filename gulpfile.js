@@ -23,9 +23,9 @@ gulp.task('sass', function () {
 });
 
 gulp.task('jade', function() {
-    return gulp.src('./index.jade')
+    return gulp.src('./layout/pages/*.jade')
         .pipe(jade()) // pip to jade plugin
-        .pipe(gulp.dest('./')); // tell gulp our output folder
+        .pipe(gulp.dest('./html_pages')); // tell gulp our output folder
 });
 
 gulp.task('sass:watch', function () {

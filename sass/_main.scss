@@ -9,6 +9,10 @@ body{
   font-size: 16px;
   color: $cl-black-brown;
 
+  @media #{$media-tablet} {
+    font-size: 12px;
+  }
+
 }
 
 ul li{
@@ -34,6 +38,10 @@ h3{
 
 h2{
   line-height: 1.1em;
+
+  @media #{$media-tablet}{
+    font-size: 1.875em;
+  }
 }
 
 a{

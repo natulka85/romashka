@@ -116,20 +116,28 @@ h1, h2 {
     background-color: #1fb09a; }
 
 .authorization__item:first-child {
-  border-right-color: #1fb09a; }
+  border-right-color: #32c7ac; }
 
 .authorization__item a {
-  color: #1fb09a; }
+  color: #32c7ac; }
 
 .block-gallery__picture:hover {
-  outline-color: #1fb09a; }
+  outline-color: #32c7ac; }
 
 .block-gallery__loupe {
-  background-color: #1fb09a; }
+  background-color: #32c7ac; }
 
 .top-slider__carousel-item img:hover {
-  border-color: #1fb09a; }
+  border-color: #32c7ac; }
 
 .top-slider__carousel-item:hover {
   background: url("../../img/top-slider/bubble-green.svg") 0% 9% no-repeat, url("../../img/top-slider/bubble-grey.svg") 12% 2% no-repeat, url("../../img/top-slider/bubble-grey.svg") 90% 55% no-repeat;
   background-size: 33px, 18px, 23px; }
+
+.tab-menu__item.active {
+  background-color: #32c7ac; }
+  .tab-menu__item.active:after {
+    border-top-color: #32c7ac; }
+
+.tab-menu__list {
+  background-color: #32c7ac; }

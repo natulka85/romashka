@@ -37,12 +37,16 @@
   &__param {
     padding: 88px 0 17px 0;
     width: 20%;
-
-    font-size: (30/16)+em;
+    font-size: (28/16)+em;
     background-position: left bottom;
     -webkit-background-size: 80%;
     background-size: 80%;
     background-repeat: no-repeat;
+
+  @media #{$media-tablet} {
+    padding: 60px 0 17px 0;
+    font-size: 1.6em;
+  }
 
     strong {
       position: relative;
@@ -52,20 +56,24 @@
     span {
       font-size: (18/30)+em;
       font-weight: bold;
+
+      @media #{$media-tablet} {
+        font-size: 0.6em;
+      }
     }
   }
 
   &__param:nth-child(1) {
     background-image: url('../img/price/price-icon-1.svg');
-    -webkit-background-size:75%;
-    background-size:75%;
+    -webkit-background-size:73%;
+    background-size:73%;
 
   }
 
   &__param:nth-child(2) {
     background-image: url('../img/price/price-icon-2.svg');
     -webkit-background-size:90%;
-    background-size:95%;
+    background-size:93%;
 
     strong {
       left: -10%;
@@ -75,7 +83,7 @@
 
   &__param:nth-child(3) {
     background-image: url('../img/price/price-icon-3.svg');
-    background-size: 63%;
+    background-size: 61%;
     background-position: center bottom;
 
     strong{
@@ -86,7 +94,7 @@
 
   &__param:nth-child(4) {
     background-image: url('../img/price/price-icon-4.svg');
-    background-size: 79%;
+    background-size: 77%;
     background-position: center bottom;
 
     strong{
@@ -98,7 +106,7 @@
   &__param:nth-child(5) {
     background-image: url('../img/price/price-icon-5.svg');
     background-position: right bottom;
-    background-size: 90%;
+    background-size: 88%;
 
     strong {
       left: 8%;
@@ -110,6 +118,10 @@
     span {
       position: relative;
       left: -14%;
+
+      @media #{$media-tablet} {
+        font-size: 0.9em;
+      }
     }
   }
 

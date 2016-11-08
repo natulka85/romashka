@@ -45,12 +45,21 @@
     margin: 0;
     margin-left: -20px;
 
+    @media #{$media-tablet} {
+      margin-left: -15px;
+    }
+
   }
 
   &__menu-item {
     display: inline-block;
     padding: 0 10px;
     line-height: 50px;
+    height: 50px;
+    
+    @media #{$media-tablet} {
+      padding: 0 0.4%;
+    }
 
     &:before{
       content: '';
@@ -66,6 +75,8 @@
       font-family: 'Arial', sans-serif;
       font-weight:bold;
       color: $cl-real-white;
+
+
 
     }
 
@@ -95,6 +106,19 @@
   border-top: 1px solid;
   border-bottom: 1px solid;
 
+  .columns:first-child{
+    @media #{$media-tablet}{
+      padding-left: 0;
+    }
+  }
+
+  .columns:last-child{
+    @media #{$media-tablet}{
+      padding-right: 0;
+    }
+  }
+
+
   &__item {
     a {
       text-transform: uppercase;
@@ -123,6 +147,11 @@
 
   .menu > li > a{
     padding: 1rem 0.7rem;
+
+    @media #{$media-tablet} {
+      padding: 1rem 0.5rem;
+    }
+
   }
 
   //rewrite foundation END
@@ -184,8 +213,13 @@
     position: absolute;
     top: 50%;
     right: 260px;
-    margin-top: -20px;
+    margin-top: -14px;
     min-width: 165px;
+
+    @media #{$media-tablet} {
+      right:65%;
+      min-width: 130px;
+    }
   }
 
   &__logo{

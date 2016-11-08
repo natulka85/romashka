@@ -207,13 +207,13 @@ h1, h2 {
 .authorization {
 
   &__item:first-child {
-    border-right-color: $cl-bright-green-sea;
+    border-right-color: $cl-shamrock-crayola;
   }
 
   &__item {
 
     a {
-      color: $cl-bright-green-sea;
+      color: $cl-shamrock-crayola;
     }
   }
 }
@@ -223,12 +223,12 @@ h1, h2 {
 
     &:hover {
 
-      outline-color: $cl-bright-green-sea;
+      outline-color: $cl-shamrock-crayola;
     }
   }
 
   &__loupe {
-    background-color: $cl-bright-green-sea;
+    background-color: $cl-shamrock-crayola;
   }
 }
 
@@ -238,7 +238,7 @@ h1, h2 {
 
     img:hover {
 
-      border-color: $cl-bright-green-sea;
+      border-color: $cl-shamrock-crayola;
 
     }
 
@@ -252,3 +252,20 @@ h1, h2 {
   }
 
 }
+
+.tab-menu{
+
+  &__item.active{
+    background-color: $cl-shamrock-crayola;
+
+    &:after{
+      border-top-color: $cl-shamrock-crayola;
+    }
+
+  }
+
+  &__list {
+    background-color: $cl-shamrock-crayola;
+  }
+}
+
