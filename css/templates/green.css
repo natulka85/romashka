@@ -141,3 +141,10 @@ h1, h2 {
 
 .tab-menu__list {
   background-color: #32c7ac; }
+
+.block-subscribe-sidebar__form-wrap {
+  border-color: #32c7ac; }
+
+.form-subscribe-sidebar .form-standart__field input[type='textarea'],
+.form-subscribe-sidebar .form-standart__field input[type='text'] {
+  border-color: #32c7ac; }

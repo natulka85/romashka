@@ -193,6 +193,39 @@ label[for="custom-checkbox"]{
     margin-top: 40px;
   }
 }
+.form-subscribe-sidebar {
+
+  @extend .form-standart;
+  margin-top:10px;
+
+  .form-standart {
+   &__field{
+     width: 100%;
+     margin-right: 0;
+     margin-bottom: 14px;
+
+     input[type='textarea'],
+     input[type='text'] {
+       border: 1px solid transparent;
+       margin: 0;
+       padding: 0 25px;
+     }
+
+     input[type='submit']{
+       margin:2px 0;
+     }
+   }
+
+    &__field:last-child{
+      margin:0;
+    }
+
+    &__label{
+      font-size: 1em;
+    }
+
+  }
+}
 .form-subscribe {
   @extend .form-standart;
   margin-left: 30px;

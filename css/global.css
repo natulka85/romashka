@@ -3778,22 +3778,22 @@ label[for="custom-checkbox"] {
 .custom-checkbox:checked + label:after {
   left: 23px; }
 
-.form-standart input[type='textarea'], .form-subscribe input[type='textarea'],
-.form-standart input[type='text'], .form-subscribe input[type='text'] {
+.form-standart input[type='textarea'], .form-subscribe-sidebar input[type='textarea'], .form-subscribe input[type='textarea'],
+.form-standart input[type='text'], .form-subscribe-sidebar input[type='text'], .form-subscribe input[type='text'] {
   box-shadow: none;
   border: none;
   border-radius: 0;
   padding: 20px;
   margin: 0 0 0 0.7rem; }
 
-.form-standart input[type='submit'], .form-subscribe input[type='submit'] {
+.form-standart input[type='submit'], .form-subscribe-sidebar input[type='submit'], .form-subscribe input[type='submit'] {
   border-radius: none; }
 
-.form-standart input[type='textarea'], .form-subscribe input[type='textarea'] {
+.form-standart input[type='textarea'], .form-subscribe-sidebar input[type='textarea'], .form-subscribe input[type='textarea'] {
   width: 100%;
   height: 140px; }
 
-.form-standart input:focus .form-standart__label, .form-subscribe input:focus .form-standart__label {
+.form-standart input:focus .form-standart__label, .form-subscribe-sidebar input:focus .form-standart__label, .form-subscribe input:focus .form-standart__label {
   display: none; }
 
 .form-standart__field {
@@ -3821,9 +3821,27 @@ label[for="custom-checkbox"] {
   padding: 6px 25px;
   font-size: 1.125em; }
 
-.form-standart .btn-color, .form-subscribe .btn-color {
+.form-standart .btn-color, .form-subscribe-sidebar .btn-color, .form-subscribe .btn-color {
   padding: 8px 20px;
   margin-top: 40px; }
+
+.form-subscribe-sidebar {
+  margin-top: 10px; }
+  .form-subscribe-sidebar .form-standart__field {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 14px; }
+    .form-subscribe-sidebar .form-standart__field input[type='textarea'],
+    .form-subscribe-sidebar .form-standart__field input[type='text'] {
+      border: 1px solid transparent;
+      margin: 0;
+      padding: 0 25px; }
+    .form-subscribe-sidebar .form-standart__field input[type='submit'] {
+      margin: 2px 0; }
+  .form-subscribe-sidebar .form-standart__field:last-child {
+    margin: 0; }
+  .form-subscribe-sidebar .form-standart__label {
+    font-size: 1em; }
 
 .form-subscribe {
   margin-left: 30px; }
@@ -4445,6 +4463,24 @@ html.swipebox-html.swipebox-touch {
 .block-payment #mts,
 .block-payment #okpay {
   max-width: 95px; }
+
+.block-subscribe-sidebar {
+  margin-top: 40px; }
+  .block-subscribe-sidebar__title {
+    text-align: center; }
+    .block-subscribe-sidebar__title h3 {
+      font-size: 1em; }
+  .block-subscribe-sidebar__form-wrap {
+    padding: 23px 17px;
+    border: 8px solid transparent; }
+    .block-subscribe-sidebar__form-wrap span {
+      font-size: 3.875em;
+      color: #f7a62e;
+      font-weight: bold;
+      display: block;
+      width: 100%;
+      text-align: center;
+      line-height: 1em; }
 
 .block-subscribe {
   margin-bottom: 90px; }

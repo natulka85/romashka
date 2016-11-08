@@ -269,3 +269,22 @@ h1, h2 {
   }
 }
 
+.block-subscribe-sidebar{
+
+  &__form-wrap{
+    border-color: $cl-shamrock-crayola;
+  }
+
+}
+
+.form-subscribe-sidebar {
+  .form-standart {
+    &__field {
+      input[type='textarea'],
+      input[type='text'] {
+        border-color: $cl-shamrock-crayola;
+      }
+    }
+  }
+}
+
