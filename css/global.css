@@ -3552,10 +3552,12 @@ input {
 div {
   box-sizing: border-box; }
 
-.main-content__title h1 {
+.main-content__title h1, .main-content__title h2 {
   font-family: 'Arial', sans-serif;
-  font-size: 45px;
-  font-weight: bold; }
+  font-size: 2.8125em;
+  font-weight: bold;
+  margin-bottom: 37px;
+  line-height: 1em; }
 
 .block-price__button-wrap {
   text-align: center; }
@@ -6182,6 +6184,8 @@ html.swipebox-html.swipebox-touch {
     display: block;
     height: auto;
     border: 1px solid transparent; }
+  .slick-slide a {
+    display: block; }
 
 .slick-arrow.slick-hidden {
   display: none; }
@@ -6211,13 +6215,13 @@ html.swipebox-html.swipebox-touch {
   background: transparent;
   color: transparent;
   top: 50%;
-  margin-top: -33px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
   border: none;
-  outline: none; }
+  outline: none;
+  z-index: 5; }
   .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
@@ -8720,6 +8724,22 @@ label[for="custom-checkbox"] {
   margin: 15px auto;
   cursor: pointer; }
 
+.loupe-color, .block-detail-slider__loupe, .block-gallery__loupe {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: transparent url("../img/loupe-white.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 60%;
+  background-size: 60%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none; }
+
 .pagination-m {
   margin: 1rem 0; }
   .pagination-m__items {
@@ -8766,6 +8786,14 @@ label[for="custom-checkbox"] {
       padding: 5px; }
     .pagination-m__num.is-current span:hover {
       color: #ffffff; }
+
+.about-company-wrap {
+  margin-bottom: 40px; }
+  .about-company-wrap .block-detail-slider {
+    border-top: none;
+    border-bottom: 1px solid #e3e5e5; }
+    .about-company-wrap .block-detail-slider__carousel {
+      padding-bottom: 30px; }
 
 .about__title {
   text-align: center;
@@ -8868,6 +8896,30 @@ label[for="custom-checkbox"] {
     overflow: hidden; }
     .block-detail-slider__carousel .slick-prev, .block-detail-slider__carousel .slick-next {
       top: 34%; }
+  .block-detail-slider__carousel.is-color-arrows {
+    padding-bottom: 3.75rem; }
+    .block-detail-slider__carousel.is-color-arrows .slick-prev, .block-detail-slider__carousel.is-color-arrows .slick-next {
+      top: 90%; }
+      .block-detail-slider__carousel.is-color-arrows .slick-prev:before, .block-detail-slider__carousel.is-color-arrows .slick-next:before {
+        width: 33px;
+        height: 33px;
+        color: #ffffff;
+        font-weight: bold;
+        background-image: none;
+        opacity: 1;
+        line-height: 33px;
+        font-size: 1.5rem;
+        font-family: 'FontAwesome', sans-serif; }
+    .block-detail-slider__carousel.is-color-arrows .slick-prev {
+      left: 50%;
+      margin-left: -23px; }
+      .block-detail-slider__carousel.is-color-arrows .slick-prev:before {
+        content: ""; }
+    .block-detail-slider__carousel.is-color-arrows .slick-next {
+      right: 50%;
+      margin-right: -23px; }
+      .block-detail-slider__carousel.is-color-arrows .slick-next:before {
+        content: ""; }
   .block-detail-slider__carousel-item {
     margin: 0 5px;
     padding: 5px 0; }
@@ -8876,10 +8928,13 @@ label[for="custom-checkbox"] {
     width: 100%;
     display: block;
     background-size: cover;
-    background-position: left top; }
+    background-position: left top;
+    position: relative; }
     @media screen and (max-width: 1023px) {
       .block-detail-slider__link {
         height: 120px; } }
+    .block-detail-slider__link:hover .block-detail-slider__loupe {
+      display: block; }
   .block-detail-slider__name {
     padding-top: 20px;
     font-size: 1.125em;
@@ -8912,24 +8967,6 @@ label[for="custom-checkbox"] {
     display: block; }
   .block-gallery__picture img {
     width: 100%; }
-
-.block-gallery__loupe {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  background-image: url("../img/loupe-white.svg");
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-position: center center;
-  -webkit-background-size: 60%;
-  background-size: 60%;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: none; }
 
 .block-order__title {
   text-align: center;
@@ -9632,6 +9669,27 @@ label[for="custom-checkbox"] {
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%; }
+
+.staff__items {
+  display: flex;
+  justify-content: space-between; }
+
+.staff__item {
+  text-align: center; }
+
+.staff__name {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 7px 0; }
+
+.staff__position {
+  display: block;
+  font-family: 'RobotoLight', sans-serif;
+  font-size: 1em;
+  color: #6d6e71;
+  margin-bottom: 20px; }
 
 .success-story .columns {
   padding: 0; }

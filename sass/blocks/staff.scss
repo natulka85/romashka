@@ -1,0 +1,28 @@
+.staff{
+&__items{
+  display: flex;
+  justify-content: space-between;
+
+}
+  
+  &__item{
+    text-align: center;
+
+
+  }
+  
+  &__name{
+    display: block;
+    font-size:(24/16)+em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 7px 0;
+  }
+  &__position{
+    display: block;
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 1em;
+    color: $cl-motherblackberry;
+    margin-bottom: 20px;
+  }
+}

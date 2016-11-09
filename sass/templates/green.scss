@@ -256,12 +256,12 @@ h1, h2 {
 .tab-menu {
 
   .tab-menu__icon-per,
-  .tab-menu__icon-comp{
+  .tab-menu__icon-comp {
     background-image: url('../../img/services/per-comp-icon-sprite.svg');
   }
 
   &__item.active {
-    a{
+    a {
       background-color: $cl-shamrock-crayola;
     }
 
@@ -320,14 +320,35 @@ h1, h2 {
 
 }
 
-.block-detail-slider{
+.block-detail-slider {
 
-  &__link{
+  &__link {
 
-    &:hover{
+    &:hover {
       box-shadow: inset -4px -0px 0px -0px $cl-shamrock-crayola,
-                  inset 7px -0px 0px -0px $cl-shamrock-crayola;
+      inset 8px -0px 0px -0px $cl-shamrock-crayola;
     }
+  }
+
+  &__loupe {
+    background-color: $cl-shamrock-crayola;
+  }
+
+  &__carousel.is-color-arrows {
+    .slick-prev,
+    .slick-next {
+      &:before {
+        background-color: $cl-shamrock-crayola;
+      }
+    }
+
+    .slick-prev:hover,
+    .slick-next:hover {
+      &:before {
+        background-color: $cl-bright-green-sea;
+      }
+    }
+
   }
 
 }

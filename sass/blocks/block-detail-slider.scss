@@ -1,53 +1,101 @@
-.block-detail-slider{
+.block-detail-slider {
   border-top: 1px solid $cl-greaterly;
-  .columns{
+  .columns {
     padding: 0;
   }
 
-  &__carousel{
+  &__carousel {
     margin: 0;
     padding: 30px 20px 0 20px;
     overflow: hidden;
-    .slick-prev, .slick-next{
-      top:34%;
+    .slick-prev, .slick-next {
+      top: 34%;
     }
   }
 
-  &__carousel-item{
-    margin:0 5px;
+  &__carousel.is-color-arrows {
+
+    padding-bottom: 3.75rem;
+
+    .slick-prev, .slick-next {
+      top: 90%;
+      &:before {
+        width: 33px;
+        height: 33px;
+        color: $cl-real-white;
+        font-weight: bold;
+        background-image: none;
+        opacity: 1;
+        line-height: 33px;
+        font-size: 1.5rem;
+        font-family: 'FontAwesome', sans-serif;
+      }
+    }
+
+    .slick-prev {
+      left: 50%;
+      margin-left: -23px;
+      &:before {
+        content: $fa-var-angle-left;
+      }
+    }
+
+    .slick-next {
+      right: 50%;
+      margin-right: -23px;
+      &:before {
+        content: $fa-var-angle-right;
+      }
+    }
+
+  }
+
+  &__carousel-item {
+    margin: 0 5px;
     padding: 5px 0;
 
   }
 
-  &__link{
+  &__link {
     height: 160px;
     width: 100%;
     display: block;
     background-size: cover;
     background-position: left top;
+    position: relative;
 
     @media #{$media-tablet} {
       height: 120px;
     }
+
+    &:hover {
+      .block-detail-slider__loupe {
+        display: block;
+      }
+    }
   }
 
-  &__name{
-    padding-top:20px;
-    font-size:(18/16)+em;
+  &__loupe {
+    @extend .loupe-color;
+  }
+
+  &__name {
+    padding-top: 20px;
+    font-size: (18/16)+em;
     font-weight: bold;
     text-transform: uppercase;
-    line-height:1em;
+    line-height: 1em;
   }
 
-  &__text{
+  &__text {
     height: 120px;
     overflow: hidden;
   }
 
-  .small-text{
-    padding:15px 0;
+  .small-text {
+    padding: 15px 0;
 
-    p{
+    p {
       margin: 0;
     }
   }

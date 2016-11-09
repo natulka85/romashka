@@ -111,7 +111,43 @@ $(function () {
         ]
     });
 
-    $('.block-detail-slider__carousel').slick({
+    $('.block-detail-slider__carousel.is-nodots').slick({
+        infinite: true,
+        dots: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+    $('.block-detail-slider__carousel.is-dots ').slick({
         infinite: true,
         dots: true,
         speed: 300,
@@ -318,6 +354,34 @@ $(function () {
 
 
     /**Check is block-products first END*/
+
+    /** Ровняем стрелки по картинке в слайдерах*/
+
+        function arrowSlider(){
+            $('.slick-slider:not(".is-color-arrows")').each(function () {
+
+                var $slider = $(this);
+                var $li = $('.slick-current', $slider);
+                var $item = ($li.find('a'));
+                var $top = $item.height() / 2;
+
+                console.log($top);
+
+                var $distance =  $item.offset().top - $slider.offset().top;
+
+
+                $('.slick-arrow', $slider).each(function () {
+                    $(this).css('top', $top + $distance + 'px');
+                });
+            });
+        }
+
+    $(window).load(arrowSlider);
+    $(window).resize(arrowSlider);
+
+
+
+    /** Ровняем стрелки по картинке в слайдерах END*/
 
 });
 

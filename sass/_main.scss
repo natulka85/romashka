@@ -95,9 +95,11 @@ div {
 }
 
 .main-content__title{
-  h1{
+  h1, h2{
     font-family: 'Arial', sans-serif;
-    font-size: 45px;
+    font-size: (45/16)+em;
     font-weight: bold;
+    margin-bottom: 37px;
+    line-height: 1em;
   }
 }

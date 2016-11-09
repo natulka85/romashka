@@ -167,6 +167,34 @@ $(function () {
 
     /**Check is block-products first END*/
 
+    /** Ровняем стрелки по картинке в слайдерах*/
+
+        function arrowSlider(){
+            $('.slick-slider:not(".is-color-arrows")').each(function () {
+
+                var $slider = $(this);
+                var $li = $('.slick-current', $slider);
+                var $item = ($li.find('a'));
+                var $top = $item.height() / 2;
+
+                console.log($top);
+
+                var $distance =  $item.offset().top - $slider.offset().top;
+
+
+                $('.slick-arrow', $slider).each(function () {
+                    $(this).css('top', $top + $distance + 'px');
+                });
+            });
+        }
+
+    $(window).load(arrowSlider);
+    $(window).resize(arrowSlider);
+
+
+
+    /** Ровняем стрелки по картинке в слайдерах END*/
+
 });
 
 jQuery(function ($) {

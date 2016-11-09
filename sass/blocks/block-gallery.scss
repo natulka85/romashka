@@ -1,51 +1,39 @@
-.block-gallery{
-  &__title{
+.block-gallery {
+  &__title {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
   }
 
-  &__big-image{
-    img{
+  &__big-image {
+    img {
       width: 100%;
     }
   }
 
-  &__text{
+  &__text {
 
   }
 
-  &__picture{
+  &__picture {
     outline: 8px solid transparent;
     outline-offset: -8px;
     cursor: pointer;
     position: relative;
-    margin-top:30px;
+    margin-top: 30px;
 
-    &:hover{
-.block-gallery__loupe{
-  display: block;
-}
+    &:hover {
+      .block-gallery__loupe {
+        display: block;
+      }
     }
-    img{
+    img {
       width: 100%;
     }
   }
 
-  &__loupe{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    @include bgsvg('loupe-white.svg');
-    background-position: center center;
-    -webkit-background-size: 60%;
-    background-size: 60%;
-    margin: auto;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    display: none;
+  &__loupe {
+    @extend .loupe-color
 
   }
 

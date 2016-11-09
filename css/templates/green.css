@@ -166,4 +166,15 @@ h1, h2 {
   background-color: #32c7ac; }
 
 .block-detail-slider__link:hover {
-  box-shadow: inset -4px 0px 0px 0px #32c7ac, inset 7px 0px 0px 0px #32c7ac; }
+  box-shadow: inset -4px 0px 0px 0px #32c7ac, inset 8px 0px 0px 0px #32c7ac; }
+
+.block-detail-slider__loupe {
+  background-color: #32c7ac; }
+
+.block-detail-slider__carousel.is-color-arrows .slick-prev:before,
+.block-detail-slider__carousel.is-color-arrows .slick-next:before {
+  background-color: #32c7ac; }
+
+.block-detail-slider__carousel.is-color-arrows .slick-prev:hover:before,
+.block-detail-slider__carousel.is-color-arrows .slick-next:hover:before {
+  background-color: #1fb09a; }
