@@ -164,3 +164,6 @@ h1, h2 {
 
 .pagination-m__num.is-current {
   background-color: #32c7ac; }
+
+.block-detail-slider__link:hover {
+  box-shadow: inset -4px 0px 0px 0px #32c7ac, inset 7px 0px 0px 0px #32c7ac; }

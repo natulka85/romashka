@@ -320,4 +320,16 @@ h1, h2 {
 
 }
 
+.block-detail-slider{
+
+  &__link{
+
+    &:hover{
+      box-shadow: inset -4px -0px 0px -0px $cl-shamrock-crayola,
+                  inset 7px -0px 0px -0px $cl-shamrock-crayola;
+    }
+  }
+
+}
+
 

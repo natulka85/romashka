@@ -25,7 +25,7 @@ gulp.task('sass', function () {
 gulp.task('jade', function() {
     return gulp.src('./layout/pages/*.jade')
         .pipe(jade()) // pip to jade plugin
-        .pipe(gulp.dest('./html_pages')); // tell gulp our output folder
+        .pipe(gulp.dest('./html_pages'));
 });
 
 gulp.task('sass:watch', function () {
@@ -38,6 +38,11 @@ gulp.task('sass:watch', function () {
 
 gulp.task('jade:watch', function () {
     gulp.watch('./**/*.jade', ['jade']);
+});
+
+
+gulp.task('js:watch', function () {
+    gulp.watch('./js/**/*.js', ['concat:js']);
 });
 
 
@@ -58,6 +63,12 @@ gulp.task('concat:scss', function() {
     gulp.src(['./sass/vendor/**/*.scss'])
         .pipe(concat('_vendor.scss'))
         .pipe(gulp.dest('./sass/'));
+});
+
+gulp.task('concat:js', function() {
+    gulp.src(['./js/_sliders.js', './js/_scripts.js'])
+        .pipe(concat('global.js'))
+        .pipe(gulp.dest('./js/'));
 });
 
 gulp.task('prefix', function () {
@@ -81,6 +92,8 @@ gulp.task('default', function(callback) {
         'sass:watch',
         'jade:watch',
         'prefix',
+        'concat:js',
+        'js:watch',
 
 
         callback);
