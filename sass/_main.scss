@@ -70,13 +70,18 @@ input{
 
 .two-columns{
   column-count: 2;
-  -webkit-column-gap:33px;
-  -moz-column-gap:33px;
-  column-gap: 33px;
+  -webkit-column-gap:2rem;
+  -moz-column-gap:2rem;
+  column-gap: 2rem;
+
+  .small-text{
+    padding:0;
+  }
 }
 
 .small-text{
   font-family: 'RobotoLight', sans-serif;
+  font-size:(18/16)+em;
   color: $cl-motherblackberry;
   padding: 12px 0;
 }

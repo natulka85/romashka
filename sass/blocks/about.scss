@@ -38,7 +38,7 @@
       background-image: url('../img/about/about-icon-sprite.svg');
       background-repeat: no-repeat;
       display: inline-block;
-      background-size: 100%;
+      background-size: 72px auto;
       margin-left: 10px;
 
       @media #{$media-tablet} {
@@ -53,7 +53,7 @@
 
   }
   #review:after{
-    background-position: 0 1%;
+    background-position: 0 0;
   }
   #garbage:after{
     background-position: 0 99%;

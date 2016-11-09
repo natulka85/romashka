@@ -27,7 +27,9 @@
     &:before{
       content: '';
       @include bgsvg('/header/top-icons-sprite.svg');
-      height:27px;
+      -webkit-background-size: 23px auto;
+      background-size: 23px auto;
+      height:50px;
       width: 23px;
       display: inline-block;
       margin-right: 10px;
@@ -47,19 +49,19 @@
 
 
   #clining:before {
-    background-position: 0px -10px;
+    background-position: 0px -6%;
   }
 
   #desinfekciya:before {
-    background-position: 0px -62px;
+    background-position: 0px 31.6%;
   }
 
   #expertizy:before {
-    background-position: 0px -116px;
+    background-position: 0px 68%;
   }
 
   #ventilyaciya:before {
-    background-position: 0px -174px;
+    background-position: 0px 110%;
   }
 
 }

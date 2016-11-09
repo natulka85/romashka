@@ -5,11 +5,13 @@
 .block-price{
   &__button-wrap{
     text-align: center;
+
+    .btn-border-color-thin{
+      width:166px;
+      padding: 7px;
+    }
   }
 
-  .button-m.btn-border-color-thin{
-    width: 166px;
-  }
 }
 
 

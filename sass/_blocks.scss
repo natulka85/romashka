@@ -38,7 +38,7 @@
       background-image: url('../img/about/about-icon-sprite.svg');
       background-repeat: no-repeat;
       display: inline-block;
-      background-size: 100%;
+      background-size: 72px auto;
       margin-left: 10px;
 
       @media #{$media-tablet} {
@@ -53,7 +53,7 @@
 
   }
   #review:after{
-    background-position: 0 1%;
+    background-position: 0 0;
   }
   #garbage:after{
     background-position: 0 99%;
@@ -93,6 +93,20 @@
       margin-left: 18px;
     }
 
+  }
+}
+.block-detail-bigpic{
+  &__pic{
+    margin: 12px 0 25px 0;
+  }
+
+  &__img{
+    width: 100%;
+  }
+
+  &__text{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $cl-greaterly;
   }
 }
 .block-gallery{
@@ -216,7 +230,7 @@
   }
 
 }
-.block-products-services{
+.block-products{
 
   .columns:first-child{
     padding-right: 30px;
@@ -270,6 +284,53 @@
     position: absolute;
     bottom: 30px;
     right: 0;
+  }
+
+}
+.block-social-page{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &__title{
+    text-transform: uppercase;
+    font-size: (14/16)+em;
+    font-weight: bold;
+    margin-right: 7px;
+    padding: 0 10px;
+  }
+  
+  &__link{
+    width: 93px;
+    height: 33px;
+    margin: 0 4px;
+    display: inline-block;
+    background-image: url('../img/social-page-icon-sprite.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 2px;
+  }
+  
+  .-vk{
+    background-position: center -7%;
+    background-color: #426b9a;
+  }
+
+  .-facebook{
+    background-position: center 29%;
+    background-color: #4c68b3;
+  }
+
+  .-twitter{
+    background-position: center 70%;
+    background-color: #00abed;
+  }
+
+  .-odnoklassniki{
+    background-position: center 105%;
+    background-color: #ee8208;
   }
 
 }

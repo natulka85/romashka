@@ -1,0 +1,14 @@
+.block-detail-bigpic{
+  &__pic{
+    margin: 12px 0 25px 0;
+  }
+
+  &__img{
+    width: 100%;
+  }
+
+  &__text{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $cl-greaterly;
+  }
+}
