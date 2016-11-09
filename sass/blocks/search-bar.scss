@@ -4,12 +4,22 @@
   position: relative;
   margin: 21px auto;
 
+  @media #{$media-tablet} {
+    width: 80%;
+    height: 28px;
+  }
+
   &__input,
   &__input:focus{
     border-radius: 30px;
     box-shadow: none;
     border: 1px solid #d1d3d4;
     height: 30px;
+
+    @media #{$media-tablet} {
+      width: 80%;
+      height: 28px;
+    }
 
   }
 
@@ -22,6 +32,11 @@
     right: 8px;
     @include bgsvg('icon-search.svg');
     cursor: pointer;
+
+    @media #{$media-tablet} {
+      top: 5px;
+    }
+
   }
 }
 

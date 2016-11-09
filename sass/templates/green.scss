@@ -81,6 +81,11 @@ h1, h2 {
   &__param {
     border-bottom-color: $cl-shamrock-crayola;
   }
+
+  tr:nth-child(2) {
+    box-shadow: inset 0 -8px 0px -4px $cl-shamrock-crayola;
+  }
+
 }
 
 #swipebox-prev,
@@ -113,6 +118,15 @@ h1, h2 {
     &:before {
       border-right-color: $cl-shamrock-crayola;
     }
+  }
+
+  .btn-full-size {
+
+    &:after {
+      border-top-color: $cl-shamrock-crayola;
+
+    }
+
   }
 
 }
@@ -192,14 +206,84 @@ h1, h2 {
 
 .authorization {
 
-  &__item:first-child{
-    border-right-color: $cl-bright-green-sea;
+  &__item:first-child {
+    border-right-color: $cl-shamrock-crayola;
   }
 
   &__item {
 
-    a{
-      color: $cl-bright-green-sea;
+    a {
+      color: $cl-shamrock-crayola;
+    }
+  }
+}
+
+.block-gallery {
+  &__picture {
+
+    &:hover {
+
+      outline-color: $cl-shamrock-crayola;
+    }
+  }
+
+  &__loupe {
+    background-color: $cl-shamrock-crayola;
+  }
+}
+
+.top-slider {
+
+  &__carousel-item {
+
+    img:hover {
+
+      border-color: $cl-shamrock-crayola;
+
+    }
+
+  }
+
+  &__carousel-item:hover {
+    background: url('../../img/top-slider/bubble-green.svg') 0% 9% no-repeat,
+    url('../../img/top-slider/bubble-grey.svg') 12% 2% no-repeat,
+    url('../../img/top-slider/bubble-grey.svg') 90% 55% no-repeat;
+    background-size: 33px, 18px, 23px;
+  }
+
+}
+
+.tab-menu{
+
+  &__item.active{
+    background-color: $cl-shamrock-crayola;
+
+    &:after{
+      border-top-color: $cl-shamrock-crayola;
+    }
+
+  }
+
+  &__list {
+    background-color: $cl-shamrock-crayola;
+  }
+}
+
+.block-subscribe-sidebar{
+
+  &__form-wrap{
+    border-color: $cl-shamrock-crayola;
+  }
+
+}
+
+.form-subscribe-sidebar {
+  .form-standart {
+    &__field {
+      input[type='textarea'],
+      input[type='text'] {
+        border-color: $cl-shamrock-crayola;
+      }
     }
   }
 }

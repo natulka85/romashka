@@ -1,0 +1,27 @@
+.block-subscribe-sidebar{
+  margin-top: 40px;
+
+  &__title{
+    text-align: center;
+    h3{
+      font-size: 1em;
+    }
+
+  }
+
+  &__form-wrap{
+    padding: 23px 17px;
+    @include bord;
+    
+    span{
+      font-size: (62/16)+em;
+      color: $cl-moderate-orange-yellow;
+      font-weight:bold;
+      display: block;
+      width: 100%;
+      text-align: center;
+      line-height:1em;
+    }
+
+  }
+}

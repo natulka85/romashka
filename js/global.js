@@ -77,16 +77,17 @@ $(function () {
 
     $('.top-slider__carousel').slick({
         infinite: true,
+        dots: true,
         speed: 300,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         arrows: true,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                     infinite: true,
                     dots: true
                 }
@@ -177,7 +178,7 @@ $(window).load(function () {
         $(this).find('.s-height').outerHeight(generalHeight);
         });
     });
-})
+
 
 /** block-expirience END*/
 
@@ -194,5 +195,75 @@ footerMenu.on('mouseout', function () {
 /** footer-main-menu END*/
 
 
+
+/** top header slider*/
+$('.custom-checkbox').on('change', function(){
+
+    $('.header-slider__item').each(function () {
+        if($(this).hasClass('active')){
+            $(this).removeClass('active')
+        }
+        else{
+            $(this).addClass('active')
+        }
+    });
+});
+
+        var itemsHeader =  $('.header-slider__menu-item')
+
+     itemsHeader.hover(function () {
+        $(this).children('a').show('slow');
+            return false;
+    },
+    function(){
+        $(this).children('a').hide('slow');
+        return false;
+    }
+    );
+
+      itemsHeader.each(function () {
+        var x = $(this).attr('data-x');
+        var y = $(this).attr('data-y');
+        var imgWidth = 1560;
+        var imgHeight = 580;
+        var left = (x / imgWidth * 100) + '%';
+        var top = (y / imgHeight * 100) + '%';
+
+        $(this).css({
+            'left' : left,
+            'top' : top
+        });
+
+
+    });
+
+
+
+/** top header slider END*/
+
+/** Active Tab Height*/
+function activeTabHeigth(){
+
+
+    var liHeigth = $('.tab-menu__list.is-opened li').outerHeight();
+
+
+    $('.tab-menu__list:not(".is-opened")')
+        .height(liHeigth * $('.tab-menu__list:not(".is-opened") li').length);
+
+
+}
+
+    activeTabHeigth();
+    $(window).resize(activeTabHeigth());
+
+
+    $('.tab-menu__item a').on('click', function () {
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+    });
+
+/** Active Tab Height END*/
+});
 
 

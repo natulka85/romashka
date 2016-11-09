@@ -14,6 +14,11 @@
     padding: 6% 19%;
     position: relative;
     @include bord;
+
+    @media #{$media-tablet} {
+      padding: 3% 10%;
+    }
+
   }
 
   &__block-text.left{
@@ -78,6 +83,29 @@
     color: $cl-moderate-orange-yellow;
     text-transform: uppercase;
     font-size: (18/16)+em;
+  }
+
+  .btn-full-size{
+    position: relative;
+
+
+    &:after{
+      content: ' ';
+      top: 25px;
+      left: 50%;
+      margin-left: -13px;
+      border: solid transparent;
+      height: 0;
+      width: 0;
+      border: 13px solid transparent;
+      border-top: 13px solid white;
+      position: absolute;
+
+      @media #{$media-tablet}{
+        top: 20px;
+      }
+  }
+
   }
 
 }
