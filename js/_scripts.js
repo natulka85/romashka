@@ -154,6 +154,19 @@ $(function () {
 
     /** Active Tab Height END*/
 
+    /**Check is block-products first*/
+
+    $('.block-products').each(function () {
+
+        if($(this).prev('.row').find('h1').length > 0){
+            $(this).addClass('first');
+        }
+
+    });
+
+
+    /**Check is block-products first END*/
+
 });
 
 jQuery(function ($) {

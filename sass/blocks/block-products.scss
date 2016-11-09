@@ -54,4 +54,20 @@
     right: 0;
   }
 
+  &__btn.left{
+    right: auto;
+  }
+
+  &__pic{
+    position: relative;
+    @include cornerRightWhite(12,0);
+  }
+
+}
+
+.block-products.first{
+  .block-products__item:first-child{
+    padding-top: 15px;
+    border-top: none;
+  }
 }

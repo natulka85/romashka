@@ -412,3 +412,17 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
   }
 
 }
+
+@mixin cornerRightWhite($width, $right) {
+  &:after {
+    content: ' ';
+    top: 50%;
+    right: $right + px;
+    margin-top: - $width + px;
+    border: $width + px solid transparent;
+    border-right: $width + px solid white;
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+}

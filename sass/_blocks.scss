@@ -236,6 +236,8 @@
   }
 }
 .block-payment{
+  margin-top: 2.5rem;
+
   &__items{
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
@@ -341,6 +343,22 @@
     right: 0;
   }
 
+  &__btn.left{
+    right: auto;
+  }
+
+  &__pic{
+    position: relative;
+    @include cornerRightWhite(12,0);
+  }
+
+}
+
+.block-products.first{
+  .block-products__item:first-child{
+    padding-top: 15px;
+    border-top: none;
+  }
 }
 .block-social-page{
   padding: 10px 0;
@@ -1259,7 +1277,7 @@
     position: relative;
     @include cornerBottomWhite(7, -15);
     line-height: 1em;
-    height: 43px;
+
 
     a{
       font-size:(14/16)+em;

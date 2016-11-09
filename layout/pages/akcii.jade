@@ -1,0 +1,122 @@
+doctype html
+html
+    include ../includes/head
+body
+    include ../header
+    .row
+        .columns.medium-3
+            .sidebar
+                include ../tab-menu.jade
+                include ../block-subscribe-sidebar.jade
+        .columns.medium-9
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Акции
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Акции
+
+            section.block-products
+                .block-products__item
+                    .row
+                        .columns.large-6
+                                .block-products__pic
+                                    img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.large-6
+                                .block-products__description
+                                    .block-products__name
+                                        a.block-products__link(href='#') Название акции 1
+                                    .block-products__text
+                                        .small-text
+                                            p Lorem ipsum dolor sit amet, consectetur
+                                                |adipiscing elit. Aenean euismod bibendum
+                                                |laoreet. Proin gravida dolor sit amet lacus
+                                                |accumsan et viverra justo commodo
+                                    .block-products__btn.left
+                                        .btn-border-color-thin Подробнее
+                .block-products__item
+                    .row
+                        .columns.large-6
+                            .block-products__pic
+                                img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.large-6
+                            .block-products__description
+                                .block-products__name
+                                    a.block-products__link(href='#') Название акции 2
+                                .block-products__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo
+                                .block-products__btn.left
+                                    .btn-border-color-thin Подробнее
+                .block-products__item
+                    .row
+                        .columns.large-6
+                            .block-products__pic
+                                img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.large-6
+                            .block-products__description
+                                .block-products__name
+                                    a.block-products__link(href='#') Название акции 3
+                                .block-products__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo
+                                .block-products__btn.left
+                                    .btn-border-color-thin Подробнее
+                .block-products__item
+                    .row
+                        .columns.large-6
+                            .block-products__pic
+                                img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.large-6
+                            .block-products__description
+                                .block-products__name
+                                    a.block-products__link(href='#') Название акции 4
+                                .block-products__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo
+                                .block-products__btn.left
+                                    .btn-border-color-thin Подробнее
+                .block-products__item
+                    .row
+                        .columns.large-6
+                            .block-products__pic
+                                img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.large-6
+                            .block-products__description
+                                .block-products__name
+                                    a.block-products__link(href='#') Название акции 5
+                                .block-products__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo
+                                .block-products__btn.left
+                                    .btn-border-color-thin Подробнее
+            .row
+                .columns.large-9.large-offset-3
+                    include ../pagination.jade
+
+
+    include ../footer
+
+
+
+    include ../includes/footer
+
+
+
+
