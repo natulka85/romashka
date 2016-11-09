@@ -2024,7 +2024,7 @@ select {
   .breadcrumbs li {
     float: left;
     color: #0a0a0a;
-    font-size: 0.6875rem;
+    font-size: 0.875rem;
     cursor: default;
     text-transform: uppercase; }
     .breadcrumbs li:not(:last-child)::after {
@@ -3486,6 +3486,9 @@ table.hover tbody tr:nth-of-type(even):hover {
   padding: 0;
   margin: 0; }
 
+html {
+  font-family: 'FontAwesome', serif; }
+
 body {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
@@ -3696,6 +3699,9 @@ div {
   margin: 0; }
   .top-contacts__logo img {
     height: 71px; }
+
+.sidebar {
+  padding-right: 1.5625rem; }
 
 /*! Swipebox v1.3.0 | Constantin Saguin csag.co | MIT License | github.com/brutaldesign/swipebox */
 html.swipebox-html.swipebox-touch {
@@ -8504,6 +8510,25 @@ html.swipebox-html.swipebox-touch {
 
 .fa-inverse {
   color: #fff; }
+
+.breadcrumbs {
+  height: 65px;
+  margin: 0 0 2rem 0;
+  position: relative; }
+  .breadcrumbs__items {
+    margin: 0;
+    position: absolute;
+    bottom: 0; }
+  .breadcrumbs__item a {
+    font-family: 'RobotoLight', sans-serif;
+    color: #231f20;
+    text-transform: capitalize; }
+  .breadcrumbs__item a:hover {
+    color: #231f20; }
+  .breadcrumbs li:not(:last-child)::after {
+    content: '|';
+    top: -2px;
+    color: #231f20; }
 
 .rrr55 {
   color: #000; }

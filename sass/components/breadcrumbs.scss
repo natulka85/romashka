@@ -1,0 +1,30 @@
+.breadcrumbs{
+  height: 65px;
+  margin: 0 0 2rem 0;
+  position: relative;
+
+&__items{
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+  
+  &__item{
+
+    a{
+      font-family: 'RobotoLight', sans-serif;
+      color: $cl-black-brown;
+      text-transform: capitalize;
+    }
+    a:hover{
+      color: $cl-black-brown;
+    }
+  }
+
+  li:not(:last-child)::after{
+    content: '|';
+    top: -2px;
+    color: $cl-black-brown;
+  }
+
+}
