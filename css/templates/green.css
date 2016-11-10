@@ -178,3 +178,9 @@ h1, h2 {
 .block-detail-slider__carousel.is-color-arrows .slick-prev:hover:before,
 .block-detail-slider__carousel.is-color-arrows .slick-next:hover:before {
   background-color: #1fb09a; }
+
+.staff__item img {
+  background-color: #32c7ac; }
+
+.block-products__date {
+  background-color: #32c7ac; }

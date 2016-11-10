@@ -353,4 +353,20 @@ h1, h2 {
 
 }
 
+.staff {
+
+  &__item {
+
+    img {
+      background-color: $cl-shamrock-crayola;
+    }
+  }
+}
+
+.block-products{
+  &__date{
+    background-color: $cl-shamrock-crayola;
+  }
+}
+
 

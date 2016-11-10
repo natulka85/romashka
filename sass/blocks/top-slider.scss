@@ -34,7 +34,7 @@
     img{
       max-width: 200px;
       margin: auto;
-      border: 8px solid transparent;
+      @include bord;
       border-radius: 50%;
     }
   }

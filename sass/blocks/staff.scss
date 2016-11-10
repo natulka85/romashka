@@ -1,13 +1,26 @@
 .staff{
+
+  .columns{
+    padding: 0;
+  }
+
 &__items{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
 
 }
   
   &__item{
     text-align: center;
+    flex-basis: 26%;
 
+    img{
+      border-radius:50%;
+      @include bord;
+    }
 
   }
   
@@ -16,7 +29,8 @@
     font-size:(24/16)+em;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 7px 0;
+    line-height: 1em;
+    margin: 12px 0 4px 0;
   }
   &__position{
     display: block;

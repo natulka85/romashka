@@ -4,6 +4,11 @@
   &__items {
     margin: 0;
     font-size: (18/16)+em;
+
+    @media #{$media-phone-landscape} {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__num,
@@ -24,6 +29,7 @@
     color: $cl-real-white;
     background-color: transparent;
     padding: 7px 14px;
+    min-width: 85px;
 
     a,
     a:hover{
@@ -55,6 +61,10 @@
     background-color: $cl-gainsborough;
     color: $cl-grafit-black;
     margin: 0 2.5px;
+
+    @media #{$media-phone-landscape} {
+      display: none;
+    }
 
     &:hover{
       outline: 3px solid transparent;

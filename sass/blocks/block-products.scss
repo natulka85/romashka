@@ -1,72 +1,108 @@
-.block-products{
+.block-products {
 
-  .columns:first-child{
+  .columns:first-child {
     padding-right: 30px;
+
+    @media #{$media-phone-landscape} {
+      padding-right: 15px;
+    }
   }
-  .columns:last-child{
+  .columns:last-child {
     padding-left: 30px;
+
+    @media #{$media-phone-landscape} {
+      padding-left: 6px;
+    }
+
   }
 
-  &__item{
-    padding:30px 0;
+  &__item {
+    padding: 30px 0;
     position: relative;
 
-    &:nth-child(odd){
+    &:nth-child(odd) {
       border-top: 1px solid $cl-greaterly;
       border-bottom: 1px solid $cl-greaterly;
     }
 
-    &:last-child{
+    &:last-child {
       border-bottom: none;
       margin-bottom: 5px;
     }
 
-
   }
-&__img{
-  width: 100%;
-}
+  &__img {
+    width: 100%;
+  }
 
-  &__name{
+  &__name {
     text-transform: uppercase;
     font-weight: bold;
     font-size: (24/16)+em;
     line-height: 1em;
   }
 
-  &__price{
+  &__price {
     position: absolute;
     bottom: 30px;
 
-   strong{
-     font-size: (18/16)+em;
-     font-weight: bold;
-     color: $cl-moderate-orange-yellow;
-     margin-right: 15px;
-   }
-    span{
+    strong {
+      font-size: (18/16)+em;
+      font-weight: bold;
+      color: $cl-moderate-orange-yellow;
+      margin-right: 15px;
+    }
+    span {
       font-size: (24/16)+em;
     }
   }
-  &__btn{
+  &__btn {
     position: absolute;
     bottom: 30px;
     right: 0;
+
+    @media #{$media-phone-landscape} {
+      bottom: 15px;
+    }
   }
 
-  &__btn.left{
+  &__btn.left {
     right: auto;
   }
 
-  &__pic{
+  &__btn.is-under-text {
+    bottom: auto;
+
+  }
+
+  &__pic {
     position: relative;
-    @include cornerRightWhite(12,0);
+    @include cornerRightWhite(12, 0);
+    
+    @media #{$media-phone-landscape} {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $cl-real-white;
+    font-size: (14/16)+em;
+    padding: 3px 4px;
+  }
+
+  .small-text{
+    @media #{$media-phone-landscape} {
+      width: 95%;
+    }
   }
 
 }
 
-.block-products.first{
-  .block-products__item:first-child{
+.block-products.first {
+  .block-products__item:first-child {
     padding-top: 15px;
     border-top: none;
   }
