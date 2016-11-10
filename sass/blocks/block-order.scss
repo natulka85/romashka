@@ -6,14 +6,17 @@
   }
 
   &__form-wrap{
-    padding: 50px 0;
+    padding: 3.125rem 0;
     position: relative;
-    background: $cl-shamrock-crayola url('../img/bubble-white-icon.svg') no-repeat 23% 89%;
-    background-size: 170px;
+    background:  url('../img/bubble-white-icon.svg') no-repeat 23% 89%,
+                 url('../img/bubble-white-icon-2.svg') no-repeat 81% 12%;
+    background-size: 170px, 70px;
+
+    @media #{$media-phone-landscape}{
+      background-position: 5% 89%, 93% 6%;
+      background-size: 120px, 50px;
+    }
+
   }
 
-  &__form-wrap-2{
-    background: url('../img/bubble-white-icon-2.svg') no-repeat 81% 12%;
-    background-size: 70px;
-  }
 }

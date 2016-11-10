@@ -148,7 +148,7 @@ h1, h2 {
 .block-order {
 
   &__form-wrap {
-    background-color: $cl-shamrock-crayola
+    background-color: $cl-shamrock-crayola;
   }
 }
 
@@ -387,6 +387,13 @@ h1, h2 {
     &:after{
       border-top-color: $cl-shamrock-crayola;
     }
+  }
+}
+
+.block-address{
+  &__name,
+  &__name-mail{
+    color: $cl-shamrock-crayola;
   }
 }
 

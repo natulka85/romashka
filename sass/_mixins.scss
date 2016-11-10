@@ -426,3 +426,11 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
     position: absolute;
   }
 }
+
+@mixin borB{
+  border-bottom: 1px solid $cl-greaterly;
+}
+
+@mixin borT{
+  border-top: 1px solid $cl-greaterly;
+}

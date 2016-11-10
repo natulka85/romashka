@@ -1,5 +1,5 @@
 .block-detail-slider {
-  border-top: 1px solid $cl-greaterly;
+  @include borT;
   .columns {
     padding: 0;
   }

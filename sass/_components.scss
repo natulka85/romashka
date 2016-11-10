@@ -161,12 +161,19 @@ label[for="custom-checkbox"]{
 .custom-checkbox:focus + label:before {
 }
 .form-standart{
+  width: 50%;
+  margin:auto;
+
+  @media #{$media-phone-landscape}{
+    width: 60%;
+  }
+
   input[type='textarea'],
   input[type='text']{
     box-shadow: none;
     border: none;
     border-radius: 0;
-    padding: 20px;
+    padding: 1.5rem;
     margin: 0 0 0 0.7rem;
 
   }
@@ -177,7 +184,7 @@ label[for="custom-checkbox"]{
 
   input[type='textarea']{
     width: 100%;
-    height: 140px;
+    height: 8.75rem;
 
   }
 
@@ -215,14 +222,14 @@ label[for="custom-checkbox"]{
     top:0;
     color: $cl-motherblackberry;
     width: 100%;
-    padding: 6px 25px;
+    padding: 6px 0 0 25px;
     font-size: (18/16)+em;
 
   }
 
   .btn-color{
     padding: 8px 20px;
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 }
 .form-subscribe-sidebar {

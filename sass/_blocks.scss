@@ -3,7 +3,7 @@
 
   .block-detail-slider{
     border-top: none;
-    border-bottom: 1px solid $cl-greaterly;
+    @include borB();
 
     &__carousel{
       padding-bottom: 30px;
@@ -105,6 +105,77 @@
       margin-left: 18px;
     }
 
+  }
+}
+.block-address-wrap {
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  @media #{$media-phone-landscape} {
+    padding-bottom: 0;
+  }
+
+  .small-text {
+    font-size: (16/16)+em;
+    padding-bottom:0;
+  }
+
+  h5 {
+    width: 70%;
+    line-height: 1.3em;
+    margin-bottom: 0;
+  }
+
+}
+
+.block-address-wrap:last-child {
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.block-address-wrap:not(:last-child) {
+  @include borB;
+}
+.block-address{
+  padding-left: 1.25rem;
+
+  &__item{
+    margin-bottom:30px;
+  }
+
+  &__name,
+  &__name-mail{
+    font-weight: bold;
+    font-size: (18/16)+em;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-right:10px;
+  }
+  
+  &__name{
+    display: block;
+    margin-bottom:10px;
+  }
+
+  &__item:nth-child(2){
+
+    margin-bottom:20px;
+
+    .block-address__name{
+      display: inline-block;
+    }
+    
+    a,
+    a:hover{
+      text-transform: none;
+      color: $cl-black-brown;
+      font-weight: normal;
+    }
+  }
+
+  &__data{
+    font-size: (18/16)+em;
+    display: block;
+    line-height: 1.3em;
   }
 }
 .block-bonus-icons{
@@ -249,11 +320,11 @@
 
   &__text{
     padding-bottom: 1rem;
-    border-bottom: 1px solid $cl-greaterly;
+    @include borB;
   }
 }
 .block-detail-slider {
-  border-top: 1px solid $cl-greaterly;
+  @include borT;
   .columns {
     padding: 0;
   }
@@ -404,16 +475,19 @@
   }
 
   &__form-wrap{
-    padding: 50px 0;
+    padding: 3.125rem 0;
     position: relative;
-    background: $cl-shamrock-crayola url('../img/bubble-white-icon.svg') no-repeat 23% 89%;
-    background-size: 170px;
+    background:  url('../img/bubble-white-icon.svg') no-repeat 23% 89%,
+                 url('../img/bubble-white-icon-2.svg') no-repeat 81% 12%;
+    background-size: 170px, 70px;
+
+    @media #{$media-phone-landscape}{
+      background-position: 5% 89%, 93% 6%;
+      background-size: 120px, 50px;
+    }
+
   }
 
-  &__form-wrap-2{
-    background: url('../img/bubble-white-icon-2.svg') no-repeat 81% 12%;
-    background-size: 70px;
-  }
 }
 .block-payment{
   margin-top: 2.5rem;
@@ -490,8 +564,8 @@
     position: relative;
 
     &:nth-child(odd) {
-      border-top: 1px solid $cl-greaterly;
-      border-bottom: 1px solid $cl-greaterly;
+      @include borT;
+      @include borB;
     }
 
     &:last-child {
@@ -678,7 +752,7 @@
 }
 .block-three-column{
   margin-top: 60px;
-  border-bottom:1px solid #e3e5e5;
+  @include borB;
 
   .columns:first-child{
     padding-right:0.5px;

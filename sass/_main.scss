@@ -43,6 +43,12 @@ h3 {
   text-transform: uppercase;
 }
 
+h5{
+  font-size: (18/16)+em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 h2 {
   line-height: 1.1em;
 
@@ -120,5 +126,12 @@ div {
 
   h2{
     margin-top: 40px;
+  }
+}
+
+.yandex-map{
+
+  @media #{$media-phone-landscape} {
+    margin-bottom: 20px;
   }
 }

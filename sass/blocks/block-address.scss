@@ -1,0 +1,43 @@
+.block-address{
+  padding-left: 1.25rem;
+
+  &__item{
+    margin-bottom:30px;
+  }
+
+  &__name,
+  &__name-mail{
+    font-weight: bold;
+    font-size: (18/16)+em;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-right:10px;
+  }
+  
+  &__name{
+    display: block;
+    margin-bottom:10px;
+  }
+
+  &__item:nth-child(2){
+
+    margin-bottom:20px;
+
+    .block-address__name{
+      display: inline-block;
+    }
+    
+    a,
+    a:hover{
+      text-transform: none;
+      color: $cl-black-brown;
+      font-weight: normal;
+    }
+  }
+
+  &__data{
+    font-size: (18/16)+em;
+    display: block;
+    line-height: 1.3em;
+  }
+}

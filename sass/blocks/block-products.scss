@@ -21,8 +21,8 @@
     position: relative;
 
     &:nth-child(odd) {
-      border-top: 1px solid $cl-greaterly;
-      border-bottom: 1px solid $cl-greaterly;
+      @include borT;
+      @include borB;
     }
 
     &:last-child {

@@ -196,3 +196,6 @@ h1, h2 {
   background-color: #32c7ac; }
   .block-three-column__title:after {
     border-top-color: #32c7ac; }
+
+.block-address__name, .block-address__name-mail {
+  color: #32c7ac; }

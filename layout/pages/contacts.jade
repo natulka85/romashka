@@ -1,0 +1,88 @@
+doctype html
+html
+    include ../includes/head
+body
+    include ../header
+    .row
+        .columns.medium-3.small-4
+            .sidebar
+                include ../tab-menu.jade
+                include ../block-subscribe-sidebar.jade
+        .columns.medium-9.small-8
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Контакты
+
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Контакты
+            .block-address-wrap
+                .row
+                    .columns.medium-6
+                        .yandex-map
+                            include ../api-yandex.jade
+                    .columns.medium-6
+                        include ../block-address.jade
+            .block-address-wrap
+                .row
+                    .columns.medium-6
+                        .yandex-map
+                            include ../api-yandex.jade
+                    .columns.medium-6
+                        h5 Проезд на общественном транспорте:
+                        .small-text
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                |Aenean euismod bibendum laoreet. Proin gravida dolor
+                                |sit amet lacus accumsan et viverra justo commodo.
+                                |Proin sodales pulvinar tempor. Cum sociis natoque
+                                |penatibus et magnis dis parturient montes, nascetur
+                                |ridiculus mus. Nam fermentum, nulla luctus pharetra
+                                |vulputate, felis tellus mollis orci, sed rhoncus sapien
+                                |nunc eget odio.
+                        h5 Проезд на автотранспорте:
+                        .small-text
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                | Aenean euismod bibendum laoreet. Proin gravida dolor
+                                | sit amet lacus accumsan et viverra justo commodo.
+                                | Proin sodales pulvinar tempor. Cum sociis natoque
+                                | penatibus et magnis dis parturient montes, nascetur
+                                | ridiculus mus. Nam fermentum, nulla luctus pharetra
+                                | vulputate, felis tellus mollis orci, sed rhoncus sapien
+                                | nunc eget odio.
+
+    section.block-order
+        .row
+            .columns.medium-12
+                .block-order__title
+                    .main-content__title
+                        h2 Связаться с нами
+        include ../block-order.jade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    include ../footer
+
+
+
+    include ../includes/footer
+
+
+
+

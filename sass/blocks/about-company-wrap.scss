@@ -3,7 +3,7 @@
 
   .block-detail-slider{
     border-top: none;
-    border-bottom: 1px solid $cl-greaterly;
+    @include borB();
 
     &__carousel{
       padding-bottom: 30px;

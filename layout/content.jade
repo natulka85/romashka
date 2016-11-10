@@ -57,7 +57,8 @@ section.about
     .row
         .columns.large-12
             .about__title
-                h2 О нас в цифрах
+                .main-content__title
+                  h2 О нас в цифрах
             .about__block-items
                 .row
                     .columns.large-4
@@ -81,7 +82,8 @@ section.block-gallery
     .row
         .columns.large-12
             .block-gallery__title
-                h2 Уборка квартир после ремонта в Москве <br> - залог чистоты и Вашего здоровья!
+                .main-content__title
+                    h2 Уборка квартир после ремонта в Москве <br> - залог чистоты и Вашего здоровья!
     .row
         .columns.large-12
             .block-gallery__text.two-columns
@@ -116,7 +118,8 @@ section.block-price
     .row
         .columns.large-12
             .block-price__title
-                h2 Послестроительная #[br]уборка
+                .main-content__title
+                    h2 Послестроительная #[br]уборка
     .row
         .columns.large-12
             .block-price__text.two-columns
@@ -177,7 +180,8 @@ section.expirience
     .row
         .columns.large-12
             .expirience__title
-                h2 Опыт работы и портфолио
+                .main-content__title
+                    h2 Опыт работы и портфолио
     .row.one-height
         .columns.large-6
             .expirience__block-text.s-height.left
@@ -227,7 +231,8 @@ section.certificates
     .row
         .columns.large-12
             .certificates__title
-                h2 Сертификаты, Дипломы, Награды
+                .main-content__title
+                    h2 Сертификаты, Дипломы, Награды
     .row
         .columns.large-12
                 ul.certificates__carousel
@@ -265,7 +270,8 @@ section.success-story
     .row
         .columns.large-12
             .success-story__title
-                h2 Истории успеха
+                .main-content__title
+                    h2 Истории успеха
     .row
         .columns.large-12
             ul.success-story__carousel
@@ -328,7 +334,8 @@ section.our-clients
     .row
         .columns.large-12
             .our-clients__title
-                h2 Наши клиенты
+                .main-content__title
+                    h2 Наши клиенты
     .row
         .columns.large-12
             ul.our-clients__carousel
@@ -359,8 +366,13 @@ section.our-clients
                 li.our-clients__carousel-item
                     a.swipebox(href='../img/clients/pic-1.png')
                         img( src="../img/clients/pic-1.png", alt="")
-
-include block-order.jade
+section.block-order
+    .row
+        .columns.medium-12
+            .block-order__title
+                .main-content__title
+                    h2 Заказать услугу
+    include block-order.jade
 
 include block-subscribe.jade
 
