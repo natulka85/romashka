@@ -184,3 +184,15 @@ h1, h2 {
 
 .block-products__date {
   background-color: #32c7ac; }
+
+.block-bonus {
+  border-color: #32c7ac; }
+  .block-bonus:before {
+    border-bottom-color: #32c7ac; }
+  .block-bonus__name {
+    color: #32c7ac; }
+
+.block-three-column__title {
+  background-color: #32c7ac; }
+  .block-three-column__title:after {
+    border-top-color: #32c7ac; }

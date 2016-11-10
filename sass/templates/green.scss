@@ -369,4 +369,25 @@ h1, h2 {
   }
 }
 
+.block-bonus{
+  border-color: $cl-shamrock-crayola;
+
+  &:before {
+    border-bottom-color: $cl-shamrock-crayola;
+  }
+
+  &__name{
+    color: $cl-shamrock-crayola;
+  }
+}
+
+.block-three-column{
+  &__title{
+    background-color: $cl-shamrock-crayola;
+    &:after{
+      border-top-color: $cl-shamrock-crayola;
+    }
+  }
+}
+
 
