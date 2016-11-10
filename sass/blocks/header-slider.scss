@@ -57,8 +57,8 @@
   }
 
   .menu-icon{
-    width: 45px;
-    height: 45px;
+    width: 2.8125rem;
+    height: 2.8125rem;
     position: relative;
     z-index: 2;
 
@@ -74,19 +74,21 @@
       top: 0;
       left: 24px;
       z-index: 1;
-      height: 45px;
+      height: 2.8125rem;
       font-size:(14/16)+em;
       color: $cl-real-white;
+      line-height:1em;
+      padding-left: 1.5625rem;
       background-color: $cl-sun-yellow;
-      line-height: 14px;
-      padding: 8px 8px 8px 25px;
-      width: 181px;
-      display: none;
+      width: 11.3125rem;
+      visibility: hidden;
+      display: table;
 
     }
     
     span{
-
+      display: table-cell;
+      vertical-align: middle;
     }
   }
 

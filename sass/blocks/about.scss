@@ -1,15 +1,14 @@
-
 .about{
 
   &__title{
     text-align: center;
-    margin-top:40px;
-    margin-bottom: 25px;
+    margin-top:2.5rem;
+    margin-bottom: 1.5625rem;
   }
 
   &__block-items{
     @include bord;
-    padding: 40px 20px;
+    padding: 2.5rem 1rem;
     position: relative;
     @include cornerTop;
 
@@ -33,18 +32,14 @@
 
     &:after{
       content: '';
-      height: 75px;
-      width: 72px;
+      height: 4.6875rem;
+      width: 4.6875rem;
       background-image: url('../img/about/about-icon-sprite.svg');
       background-repeat: no-repeat;
       display: inline-block;
-      background-size: 72px auto;
+      background-size: 100% auto;
       margin-left: 10px;
 
-      @media #{$media-tablet} {
-        height:45px;
-        width: 45px;
-      }
     }
   }
 

@@ -289,11 +289,18 @@ $(function () {
     var itemsHeader =  $('.header-slider__menu-item')
 
     itemsHeader.hover(function () {
-            $(this).children('a').show('slow');
+            $(this).children('a').css({
+                opacity: 0.0,
+                visibility: "visible"
+            })
+                .animate({opacity: 1}, 500);
             return false;
         },
         function(){
-            $(this).children('a').hide('slow');
+            $(this).children('a').animate({opacity: 0}, 200).css({
+                visibility: "hidden"
+            })
+                ;
             return false;
         }
     );

@@ -4,18 +4,20 @@
   &__items{
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    padding-bottom: 30px;
+    padding-bottom: 1.5625rem;
+    padding-top: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__item{
-    display: inline-block;
-    max-width: 140px;
     margin: 0 1.2%;
     vertical-align: middle;
 
     img{
-      height: 66px;
+      height: 35px;
     }
 
 
@@ -24,29 +26,39 @@
       font-weight:bold;
       font-size: (14/16)+em;
       display: block;
-      margin-top:-8px;
     }
   }
 
-  &__item:first-child{
-    margin-left: 0;
+  #paypal{
+    img{
+      height:27px;
+    }
   }
-  &__item:last-child{
-    margin-right: 0;
+  #mts{
+    img{
+      height:43px;
+    }
+  }
+
+  #okpay{
+    img {
+      height:22px;
+    }
+  }
+
+  #qiwi{
+    img{
+      height: 66px;
+    }
   }
 
   #cash{
-    max-width: 85px;
+
     img{
-      margin-top:38px;
+      margin-top: 24px;
+      margin-bottom: 4px;
     }
   }
 
-  #paypal,
-  #mts,
-  #okpay
-  {
-    max-width: 95px;
-  }
 
 }

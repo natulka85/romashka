@@ -9142,12 +9142,12 @@ label[for="custom-checkbox"] {
 
 .about__title {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 25px; }
+  margin-top: 2.5rem;
+  margin-bottom: 1.5625rem; }
 
 .about__block-items {
   border: 8px solid transparent;
-  padding: 40px 20px;
+  padding: 2.5rem 1rem;
   position: relative; }
   .about__block-items:after, .about__block-items:before {
     content: ' ';
@@ -9179,17 +9179,13 @@ label[for="custom-checkbox"] {
   display: block; }
   .about__block-item-counts:after {
     content: '';
-    height: 75px;
-    width: 72px;
+    height: 4.6875rem;
+    width: 4.6875rem;
     background-image: url("../img/about/about-icon-sprite.svg");
     background-repeat: no-repeat;
     display: inline-block;
-    background-size: 72px auto;
+    background-size: 100% auto;
     margin-left: 10px; }
-    @media screen and (max-width: 1023px) {
-      .about__block-item-counts:after {
-        height: 45px;
-        width: 45px; } }
 
 .about #clean:after {
   background-position: 0 50%; }
@@ -9439,8 +9435,8 @@ label[for="custom-checkbox"] {
 
 .block-gallery__title {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px; }
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem; }
 
 .block-gallery__big-image img {
   width: 100%; }
@@ -9458,17 +9454,21 @@ label[for="custom-checkbox"] {
 
 .block-order__title {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 30px; }
+  margin-top: 3.75rem;
+  margin-bottom: 1.875rem; }
 
 .block-order__form-wrap {
   padding: 3.125rem 0;
   position: relative;
-  background: url("../img/bubble-white-icon.svg") no-repeat 23% 89%, url("../img/bubble-white-icon-2.svg") no-repeat 81% 12%;
+  background: url("../img/bubble-white-icon.svg") no-repeat 22% 86%, url("../img/bubble-white-icon-2.svg") no-repeat 84% 24%;
   background-size: 170px, 70px; }
+  @media screen and (max-width: 1023px) {
+    .block-order__form-wrap {
+      background-position: 22% 86%, 86% 24%;
+      background-size: 136px, 56px; } }
   @media screen and (max-width: 767px) {
     .block-order__form-wrap {
-      background-position: 5% 89%, 93% 6%;
+      background-position: 9% 86%, 98% 24%;
       background-size: 120px, 50px; } }
 
 .block-payment {
@@ -9476,33 +9476,33 @@ label[for="custom-checkbox"] {
   .block-payment__items {
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    padding-bottom: 30px;
-    text-align: center; }
+    padding-bottom: 1.5625rem;
+    padding-top: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .block-payment__item {
-    display: inline-block;
-    max-width: 140px;
     margin: 0 1.2%;
     vertical-align: middle; }
     .block-payment__item img {
-      height: 66px; }
+      height: 35px; }
     .block-payment__item span {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 0.875em;
-      display: block;
-      margin-top: -8px; }
-  .block-payment__item:first-child {
-    margin-left: 0; }
-  .block-payment__item:last-child {
-    margin-right: 0; }
-  .block-payment #cash {
-    max-width: 85px; }
-    .block-payment #cash img {
-      margin-top: 38px; }
-  .block-payment #paypal,
-  .block-payment #mts,
-  .block-payment #okpay {
-    max-width: 95px; }
+      display: block; }
+  .block-payment #paypal img {
+    height: 27px; }
+  .block-payment #mts img {
+    height: 43px; }
+  .block-payment #okpay img {
+    height: 22px; }
+  .block-payment #qiwi img {
+    height: 66px; }
+  .block-payment #cash img {
+    margin-top: 24px;
+    margin-bottom: 4px; }
 
 .block-products .columns:first-child {
   padding-right: 30px; }
@@ -9644,11 +9644,11 @@ label[for="custom-checkbox"] {
       line-height: 1em; }
 
 .block-subscribe {
-  margin-bottom: 90px; }
+  margin-bottom: 5.625rem; }
   .block-subscribe__title {
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 25px; }
+    margin-top: 4.375rem;
+    margin-bottom: 1.5625rem; }
   .block-subscribe__form-wrap {
     position: relative;
     border: 8px solid transparent;
@@ -9765,7 +9765,7 @@ label[for="custom-checkbox"] {
 
 .certificates__title {
   text-align: center;
-  margin-top: 80px; }
+  margin-top: 5rem; }
 
 .certificates__carousel {
   text-align: center;
@@ -9802,8 +9802,8 @@ label[for="custom-checkbox"] {
 
 .expirience__title {
   text-align: center;
-  margin-top: 77px;
-  margin-bottom: 44px; }
+  margin-top: 4.8125rem;
+  margin-bottom: 2.75rem; }
 
 .expirience__block-text {
   padding: 6% 19%;
@@ -9983,8 +9983,8 @@ label[for="custom-checkbox"] {
   display: block; }
 
 .header-slider .menu-icon {
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   position: relative;
   z-index: 2; }
 
@@ -9997,14 +9997,18 @@ label[for="custom-checkbox"] {
     top: 0;
     left: 24px;
     z-index: 1;
-    height: 45px;
+    height: 2.8125rem;
     font-size: 0.875em;
     color: #ffffff;
+    line-height: 1em;
+    padding-left: 1.5625rem;
     background-color: #f9a61b;
-    line-height: 14px;
-    padding: 8px 8px 8px 25px;
-    width: 181px;
-    display: none; }
+    width: 11.3125rem;
+    visibility: hidden;
+    display: table; }
+  .header-slider__menu-item span {
+    display: table-cell;
+    vertical-align: middle; }
 
 .header-slider .kl .header-slider__menu-item.i-1 .menu-icon {
   background-image: url("../img/services/kl-icon-1.svg");
@@ -10104,8 +10108,8 @@ label[for="custom-checkbox"] {
 
 .block-price__title {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px; }
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem; }
 
 .price-table {
   text-align: center;
@@ -10268,8 +10272,8 @@ label[for="custom-checkbox"] {
 
 .success-story__title {
   text-align: center;
-  margin-top: 38px;
-  margin-bottom: 30px; }
+  margin-top: 2.375rem;
+  margin-bottom: 1.875rem; }
 
 .success-story__carousel {
   margin: 0;

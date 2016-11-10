@@ -1,19 +1,25 @@
 .block-order{
   &__title{
     text-align: center;
-    margin-top: 60px;
-    margin-bottom:30px;
+    margin-top: 3.75rem;
+    margin-bottom:1.875rem;
   }
 
   &__form-wrap{
     padding: 3.125rem 0;
     position: relative;
-    background:  url('../img/bubble-white-icon.svg') no-repeat 23% 89%,
-                 url('../img/bubble-white-icon-2.svg') no-repeat 81% 12%;
+    background:  url('../img/bubble-white-icon.svg') no-repeat 22% 86%,
+                 url('../img/bubble-white-icon-2.svg') no-repeat 84% 24%;
     background-size: 170px, 70px;
 
+    @media #{$media-tablet}{
+      background-position: 22% 86%, 86% 24%;
+      background-size: 136px, 56px;
+
+    }
+
     @media #{$media-phone-landscape}{
-      background-position: 5% 89%, 93% 6%;
+      background-position: 9% 86%, 98% 24%;
       background-size: 120px, 50px;
     }
 

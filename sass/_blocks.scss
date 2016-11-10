@@ -10,18 +10,17 @@
     }
   }
 }
-
 .about{
 
   &__title{
     text-align: center;
-    margin-top:40px;
-    margin-bottom: 25px;
+    margin-top:2.5rem;
+    margin-bottom: 1.5625rem;
   }
 
   &__block-items{
     @include bord;
-    padding: 40px 20px;
+    padding: 2.5rem 1rem;
     position: relative;
     @include cornerTop;
 
@@ -45,18 +44,14 @@
 
     &:after{
       content: '';
-      height: 75px;
-      width: 72px;
+      height: 4.6875rem;
+      width: 4.6875rem;
       background-image: url('../img/about/about-icon-sprite.svg');
       background-repeat: no-repeat;
       display: inline-block;
-      background-size: 72px auto;
+      background-size: 100% auto;
       margin-left: 10px;
 
-      @media #{$media-tablet} {
-        height:45px;
-        width: 45px;
-      }
     }
   }
 
@@ -430,8 +425,8 @@
 .block-gallery {
   &__title {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
   }
 
   &__big-image {
@@ -470,19 +465,25 @@
 .block-order{
   &__title{
     text-align: center;
-    margin-top: 60px;
-    margin-bottom:30px;
+    margin-top: 3.75rem;
+    margin-bottom:1.875rem;
   }
 
   &__form-wrap{
     padding: 3.125rem 0;
     position: relative;
-    background:  url('../img/bubble-white-icon.svg') no-repeat 23% 89%,
-                 url('../img/bubble-white-icon-2.svg') no-repeat 81% 12%;
+    background:  url('../img/bubble-white-icon.svg') no-repeat 22% 86%,
+                 url('../img/bubble-white-icon-2.svg') no-repeat 84% 24%;
     background-size: 170px, 70px;
 
+    @media #{$media-tablet}{
+      background-position: 22% 86%, 86% 24%;
+      background-size: 136px, 56px;
+
+    }
+
     @media #{$media-phone-landscape}{
-      background-position: 5% 89%, 93% 6%;
+      background-position: 9% 86%, 98% 24%;
       background-size: 120px, 50px;
     }
 
@@ -495,18 +496,20 @@
   &__items{
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    padding-bottom: 30px;
+    padding-bottom: 1.5625rem;
+    padding-top: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__item{
-    display: inline-block;
-    max-width: 140px;
     margin: 0 1.2%;
     vertical-align: middle;
 
     img{
-      height: 66px;
+      height: 35px;
     }
 
 
@@ -515,30 +518,40 @@
       font-weight:bold;
       font-size: (14/16)+em;
       display: block;
-      margin-top:-8px;
     }
   }
 
-  &__item:first-child{
-    margin-left: 0;
+  #paypal{
+    img{
+      height:27px;
+    }
   }
-  &__item:last-child{
-    margin-right: 0;
+  #mts{
+    img{
+      height:43px;
+    }
+  }
+
+  #okpay{
+    img {
+      height:22px;
+    }
+  }
+
+  #qiwi{
+    img{
+      height: 66px;
+    }
   }
 
   #cash{
-    max-width: 85px;
+
     img{
-      margin-top:38px;
+      margin-top: 24px;
+      margin-bottom: 4px;
     }
   }
 
-  #paypal,
-  #mts,
-  #okpay
-  {
-    max-width: 95px;
-  }
 
 }
 .block-products {
@@ -725,12 +738,12 @@
   }
 }
 .block-subscribe{
-  margin-bottom: 90px;
+  margin-bottom: 5.625rem;
 
   &__title{
     text-align: center;
-    margin-top: 70px;
-    margin-bottom:25px;
+    margin-top: 4.375rem;
+    margin-bottom: 1.5625rem
   }
 
   &__form-wrap{
@@ -863,7 +876,7 @@
 .certificates{
   &__title{
     text-align: center;
-    margin-top: 80px;
+    margin-top: 5rem;
   }
 
   &__carousel{
@@ -911,8 +924,8 @@
 
   &__title{
     text-align: center;
-    margin-top:77px;
-    margin-bottom: 44px;
+    margin-top:4.8125rem;
+    margin-bottom: 2.75rem;
   }
 
 
@@ -1150,8 +1163,8 @@
   }
 
   .menu-icon{
-    width: 45px;
-    height: 45px;
+    width: 2.8125rem;
+    height: 2.8125rem;
     position: relative;
     z-index: 2;
 
@@ -1167,19 +1180,21 @@
       top: 0;
       left: 24px;
       z-index: 1;
-      height: 45px;
+      height: 2.8125rem;
       font-size:(14/16)+em;
       color: $cl-real-white;
+      line-height:1em;
+      padding-left: 1.5625rem;
       background-color: $cl-sun-yellow;
-      line-height: 14px;
-      padding: 8px 8px 8px 25px;
-      width: 181px;
-      display: none;
+      width: 11.3125rem;
+      visibility: hidden;
+      display: table;
 
     }
     
     span{
-
+      display: table-cell;
+      vertical-align: middle;
     }
   }
 
@@ -1308,8 +1323,8 @@
 .block-price{
 &__title{
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
 }  
 }
 
@@ -1552,8 +1567,8 @@
 
   &__title {
     text-align: center;
-    margin-top: 38px;
-    margin-bottom: 30px;
+    margin-top: 2.375rem;
+    margin-bottom: 1.875rem;
   }
 
   &__carousel{
