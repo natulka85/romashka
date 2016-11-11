@@ -206,11 +206,29 @@ $(function () {
 
     /** Проставляем значения колонок по сетки в блоке some-columns*/
     var blockSomeColumns = $('.block-some-columns');
-    var count = 12 / blockSomeColumns.attr('data-col-count');
-    var columnClass = blockSomeColumns.attr('data-col-class') + "-" + count;
+    var count = blockSomeColumns.children('.row').children('.columns');
 
-    blockSomeColumns.find('.columns').each(function () {
-        $(this).addClass(columnClass);
+
+    blockSomeColumns.children('.row').each(function () {
+
+        count = $(this).find('.columns');
+
+        var num = 12 / count.length;
+
+        var columnClass = blockSomeColumns.attr('data-col-class') + "-" + num;
+
+        $(this).find('.columns').each(function () {
+            $(this).addClass(columnClass);
+        });
+
+                if(count.length > 2){
+                    count.eq(0).addClass('first');
+                    count.eq(count.length - 1).addClass('last');
+                }
+                else{
+                    count.addClass('is-only-one');
+                }
+
     });
 
 
