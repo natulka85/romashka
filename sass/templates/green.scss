@@ -386,7 +386,7 @@ h1, h2 {
   }
 }
 
-.block-three-column{
+.block-some-columns{
   &__title{
     background-color: $cl-shamrock-crayola;
     &:after{
@@ -441,6 +441,12 @@ h1, h2 {
     }
   }
 
+}
+
+.simple-table{
+  &__head-name{
+    background-color: $cl-shamrock-crayola;
+  }
 }
 
 

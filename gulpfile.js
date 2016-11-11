@@ -20,6 +20,7 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css/templates'));
 
+
 });
 
 gulp.task('jade', function() {
@@ -73,19 +74,19 @@ gulp.task('concat:js', function() {
         .pipe(concat('global.js'))
         .pipe(gulp.dest('./js/'));
 });
-
-gulp.task('prefix', function () {
-    return gulp.src('./css/global.css')
-        .pipe(autoprefixer({
-            browsers: ['last 16 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('./css/'));
-});
-
-gulp.task('prefix:watch', function (){
-    gulp.watch('./css/global.css', ['prefix']);
-});
+//
+// gulp.task('prefix', function () {
+//     return gulp.src('./css/global.css')
+//         .pipe(autoprefixer({
+//             browsers: ['last 16 versions'],
+//             cascade: false
+//         }))
+//         .pipe(gulp.dest('./css/'));
+// });
+//
+// gulp.task('prefix:watch', function (){
+//     gulp.watch('./css/global.css', ['prefix']);
+// });
 
 gulp.task('default', function(callback) {
     runSequence(
@@ -94,10 +95,9 @@ gulp.task('default', function(callback) {
         'jade',
         'sass:watch',
         'jade:watch',
-        'prefix',
         'concat:js',
         'js:watch',
-        'prefix:watch',
+
 
 
         callback);

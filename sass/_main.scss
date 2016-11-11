@@ -131,6 +131,10 @@ div {
   text-align: center;
 }
 
+.is-border-b{
+  @include borB;
+}
+
 .yandex-map{
 
   @media #{$media-phone-landscape} {
@@ -145,4 +149,12 @@ table tfoot{
 }
 table tbody tr:nth-child(even) {
   background: none;
+}
+
+.small-description{
+  margin-bottom: 1.875rem ;
+}
+
+.block-empty-height{
+  height: 3.125rem;
 }

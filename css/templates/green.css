@@ -195,9 +195,9 @@ h1, h2 {
   .block-bonus__name {
     color: #32c7ac; }
 
-.block-three-column__title {
+.block-some-columns__title {
   background-color: #32c7ac; }
-  .block-three-column__title:after {
+  .block-some-columns__title:after {
     border-top-color: #32c7ac; }
 
 .block-address__name, .block-address__name-mail {
@@ -227,3 +227,6 @@ h1, h2 {
 .price-big-table__row:last-child .price-big-table__data,
 .price-big-table__row:last-child .price-big-table__name {
   border-bottom-color: #32c7ac; }
+
+.simple-table__head-name {
+  background-color: #32c7ac; }

@@ -202,6 +202,20 @@ $(function () {
 
     /** Ровняем стрелки по картинке в слайдерах END*/
 
+
+
+    /** Проставляем значения колонок по сетки в блоке some-columns*/
+    var blockSomeColumns = $('.block-some-columns');
+    var count = 12 / blockSomeColumns.attr('data-col-count');
+    var columnClass = blockSomeColumns.attr('data-col-class') + "-" + count;
+
+    blockSomeColumns.find('.columns').each(function () {
+        $(this).addClass(columnClass);
+    });
+
+
+    /** Проставляем значения колонок по сетки в блоке some-columns END*/
+
 });
 
 jQuery(function ($) {

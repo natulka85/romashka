@@ -440,3 +440,11 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
 @mixin borT{
   border-top: 1px solid $cl-greaterly;
 }
+
+@mixin borR{
+  border-right: 1px solid $cl-greaterly;
+}
+
+@mixin borL{
+  border-left: 1px solid $cl-greaterly;
+}

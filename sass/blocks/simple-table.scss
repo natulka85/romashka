@@ -1,0 +1,56 @@
+.simple-table {
+
+  &__table{
+    table-layout: fixed;
+  }
+
+  &__name {
+    text-align: center;
+    margin: 0 0.625rem 1.875rem 0.625rem;
+  }
+
+  &__scores {
+    color: $cl-moderate-orange-yellow;
+    font-weight: bold;
+    font-size: (18/16)+em;
+  }
+
+  &__head-name {
+    color: $cl-real-white;
+    text-transform: uppercase;
+    padding: 1.25rem;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+  }
+
+  &__head-name:first-child{
+    border-left: none;
+  }
+  &__head-name:last-child{
+    border-right: none;
+  }
+
+  &__data,
+  &__data-scores {
+    text-align: center;
+    padding: 0.875rem 0.625rem;
+    font-size: (14/16)+em;
+    @include borR;
+  }
+
+  &__data-scores{
+    font-weight: bold;
+  }
+
+  &__row{
+    .simple-table__data:first-child{
+      @include borL;
+    }
+  }
+
+  &__row:last-child{
+    @include borB;
+  }
+
+
+}
