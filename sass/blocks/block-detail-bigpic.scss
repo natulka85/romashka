@@ -11,4 +11,14 @@
     padding-bottom: 1rem;
     @include borB;
   }
+
+  &__btn-wrap{
+    text-align: center;
+    @include borB;
+    margin: 1.75rem 0;
+
+    .btn-border-color{
+      margin-bottom: 1.6875rem;
+    }
+  }
 }

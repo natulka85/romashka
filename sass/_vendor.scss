@@ -307,25 +307,6 @@ html.swipebox-html.swipebox-touch {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-/*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-
-@import "./vendor/fontawesome/scss/variables";
-@import "./vendor/fontawesome/scss/mixins";
-@import "./vendor/fontawesome/scss/path";
-@import "./vendor/fontawesome/scss/core";
-@import "./vendor/fontawesome/scss/larger";
-@import "./vendor/fontawesome/scss/fixed-width";
-@import "./vendor/fontawesome/scss/list";
-@import "./vendor/fontawesome/scss/bordered-pulled";
-@import "./vendor/fontawesome/scss/animated";
-@import "./vendor/fontawesome/scss/rotated-flipped";
-@import "./vendor/fontawesome/scss/stacked";
-@import "./vendor/fontawesome/scss/icons";
-@import "./vendor/fontawesome/scss/screen-reader";
-
 /* Slider */
 
 .slick-slider {
@@ -577,7 +558,7 @@ $slick-opacity-not-active: 0.25 !default;
 /* Dots */
 
 .slick-dotted.slick-slider {
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
 }
 
 .slick-dots {
@@ -639,6 +620,25 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
 }
+
+/*!
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import "./vendor/fontawesome/scss/variables";
+@import "./vendor/fontawesome/scss/mixins";
+@import "./vendor/fontawesome/scss/path";
+@import "./vendor/fontawesome/scss/core";
+@import "./vendor/fontawesome/scss/larger";
+@import "./vendor/fontawesome/scss/fixed-width";
+@import "./vendor/fontawesome/scss/list";
+@import "./vendor/fontawesome/scss/bordered-pulled";
+@import "./vendor/fontawesome/scss/animated";
+@import "./vendor/fontawesome/scss/rotated-flipped";
+@import "./vendor/fontawesome/scss/stacked";
+@import "./vendor/fontawesome/scss/icons";
+@import "./vendor/fontawesome/scss/screen-reader";
 
 // Spinning Icons
 // --------------------------

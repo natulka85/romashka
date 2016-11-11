@@ -30,10 +30,6 @@
   }
 
 }
-.rrr55{
-  color: #000;
-}
-
 .button-m{
   display: inline-block;
   font-size: (14/16)+em;
@@ -43,7 +39,6 @@
   padding: 3.5px 9px;
   border: 4px solid $cl-moderate-orange-yellow;
   color: $cl-moderate-orange-yellow;
-  margin-top:6px;
 
   
   &:hover{
@@ -99,6 +94,13 @@
   width: 100%;
   text-align: center;
   margin:0;
+}
+
+.btn-full-size.is-corner-b{
+  position: relative;
+
+  @include cornerBottomWhite(10, -23);
+
 }
 
 
@@ -236,6 +238,7 @@ label[for="custom-checkbox"]{
 
   @extend .form-standart;
   margin-top:10px;
+  width: 100%;
 
   .form-standart {
    &__field{

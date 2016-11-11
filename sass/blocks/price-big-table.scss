@@ -1,0 +1,65 @@
+.price-big-table {
+  font-size: (14/16)+em;
+  text-align: left;
+  margin: 1.875rem 0;
+
+  &__table{
+    border-collapse: separate;
+  }
+
+  &__head-name{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+  &__head:nth-child(2) {
+    height: 6.4375rem;
+    @include bg("price-big-table-layer.png", 100%, center bottom, no-repeat);
+    text-transform: uppercase;
+    color: $cl-real-white;
+    line-height: 1em;
+    text-align: center;
+    vertical-align: bottom;
+    font-weight: bold;
+    padding-bottom: 0.75rem;
+
+  }
+
+  &__name {
+    color: $cl-real-white;
+    border-bottom: 1px solid $cl-real-white;
+    font-weight: normal;
+    padding: 0.5rem 0.875rem;
+  }
+
+  &__data {
+    border-bottom: 1px solid transparent;
+    font-weight: normal;
+    padding: 0.5rem 0.875rem;
+  }
+
+  &__data:last-child{
+    border-right: 3px solid transparent;
+  }
+
+  &__data:nth-child(2){
+    border-left: 3px solid transparent;
+  }
+
+  &__row:nth-child(2){
+    .price-big-table__data{
+      border-top: 3px solid transparent;
+    }
+  }
+
+  &__row:last-child{
+    .price-big-table__data,
+    .price-big-table__name{
+      border-bottom: 3px solid transparent;
+    }
+  }
+  
+}

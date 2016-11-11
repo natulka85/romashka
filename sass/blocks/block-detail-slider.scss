@@ -6,13 +6,13 @@
 
   &__carousel {
     margin: 0;
-    padding: 30px 20px 0 20px;
+    padding: 1.875rem 1.25rem 0 1.25rem;
     overflow: hidden;
     .slick-prev, .slick-next {
       top: 34%;
     }
   }
-
+//___color-arrows
   &__carousel.is-color-arrows {
 
     padding-bottom: 3.75rem;
@@ -49,6 +49,12 @@
     }
 
   }
+//___color-arrows END
+
+  &__carousel.is-border-b{
+    padding-bottom: 1.875rem;
+    @include borB;
+  }
 
   &__carousel-item {
     margin: 0 5px;
@@ -69,6 +75,8 @@
     }
 
     &:hover {
+      @include bordOutline;
+
       .block-detail-slider__loupe {
         display: block;
       }

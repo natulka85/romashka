@@ -1,4 +1,5 @@
 .block-video{
+  position: relative;
 &__wrap {
   @include bg2('layout-2.png', no-repeat);
   position: relative;

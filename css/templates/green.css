@@ -24,6 +24,9 @@ h1, h2 {
     color: #32c7ac;
     background-color: #ffffff; }
 
+.btn-full-size.is-corner-b:after {
+  border-top-color: #32c7ac; }
+
 .top-height {
   background-color: #32c7ac; }
   .top-height__menu-item.active, .top-height__menu-item:hover {
@@ -166,7 +169,7 @@ h1, h2 {
   background-color: #32c7ac; }
 
 .block-detail-slider__link:hover {
-  box-shadow: inset -4px 0px 0px 0px #32c7ac, inset 8px 0px 0px 0px #32c7ac; }
+  outline-color: #32c7ac; }
 
 .block-detail-slider__loupe {
   background-color: #32c7ac; }
@@ -199,3 +202,28 @@ h1, h2 {
 
 .block-address__name, .block-address__name-mail {
   color: #32c7ac; }
+
+.price-big-table__head-name {
+  color: #32c7ac; }
+
+.price-big-table__head:nth-child(2) {
+  background-image: url("../../img/price-big-table-layer-green.png"); }
+
+.price-big-table__name {
+  background-color: #32c7ac; }
+
+.price-big-table__data {
+  border-color: #32c7ac; }
+
+.price-big-table__data:last-child {
+  border-right-color: #32c7ac; }
+
+.price-big-table__data:nth-child(2) {
+  border-left-color: #32c7ac; }
+
+.price-big-table__row:nth-child(2) .price-big-table__data {
+  border-top-color: #32c7ac; }
+
+.price-big-table__row:last-child .price-big-table__data,
+.price-big-table__row:last-child .price-big-table__name {
+  border-bottom-color: #32c7ac; }

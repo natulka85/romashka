@@ -16,8 +16,7 @@
   }
 
   &__picture {
-    outline: 8px solid transparent;
-    outline-offset: -8px;
+    @include bordOutline;
     cursor: pointer;
     position: relative;
     margin-top: 30px;

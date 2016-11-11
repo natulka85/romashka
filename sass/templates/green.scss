@@ -37,6 +37,12 @@ h1, h2 {
   }
 
 }
+.btn-full-size.is-corner-b{
+  &:after{
+    border-top-color:$cl-shamrock-crayola ;
+  }
+}
+
 
 .top-height {
   background-color: $cl-shamrock-crayola;
@@ -325,8 +331,7 @@ h1, h2 {
   &__link {
 
     &:hover {
-      box-shadow: inset -4px -0px 0px -0px $cl-shamrock-crayola,
-      inset 8px -0px 0px -0px $cl-shamrock-crayola;
+     outline-color: $cl-shamrock-crayola,
     }
   }
 
@@ -395,6 +400,47 @@ h1, h2 {
   &__name-mail{
     color: $cl-shamrock-crayola;
   }
+}
+
+.price-big-table{
+
+  &__head-name{
+      color: $cl-shamrock-crayola;
+    }
+
+  &__head:nth-child(2){
+    background-image: url("../../img/price-big-table-layer-green.png");
+  }
+
+  &__name{
+    background-color: $cl-shamrock-crayola;
+  }
+
+  &__data{
+    border-color: $cl-shamrock-crayola;
+  }
+
+  &__data:last-child{
+    border-right-color: $cl-shamrock-crayola;
+  }
+
+  &__data:nth-child(2){
+    border-left-color: $cl-shamrock-crayola;
+  }
+
+  &__row:nth-child(2){
+    .price-big-table__data{
+      border-top-color: $cl-shamrock-crayola;
+    }
+  }
+
+  &__row:last-child{
+    .price-big-table__data,
+    .price-big-table__name{
+      border-bottom-color: $cl-shamrock-crayola;
+    }
+  }
+
 }
 
 

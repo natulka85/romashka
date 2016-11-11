@@ -63,6 +63,9 @@ gulp.task('concat:scss', function() {
     gulp.src(['./sass/vendor/**/*.scss'])
         .pipe(concat('_vendor.scss'))
         .pipe(gulp.dest('./sass/'));
+    gulp.src(['./sass/wrapps/**/*.scss'])
+        .pipe(concat('_wrapps.scss'))
+        .pipe(gulp.dest('./sass/'));
 });
 
 gulp.task('concat:js', function() {
@@ -79,10 +82,10 @@ gulp.task('prefix', function () {
         }))
         .pipe(gulp.dest('./css/'));
 });
-//
-// gulp.task('prefix:watch', function (){
-//     gulp.watch('./css/global.css', ['prefix']);
-// });
+
+gulp.task('prefix:watch', function (){
+    gulp.watch('./css/global.css', ['prefix']);
+});
 
 gulp.task('default', function(callback) {
     runSequence(
@@ -94,6 +97,7 @@ gulp.task('default', function(callback) {
         'prefix',
         'concat:js',
         'js:watch',
+        'prefix:watch',
 
 
         callback);

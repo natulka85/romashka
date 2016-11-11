@@ -273,6 +273,12 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
   border: 8px solid transparent;
 }
 
+@mixin bordOutline(){
+  outline: 8px solid transparent;
+  outline-offset: -8px;
+}
+
+
 
 @mixin retinabg($url, $url2x, $size, $position, $repeat) {
   $prefix:"images/";

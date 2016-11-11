@@ -1,6 +1,18 @@
+.about-company-wrap{
+
+
+  .block-detail-slider{
+    border-top: none;
+    @include borB();
+
+    &__carousel{
+      padding-bottom: 30px;
+    }
+  }
+}
 .block-address-wrap {
-  margin-bottom: 35px;
-  padding-bottom: 35px;
+  margin-bottom: 2.1875rem;
+  padding-bottom: 2.1875rem;
   @media #{$media-phone-landscape} {
     padding-bottom: 0;
   }
@@ -25,4 +37,8 @@
 
 .block-address-wrap:not(:last-child) {
   @include borB;
+}
+.cleaning-room-wrap{
+  margin-top: 3.75rem;
+  margin-bottom:2.5rem;
 }

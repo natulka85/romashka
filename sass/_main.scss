@@ -78,8 +78,6 @@ input {
 
 .two-columns {
   column-count: 2;
-  -webkit-column-gap: 2rem;
-  -moz-column-gap: 2rem;
   column-gap: 2rem;
 
   @media #{$media-phone-landscape} {
@@ -125,8 +123,12 @@ div {
   }
 
   h2{
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
+}
+
+.centered{
+  text-align: center;
 }
 
 .yandex-map{
@@ -134,4 +136,13 @@ div {
   @media #{$media-phone-landscape} {
     margin-bottom: 20px;
   }
+}
+
+table thead,
+table tbody,
+table tfoot{
+  border: none;
+}
+table tbody tr:nth-child(even) {
+  background: none;
 }
