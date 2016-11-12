@@ -244,3 +244,9 @@ h1, h2 {
 
 .button-menu-lines__line {
   background-color: #32c7ac; }
+
+.block-social-top__link {
+  background-color: #32c7ac; }
+
+.block-social-top__link:hover {
+  background-color: #1fb09a; }

@@ -693,6 +693,89 @@
   }
 
 }
+.block-social-top{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+
+  &__title{
+    text-transform: uppercase;
+    font-size: (14/16)+em;
+    font-weight: bold;
+    margin-right: 7px;
+    padding: 0 10px;
+  }
+  
+  &__link{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0 4px;
+    display: inline-block;
+    background-image: url('../img/icon-social-sprite-top.svg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    border-radius: 50%;
+    background-size: 1.25rem;
+  }
+  
+  .-vk{
+    background-position: center 14.8%;
+    @media #{$media-tablet} {
+      background-position: center 3%;
+    }
+    @media #{$media-phone-landscape} {
+      background-position: center -2%;
+    }
+  }
+
+  .-facebook{
+    background-position: center 28.5%;
+    @media #{$media-tablet} {
+      background-position: center 21%;
+    }
+    @media #{$media-phone-landscape} {
+      background-position: center 18.5%;
+    }
+  }
+
+  .-odnoklassniki{
+    background-position: center 42.8%;
+    @media #{$media-tablet} {
+      background-position: center 40%;
+    }
+
+  }
+
+  .-twitter{
+    background-position: center 56.8%;
+    @media #{$media-tablet} {
+      background-position: center 60%;
+    }
+  }
+
+  .-youtube{
+    background-position: center 70.9%;
+    @media #{$media-tablet} {
+      background-position: center 78%;
+    }
+    @media #{$media-phone-landscape} {
+      background-position: center 81%;
+    }
+  }
+
+  .-instagram{
+    background-position: center 85%;
+    @media #{$media-tablet} {
+      background-position: center 97%;
+    }
+    @media #{$media-phone-landscape} {
+      background-position: center 102%;
+    }
+  }
+
+}
 .block-some-columns{
   .columns.first{
     padding-right:0;
@@ -1608,43 +1691,32 @@
   }
 }
 .search-bar{
-  height: 30px;
   width: 217px;
   position: relative;
-  margin: 21px auto;
+  margin:1.0625rem auto;
+  padding: 0.625rem 0;
 
-  @media #{$media-tablet} {
-    width: 80%;
-    height: 28px;
-  }
 
   &__input,
   &__input:focus{
     border-radius: 30px;
     box-shadow: none;
     border: 1px solid #d1d3d4;
-    height: 30px;
+    height: 1.875rem;
+    margin: 0;
 
-    @media #{$media-tablet} {
-      width: 80%;
-      height: 28px;
-    }
 
   }
 
   &__label{
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     position: absolute;
-    top: 6px;
-    right: 8px;
+    top: 1rem;
+    right: 0.5rem;
     @include bgsvg('icon-search.svg');
     cursor: pointer;
-
-    @media #{$media-tablet} {
-      top: 5px;
-    }
 
   }
 }

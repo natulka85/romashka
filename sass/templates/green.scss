@@ -477,4 +477,14 @@ h1, h2 {
   }
 }
 
+.block-social-top{
+  &__link{
+    background-color: $cl-shamrock-crayola;
+  }
+
+  &__link:hover{
+    background-color: $cl-bright-green-sea;
+  }
+}
+
 

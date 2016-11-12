@@ -381,7 +381,8 @@ $(function () {
         }
 
 
-
+    arrowSlider();
+    $(window).resize(arrowSlider);
 
 
     /** Ровняем стрелки по картинке в слайдерах END*/
@@ -466,6 +467,23 @@ $(function () {
 
 
     /** Выпадающее меню END*/
+
+
+    function searchMove() {
+        var $view = $(window).width();
+    if ($view <= 768){
+        $('.search-bar').appendTo('.block-social-top').addClass('new')
+    }
+    else if($view > 768 && $('.top-contacts .search-bar').length == 0){
+        $('.search-bar.new').appendTo('.top-contacts .columns.small-4').removeClass('new')
+    }
+    }
+
+    searchMove();
+    $(window).resize(searchMove);
+
+    /** Перемещение элементов DOM*/
+
 
 
 

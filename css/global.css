@@ -8799,38 +8799,38 @@ ul.mark-list li:before {
 
 .top-height {
   width: 100%;
-  height: 50px; }
+  height: 3.125rem; }
   .top-height__menu {
     margin: 0;
-    margin-left: -20px; }
-    @media screen and (max-width: 1023px) {
-      .top-height__menu {
-        margin-left: -15px; } }
+    margin-left: -1.25rem; }
   .top-height__menu-item {
     display: inline-block;
-    padding: 0 10px;
-    line-height: 50px;
-    height: 50px; }
-    @media screen and (max-width: 1023px) {
+    padding: 0 0.625rem;
+    line-height: 3.125rem;
+    height: 3.125rem; }
+    @media screen and (max-width: 479px) {
       .top-height__menu-item {
-        padding: 0 0.4%; } }
+        padding: 0 0.25rem; } }
     .top-height__menu-item:before {
       content: '';
       background-image: url("../img//header/top-icons-sprite.svg");
       background-repeat: no-repeat;
       -webkit-background-size: 100%;
       background-size: 100%;
-      -webkit-background-size: 23px auto;
-      background-size: 23px auto;
-      height: 50px;
-      width: 23px;
+      -webkit-background-size: 1.4375rem auto;
+      background-size: 1.4375rem auto;
+      height: 3.125rem;
+      width: 1.4375rem;
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 0.625rem;
       vertical-align: middle; }
     .top-height__menu-item a {
       font-family: 'Arial', sans-serif;
       font-weight: bold;
       color: #ffffff; }
+      @media screen and (max-width: 479px) {
+        .top-height__menu-item a {
+          font-size: 0.8em; } }
   .top-height #clining:before {
     background-position: 0px -6%; }
   .top-height #desinfekciya:before {
@@ -8872,7 +8872,8 @@ ul.mark-list li:before {
     color: #231f20;
     text-decoration: none;
     border-bottom: 1px solid #d7d6d6;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 0.875em; }
   .top-contacts__phone a:hover, .footer-contacts a:hover {
     border-bottom: 1px solid transparent;
     -webkit-transition: border-bottom 0.2s;
@@ -8894,12 +8895,16 @@ ul.mark-list li:before {
 
 .top-contacts__logo {
   max-width: 240px;
-  margin: 0; }
+  margin: 0;
+  padding: 0.625rem 0; }
   .top-contacts__logo img {
-    height: 71px; }
+    height: 2.25rem; }
 
 .sidebar {
   padding-right: 1.5625rem; }
+  @media screen and (max-width: 479px) {
+    .sidebar {
+      padding-right: initial; } }
 
 .breadcrumbs {
   height: 65px;
@@ -9700,6 +9705,70 @@ label[for="custom-checkbox"] {
     background-position: center 105%;
     background-color: #ee8208; }
 
+.block-social-top {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .block-social-top__title {
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: bold;
+    margin-right: 7px;
+    padding: 0 10px; }
+  .block-social-top__link {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0 4px;
+    display: inline-block;
+    background-image: url("../img/icon-social-sprite-top.svg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    border-radius: 50%;
+    background-size: 1.25rem; }
+  .block-social-top .-vk {
+    background-position: center 14.8%; }
+    @media screen and (max-width: 1023px) {
+      .block-social-top .-vk {
+        background-position: center 3%; } }
+    @media screen and (max-width: 767px) {
+      .block-social-top .-vk {
+        background-position: center -2%; } }
+  .block-social-top .-facebook {
+    background-position: center 28.5%; }
+    @media screen and (max-width: 1023px) {
+      .block-social-top .-facebook {
+        background-position: center 21%; } }
+    @media screen and (max-width: 767px) {
+      .block-social-top .-facebook {
+        background-position: center 18.5%; } }
+  .block-social-top .-odnoklassniki {
+    background-position: center 42.8%; }
+    @media screen and (max-width: 1023px) {
+      .block-social-top .-odnoklassniki {
+        background-position: center 40%; } }
+  .block-social-top .-twitter {
+    background-position: center 56.8%; }
+    @media screen and (max-width: 1023px) {
+      .block-social-top .-twitter {
+        background-position: center 60%; } }
+  .block-social-top .-youtube {
+    background-position: center 70.9%; }
+    @media screen and (max-width: 1023px) {
+      .block-social-top .-youtube {
+        background-position: center 78%; } }
+    @media screen and (max-width: 767px) {
+      .block-social-top .-youtube {
+        background-position: center 81%; } }
+  .block-social-top .-instagram {
+    background-position: center 85%; }
+    @media screen and (max-width: 1023px) {
+      .block-social-top .-instagram {
+        background-position: center 97%; } }
+    @media screen and (max-width: 767px) {
+      .block-social-top .-instagram {
+        background-position: center 102%; } }
+
 .block-some-columns .columns.first {
   padding-right: 0;
   padding-left: 0.78125rem; }
@@ -10382,38 +10451,28 @@ label[for="custom-checkbox"] {
     left: 0; }
 
 .search-bar {
-  height: 30px;
   width: 217px;
   position: relative;
-  margin: 21px auto; }
-  @media screen and (max-width: 1023px) {
-    .search-bar {
-      width: 80%;
-      height: 28px; } }
+  margin: 1.0625rem auto;
+  padding: 0.625rem 0; }
   .search-bar__input, .search-bar__input:focus {
     border-radius: 30px;
     box-shadow: none;
     border: 1px solid #d1d3d4;
-    height: 30px; }
-    @media screen and (max-width: 1023px) {
-      .search-bar__input, .search-bar__input:focus {
-        width: 80%;
-        height: 28px; } }
+    height: 1.875rem;
+    margin: 0; }
   .search-bar__label {
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     position: absolute;
-    top: 6px;
-    right: 8px;
+    top: 1rem;
+    right: 0.5rem;
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     -webkit-background-size: 100%;
     background-size: 100%;
     cursor: pointer; }
-    @media screen and (max-width: 1023px) {
-      .search-bar__label {
-        top: 5px; } }
 
 .simple-table__table {
   table-layout: fixed; }

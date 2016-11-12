@@ -1,3 +1,7 @@
 .sidebar{
   padding-right: 1.5625rem;
+
+  @media #{$media-phone} {
+    padding-right:initial;
+  }
 }
