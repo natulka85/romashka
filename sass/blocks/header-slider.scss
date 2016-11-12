@@ -56,7 +56,7 @@
     display: block;
   }
 
-  .menu-icon{
+  .menu-icons{
     width: 2.8125rem;
     height: 2.8125rem;
     position: relative;
@@ -97,55 +97,55 @@
   .kl{
 
     .header-slider__menu-item.i-1{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-1.svg');
       }
     }
 
     .header-slider__menu-item.i-2{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-2.svg');
       }
     }
 
     .header-slider__menu-item.i-3{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-3.svg');
       }
     }
 
     .header-slider__menu-item.i-4{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-4.svg');
       }
     }
 
     .header-slider__menu-item.i-5{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-5.svg');
       }
     }
 
     .header-slider__menu-item.i-6{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-6.svg');
       }
     }
 
     .header-slider__menu-item.i-7{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-7.svg');
       }
     }
 
     .header-slider__menu-item.i-8{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-8.svg');
       }
     }
 
     .header-slider__menu-item.i-9{
-      .menu-icon{
+      .menu-icons{
         @include bgsvg('services/kl-icon-9.svg');
       }
     }

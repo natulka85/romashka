@@ -371,9 +371,6 @@ $(function () {
                 var $li = $('.slick-current', $slider);
                 var $item = ($li.find('a'));
                 var $top = $item.height() / 2;
-
-                console.log($top);
-
                 var $distance =  $item.offset().top - $slider.offset().top;
 
 
@@ -383,8 +380,7 @@ $(function () {
             });
         }
 
-    $(window).load(arrowSlider);
-    $(window).resize(arrowSlider);
+
 
 
 
@@ -421,6 +417,57 @@ $(function () {
 
 
     /** Проставляем значения колонок по сетки в блоке some-columns END*/
+
+
+
+    /** Выпадающее меню*/
+    function menuPosition(){
+        var secondItem = $('.top-menu__items-second-lvl');
+
+        secondItem.each(function () {
+            var secondWith = $(this).width();
+            var firstWidth = $(this).parent().children("a").width();
+            var leftPos = (firstWidth - secondWith) / 2;
+
+            $(this).css('left', leftPos + 'px');
+
+            $(this).parent().addClass('is-parent');
+        });
+    }
+
+
+    menuPosition();
+    $(window).resize(menuPosition);
+
+
+    /** Выпадающее меню END*/
+
+    /** Мобильное меню*/
+    var secondItemMobile = $('.mobile-menu__items-second-lvl');
+
+    secondItemMobile.each(function () {
+        $(this).parent().addClass('is-parent');
+    });
+
+
+    var isParentMobile = $('.mobile-menu .is-parent');
+
+    isParentMobile.children('span').on('click', function () {
+
+        $(this).parent('li').toggleClass('active');
+        $(this).parent().siblings().removeClass('active');
+    });
+
+    $('.button-menu-lines').on('click', function () {
+        $(this).toggleClass('is-close')
+        $('.mobile-menu').toggleClass('is-opened')
+    });
+
+
+
+    /** Выпадающее меню END*/
+
+
 
 });
 

@@ -415,6 +415,7 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
     height: 0;
     width: 0;
     position: absolute;
+    z-index: 3;
   }
 
 }

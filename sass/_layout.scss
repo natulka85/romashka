@@ -105,62 +105,6 @@
 
 }
 
-.top-menu {
-  max-width: 1280px;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-
-  .columns:first-child{
-    @media #{$media-tablet}{
-      padding-left: 0;
-    }
-  }
-
-  .columns:last-child{
-    @media #{$media-tablet}{
-      padding-right: 0;
-    }
-  }
-
-
-  &__item {
-    a {
-      text-transform: uppercase;
-      color: #000;
-
-    }
-  }
-
-  &__item:first-child {
-    a {
-      padding-left: 0;
-
-    }
-  }
-
-  //rewrite foundation
-  .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
-    display: block;
-    background-image: url('../img/header/menu-top-arrow.png');
-    width: 9px;
-    height: 4px;
-    right: 5px;
-    margin-top: -1px;
-    border: none;
-  }
-
-  .menu > li > a{
-    padding: 1rem 0.7rem;
-
-    @media #{$media-tablet} {
-      padding: 1rem 0.5rem;
-    }
-
-  }
-
-  //rewrite foundation END
-
-}
 
 .top-contacts{
 

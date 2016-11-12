@@ -71,4 +71,14 @@
 
 }
 
+.close-button-m{
+  display: inline-block;
+  position: absolute;
+  &:after{
+    content: 'x';
+    font-family:'RobotoLight', sans-serif;
+    font-size: 26px;
+  }
+}
+
 

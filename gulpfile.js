@@ -73,7 +73,9 @@ gulp.task('concat:js', function() {
     gulp.src(['./js/_sliders.js', './js/_scripts.js'])
         .pipe(concat('global.js'))
         .pipe(gulp.dest('./js/'));
+
 });
+
 //
 // gulp.task('prefix', function () {
 //     return gulp.src('./css/global.css')

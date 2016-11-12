@@ -5,14 +5,19 @@
 
   &__items{
     margin:0;
-    padding: 10px 0;
+    padding: 0.6875rem 0;
   }
 
   &__item {
     display: inline-block;
     a {
       font-size: (14/16)+em;
+
+      @media #{$media-phone}{
+        font-size: 1.4em;
+      }
     }
+
   }
 
   &__item:first-child {

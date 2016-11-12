@@ -57,13 +57,12 @@ h2 {
   }
 }
 
-a {
+a,
+a:hover,
+a:focus,
+a:active{
   outline: 0;
   color: $cl-black-brown;
-
-  &:hover {
-    color: $cl-black-brown;
-  }
 }
 
 input {
