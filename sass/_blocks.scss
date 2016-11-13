@@ -1000,6 +1000,7 @@
   }
 }
 .expirience{
+  overflow: hidden;
   .columns{
     padding: 0;
   }
@@ -1097,6 +1098,10 @@
   &__item{
     display: inline-block;
     margin-left: 10px;
+
+    @media #{$media-phone-landscape} {
+      width: 10%;
+    }
   }
 }
 
@@ -1161,6 +1166,23 @@
   .button-m{
     float: right;
     margin: 25px 0;
+  }
+
+  .presentation{
+
+    @media #{$media-phone} {
+      float: left;
+      text-align: center;
+    }
+
+
+    .footer-main-menu__title{
+      @media #{$media-phone} {
+        margin-top: 0;
+
+      }
+    }
+
   }
 
 }

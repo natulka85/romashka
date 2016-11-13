@@ -54,4 +54,21 @@
     margin: 25px 0;
   }
 
+  .presentation{
+
+    @media #{$media-phone} {
+      float: left;
+      text-align: center;
+    }
+
+
+    .footer-main-menu__title{
+      @media #{$media-phone} {
+        margin-top: 0;
+
+      }
+    }
+
+  }
+
 }
