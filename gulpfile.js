@@ -76,19 +76,19 @@ gulp.task('concat:js', function() {
 
 });
 
-//
-// gulp.task('prefix', function () {
-//     return gulp.src('./css/global.css')
-//         .pipe(autoprefixer({
-//             browsers: ['last 16 versions'],
-//             cascade: false
-//         }))
-//         .pipe(gulp.dest('./css/'));
-// });
-//
-// gulp.task('prefix:watch', function (){
-//     gulp.watch('./css/global.css', ['prefix']);
-// });
+
+gulp.task('prefix', function () {
+    return gulp.src('./css/global.css')
+        .pipe(autoprefixer({
+            browsers: ['last 16 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('./css/'));
+});
+
+gulp.task('prefix:watch', function (){
+    gulp.watch('./css/global.css', ['prefix']);
+});
 
 gulp.task('default', function(callback) {
     runSequence(
@@ -99,6 +99,7 @@ gulp.task('default', function(callback) {
         'jade:watch',
         'concat:js',
         'js:watch',
+        'prefix',
 
 
 

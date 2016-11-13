@@ -46,7 +46,25 @@
   &__menu {
     margin: 0;
     margin-left: -1.25rem;
+
+    @media#{$media-phone}{
+      position: absolute;
+      width: 100%;
+      left: -3000px;
+      top: 3.125rem;
+      z-index: 3;
+      margin-left:0;
+      transition: left 0.7s;
+  }
     
+  }
+
+  &__menu.is-opened {
+
+    @media#{$media-phone}{
+      left: 0;
+    }
+
   }
 
   &__menu-item {
@@ -57,6 +75,7 @@
 
     @media #{$media-phone} {
       padding: 0 0.25rem;
+      display: block;
     }
 
 
@@ -79,7 +98,7 @@
       color: $cl-real-white;
 
       @media #{$media-phone} {
-        font-size: 0.8em;
+        font-size: 1.5em;
       }
 
 
@@ -108,11 +127,12 @@
 
 
 .top-contacts{
+  padding: 0.3125rem;
 
   &__btn-wrap{
     position: relative;
     width: 100%;
-    height: 72px;
+    height: 4rem;
   }
 
   &__phone {
@@ -120,13 +140,14 @@
     float: right;
     margin-left: 20px;
     text-align: right;
-    padding:5px 0;
+    padding:0.625rem 0;
 
     nobr {
       font-size: (24/16)+em;
       font-weight: bold;
       display: block;
       color: $cl-black-brown;
+      line-height: 1em;
     }
 
     nobr:before {
@@ -163,7 +184,7 @@
     position: absolute;
     top: 50%;
     right: 260px;
-    margin-top: -14px;
+    margin-top: -1.125rem;
     min-width: 165px;
 
     @media #{$media-tablet} {
@@ -175,7 +196,7 @@
   &__logo{
     max-width: 240px;
     margin: 0;
-    padding: 0.625rem 0;
+    line-height: 4rem;
 
     img{
       height:2.25rem

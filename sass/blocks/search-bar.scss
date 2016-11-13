@@ -1,8 +1,11 @@
 .search-bar{
   width: 217px;
   position: relative;
-  margin:1.0625rem auto;
-  padding: 0.625rem 0;
+  margin: auto;
+  
+  @media #{$media-phone-landscape} {
+    margin:0;
+  }
 
 
   &__input,
@@ -21,7 +24,7 @@
     height: 1.25rem;
     width: 1.25rem;
     position: absolute;
-    top: 1rem;
+    top: 0.4rem;
     right: 0.5rem;
     @include bgsvg('icon-search.svg');
     cursor: pointer;
