@@ -986,9 +986,9 @@
   }
 
   &__contacts{
-    padding-left: 63px;
+    padding-left: 3.9375rem;
     @include bgsvg('icon-email.svg');
-    background-size: inherit;
+    background-size: 2.875rem;
     cursor: pointer;
   }
   
@@ -2044,7 +2044,7 @@
     position: absolute;
     margin: 0;
     min-width: 8.125rem;
-    z-index: 2;
+    z-index: 3;
     text-align: center;
     display: none;
   }

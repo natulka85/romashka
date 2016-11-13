@@ -10,9 +10,9 @@
   }
 
   &__contacts{
-    padding-left: 63px;
+    padding-left: 3.9375rem;
     @include bgsvg('icon-email.svg');
-    background-size: inherit;
+    background-size: 2.875rem;
     cursor: pointer;
   }
   

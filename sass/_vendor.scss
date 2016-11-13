@@ -307,130 +307,6 @@ html.swipebox-html.swipebox-touch {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-/*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-
-@import "./vendor/fontawesome/scss/variables";
-@import "./vendor/fontawesome/scss/mixins";
-@import "./vendor/fontawesome/scss/path";
-@import "./vendor/fontawesome/scss/core";
-@import "./vendor/fontawesome/scss/larger";
-@import "./vendor/fontawesome/scss/fixed-width";
-@import "./vendor/fontawesome/scss/list";
-@import "./vendor/fontawesome/scss/bordered-pulled";
-@import "./vendor/fontawesome/scss/animated";
-@import "./vendor/fontawesome/scss/rotated-flipped";
-@import "./vendor/fontawesome/scss/stacked";
-@import "./vendor/fontawesome/scss/icons";
-@import "./vendor/fontawesome/scss/screen-reader";
-
-/* Slider */
-
-.slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-.slick-list {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    &:focus {
-        outline: none;
-    }
-
-    &.dragging {
-        cursor: pointer;
-        cursor: hand;
-    }
-}
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-    position: relative;
-    left: 0;
-    top: 0;
-    display: block;
-
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
-
-    .slick-loading & {
-        visibility: hidden;
-    }
-}
-.slick-slide {
-    float: left;
-    height: 100%;
-    min-height: 1px;
-    [dir="rtl"] & {
-        float: right;
-    }
-    img {
-        display: block;
-    }
-    &.slick-loading img {
-        display: none;
-    }
-
-    display: none;
-
-    &.dragging img {
-        pointer-events: none;
-    }
-
-    .slick-initialized & {
-        display: block;
-    }
-
-    .slick-loading & {
-        visibility: hidden;
-    }
-
-    .slick-vertical & {
-        display: block;
-        height: auto;
-        border: 1px solid transparent;
-    }
-
-    a{
-        display: block;
-    }
-}
-
-
-.slick-arrow.slick-hidden {
-    display: none;
-}
-
 @charset "UTF-8";
 
 // Default Variables
@@ -639,6 +515,130 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
 }
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+
+    a{
+        display: block;
+    }
+}
+
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*!
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import "./vendor/fontawesome/scss/variables";
+@import "./vendor/fontawesome/scss/mixins";
+@import "./vendor/fontawesome/scss/path";
+@import "./vendor/fontawesome/scss/core";
+@import "./vendor/fontawesome/scss/larger";
+@import "./vendor/fontawesome/scss/fixed-width";
+@import "./vendor/fontawesome/scss/list";
+@import "./vendor/fontawesome/scss/bordered-pulled";
+@import "./vendor/fontawesome/scss/animated";
+@import "./vendor/fontawesome/scss/rotated-flipped";
+@import "./vendor/fontawesome/scss/stacked";
+@import "./vendor/fontawesome/scss/icons";
+@import "./vendor/fontawesome/scss/screen-reader";
 
 // Spinning Icons
 // --------------------------
