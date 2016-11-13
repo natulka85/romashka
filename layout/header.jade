@@ -1,7 +1,7 @@
 header
     .top-height
         .row
-            .columns.medium-9
+            .columns.xsmall-2.small-12.medium-9
                 ul.top-height__menu
                     li.top-height__menu-item(id='clining').active
                         a(href='#') Клининг
@@ -11,20 +11,26 @@ header
                         a(href='#') Экспертизы
                     li.top-height__menu-item(id='ventilyaciya')
                         a(href='#') Вентиляция и кондиционирование
-            .columns.medium-3
+                ul.button-menu-lines
+                    li.button-menu-lines__line
+                    li.button-menu-lines__line
+                    li.button-menu-lines__line
+                    li.button-menu-lines__line
+            .columns.xsmall-8.small-12.medium-3
                 include block-social-top.jade
 
 
     .top-contacts
-        .row(data-equalizer)
-            .columns.small-3(data-equalizer-watch)
+        .row
+            .columns.xsmall-4.medium-3(data-equalizer-watch)
                 .top-contacts__logo
                     img(alt='Клининговая компания', src='../img/logo.svg')
-            .columns.small-4(data-equalizer-watch)
-                .search-bar
-                    input.search-bar__input(type='text')
-                    label.search-bar__label
-            .columns.small-5(data-equalizer-watch)
+            .columns.hide-for-xsmall-only.hide-for-small-only.medium-4(data-equalizer-watch)
+                .search-bar-wrap
+                    .search-bar
+                        input.search-bar__input(type='text')
+                        label.search-bar__label
+            .columns.xsmall-8.medium-5(data-equalizer-watch)
                 .top-contacts__btn-wrap
                     .button-m Оставить заявку
                     .top-contacts__phone

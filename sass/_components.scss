@@ -43,7 +43,7 @@
 
   &__line{
     height: 2px;
-    background: #7fa428;
+    background: $cl-real-white;
     margin: 0 0 4px 0;
     width: 25px;
     position: relative;
@@ -78,6 +78,7 @@
   font-size: (14/16)+em;
   cursor: pointer;
   text-transform: uppercase;
+  text-align: center;
   font-weight:bold;
   padding: 3.5px 9px;
   border: 4px solid $cl-moderate-orange-yellow;
