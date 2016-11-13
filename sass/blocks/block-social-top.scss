@@ -5,6 +5,7 @@
   justify-content: flex-end;
 
 
+
   &__title{
     text-transform: uppercase;
     font-size: (14/16)+em;
@@ -27,8 +28,9 @@
 
   .-vk {
     background-position: center -1.5%;
+
     @media #{$media-phone} {
-      background-position: center -1%;
+      background-position: center -2%;
     }
   }
 

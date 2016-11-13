@@ -8,6 +8,10 @@
     display: inline-block;
     margin-left: 10px;
 
+    @media #{$media-tablet} {
+      width: 20%;
+    }
+
     @media #{$media-phone-landscape} {
       width: 10%;
     }

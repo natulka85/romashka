@@ -703,6 +703,7 @@
   justify-content: flex-end;
 
 
+
   &__title{
     text-transform: uppercase;
     font-size: (14/16)+em;
@@ -725,8 +726,9 @@
 
   .-vk {
     background-position: center -1.5%;
+
     @media #{$media-phone} {
-      background-position: center -1%;
+      background-position: center -2%;
     }
   }
 
@@ -958,7 +960,7 @@
 .certificates{
   &__title{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 4.375rem;
   }
 
   &__carousel{
@@ -1001,6 +1003,7 @@
 }
 .expirience{
   overflow: hidden;
+  padding-bottom: 10px;
   .columns{
     padding: 0;
   }
@@ -1098,6 +1101,10 @@
   &__item{
     display: inline-block;
     margin-left: 10px;
+
+    @media #{$media-tablet} {
+      width: 20%;
+    }
 
     @media #{$media-phone-landscape} {
       width: 10%;
@@ -1372,7 +1379,7 @@
 .mobile-menu{
   position: absolute;
   background: white;
-  z-index: 4;
+  z-index: 6;
   width: 100%;
   border-bottom: 1px solid transparent;
   top:2.9375rem;

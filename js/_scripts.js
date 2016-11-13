@@ -290,6 +290,7 @@ $(function () {
 
         if ($view <= 768) {
             $('.search-bar').appendTo('.block-social-top').addClass('new');
+            $('.authorization').prependTo('.top-height .authorization-wrap').addClass('new');
         }
         if ($view > 768 && $('.search-bar-wrap .search-bar').length == 0) {
             $('.search-bar.new').appendTo('.search-bar-wrap').removeClass('new');
@@ -297,7 +298,11 @@ $(function () {
 
         if($view > 480 && $('.presentation-wrap .presentation').length == 0){
             $('.presentation.new').appendTo('.presentation-wrap').removeClass('new');
-            console.log(',jkmit480');
+
+        }
+
+        if ($view > 768 || $view < 480 && $('.top-menu .authorization').length == 0) {
+            $('.authorization.new').appendTo('.top-menu .authorization-wrap').removeClass('new');
         }
 
     }

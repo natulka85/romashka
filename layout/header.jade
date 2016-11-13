@@ -17,12 +17,13 @@ header
                     li.button-menu-lines__line
                     li.button-menu-lines__line
             .columns.xsmall-8.small-12.medium-3
+                .authorization-wrap
                 include block-social-top.jade
 
 
     .top-contacts
         .row
-            .columns.xsmall-4.medium-3(data-equalizer-watch)
+            .columns.xsmall-3.medium-3(data-equalizer-watch)
                 .top-contacts__logo
                     img(alt='Клининговая компания', src='../img/logo.svg')
             .columns.hide-for-xsmall-only.hide-for-small-only.medium-4(data-equalizer-watch)
@@ -30,7 +31,7 @@ header
                     .search-bar
                         input.search-bar__input(type='text')
                         label.search-bar__label
-            .columns.xsmall-8.medium-5(data-equalizer-watch)
+            .columns.xsmall-9.medium-5(data-equalizer-watch)
                 .top-contacts__btn-wrap
                     .button-m Оставить заявку
                     .top-contacts__phone
@@ -143,12 +144,13 @@ header
                                     a(href="#") Контакты
                                     span
                     .columns.medium-3.small-12.xsmall-6
-                        .authorization
-                            ul.authorization__items
-                                li.authorization__item
-                                    a(href='') Вход
-                                li.authorization__item
-                                    a(href='') Регистрация
+                        .authorization-wrap
+                            .authorization
+                                ul.authorization__items
+                                    li.authorization__item
+                                        a(href='') Вход
+                                    li.authorization__item
+                                        a(href='') Регистрация
 
 
 

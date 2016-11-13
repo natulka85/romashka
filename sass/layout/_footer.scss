@@ -1,20 +1,38 @@
 .footer-height {
   width: 100%;
-  height: 55px;
+
 
   &__menu {
     margin: 0;
+    height: 3.4365rem;
+
+    @media #{$media-phone-landscape} {
+      display: flex;
+      align-content: center;
+      align-items: center;
+    }
   }
 
   &__menu-item {
     display: inline-block;
     text-align: center;
     width: 16.6%;
+    height: 3.4365rem;
+    line-height:1.2em;
+
+    @media #{$media-phone-landscape} {
+      width: 100%;
+      display: inline;
+
+    }
 
     a {
-      line-height: 55px;
+      height: 3.4365rem;
+      display: table-cell;
+      vertical-align: middle;
       color: $cl-real-white;
-      font-size: (14/16)+em;
+      width: 50%;
+
     }
 
   }
