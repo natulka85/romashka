@@ -290,7 +290,7 @@ html.swipebox-html.swipebox-touch {
 #swipebox-bottom-bar,
 #swipebox-top-bar {
 	text-shadow: 1px 1px 1px black;
-	background: #000;
+	background: $cl-real-white;
 	//@include bar(#0d0d0d);
 	opacity: 0.95;
 }

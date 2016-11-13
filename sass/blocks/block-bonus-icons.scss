@@ -10,18 +10,13 @@
   }
 
   &__img{
-    width: 90px;
-    height: 90px;
+    width: 5.625rem;
+    height: 5.625rem;
     background-image: url("../img/bonus/icon-sprite.svg");
     background-repeat: no-repeat;
     -webkit-background-size:100% auto;
     background-size:100% auto;
     margin:auto;
-
-    @media #{$media-tablet} {
-      width: 70px;
-      height: 80px;
-    }
 
      }
 
@@ -74,4 +69,11 @@
     font-family:'Arial Black', sans-serif;
   }
 
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .block-bonus__item:nth-child(2) .block-bonus__img{
+
+    background-size: 95px auto !important;
+  }
 }
