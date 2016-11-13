@@ -7,6 +7,10 @@
     margin:0;
   }
 
+  @media #{$media-phone} {
+    width: 150px;
+  }
+
 
   &__input,
   &__input:focus{

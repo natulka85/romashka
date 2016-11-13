@@ -9743,47 +9743,20 @@ label[for="custom-checkbox"] {
     border-radius: 50%;
     background-size: 1.25rem; }
   .block-social-top .-vk {
-    background-position: center 14.8%; }
-    @media screen and (max-width: 1023px) {
+    background-position: center -1.5%; }
+    @media screen and (max-width: 479px) {
       .block-social-top .-vk {
-        background-position: center 3%; } }
-    @media screen and (max-width: 767px) {
-      .block-social-top .-vk {
-        background-position: center -2%; } }
+        background-position: center -1%; } }
   .block-social-top .-facebook {
-    background-position: center 28.5%; }
-    @media screen and (max-width: 1023px) {
-      .block-social-top .-facebook {
-        background-position: center 21%; } }
-    @media screen and (max-width: 767px) {
-      .block-social-top .-facebook {
-        background-position: center 18.5%; } }
+    background-position: center 18.5%; }
   .block-social-top .-odnoklassniki {
-    background-position: center 42.8%; }
-    @media screen and (max-width: 1023px) {
-      .block-social-top .-odnoklassniki {
-        background-position: center 40%; } }
+    background-position: center 39.5%; }
   .block-social-top .-twitter {
-    background-position: center 56.3%; }
-    @media screen and (max-width: 1023px) {
-      .block-social-top .-twitter {
-        background-position: center 59.4%; } }
+    background-position: center 60%; }
   .block-social-top .-youtube {
-    background-position: center 70.9%; }
-    @media screen and (max-width: 1023px) {
-      .block-social-top .-youtube {
-        background-position: center 78%; } }
-    @media screen and (max-width: 767px) {
-      .block-social-top .-youtube {
-        background-position: center 81%; } }
+    background-position: center 80%; }
   .block-social-top .-instagram {
-    background-position: center 85%; }
-    @media screen and (max-width: 1023px) {
-      .block-social-top .-instagram {
-        background-position: center 97%; } }
-    @media screen and (max-width: 767px) {
-      .block-social-top .-instagram {
-        background-position: center 102%; } }
+    background-position: center 101%; }
 
 .block-some-columns .columns.first {
   padding-right: 0;
@@ -10473,6 +10446,9 @@ label[for="custom-checkbox"] {
   @media screen and (max-width: 767px) {
     .search-bar {
       margin: 0; } }
+  @media screen and (max-width: 479px) {
+    .search-bar {
+      width: 150px; } }
   .search-bar__input, .search-bar__input:focus {
     border-radius: 30px;
     box-shadow: none;
