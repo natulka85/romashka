@@ -246,6 +246,9 @@ h1, h2 {
 .price-big-table__row:last-child .price-big-table__name {
   border-bottom-color: #32c7ac; }
 
+.cleaning-price-wrap .price-big-table__head:nth-child(2) {
+  background-image: url("../../img/price-big-table-layer-wp-green.png"); }
+
 .simple-table__head-name {
   background-color: #32c7ac; }
 
@@ -254,3 +257,10 @@ h1, h2 {
 
 .block-social-top__link:hover {
   background-color: #1fb09a; }
+
+.services-list {
+  border-color: #32c7ac; }
+  .services-list__title {
+    color: #32c7ac; }
+  .services-list__item:before {
+    border-left-color: #32c7ac; }

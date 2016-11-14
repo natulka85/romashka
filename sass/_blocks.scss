@@ -1734,6 +1734,42 @@
 
 
 
+.services-list{
+  padding: 2.1875rem 1.875rem;
+  margin-top: 2.8125rem;
+  @include bord;
+
+  &__title{
+    text-transform: uppercase;
+
+    h6{
+      margin-bottom: 1.375rem;
+      padding-left: 1.75rem;
+      line-height: 1em;
+      font-weight:bold;
+    }
+  }
+
+  &__items{
+    margin:0;
+  }
+
+  &__item{
+    position: relative;
+    font-family: 'RobotoLight', sans-serif;
+    font-size: (14/16)+em;
+    padding-left: 1.75rem;
+    @include cornerLeftWhite(7,0, right);
+
+    &:before{
+      border-width: 0.4375rem;
+      top: 0.25rem;
+      margin-top:0;
+
+    }
+
+  }
+}
 .simple-table {
 
   &__table{

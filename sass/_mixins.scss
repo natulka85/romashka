@@ -434,6 +434,29 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
   }
 }
 
+@mixin cornerLeftWhite($width, $left, $dir) {
+  &:before {
+    content: ' ';
+    top: 50%;
+    left: $left + px;
+    margin-top: - $width + px;
+    @if ($dir == 'left'){
+      border: $width + px solid transparent;
+      border-right: $width + px solid white;
+    }
+
+    @elseif($dir == 'right'){
+      border: $width + px solid transparent;
+      border-left: $width + px solid white;
+    }
+
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+}
+
+
 @mixin borB{
   border-bottom: 1px solid $cl-greaterly;
 }
