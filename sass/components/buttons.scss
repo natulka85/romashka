@@ -61,6 +61,9 @@
 
 .btn-full-size{
   @extend .button-m;
+  font-size: (18/16)+em;
+  line-height:1em;
+  padding: 0.5rem;
   width: 100%;
   text-align: center;
   margin:0;

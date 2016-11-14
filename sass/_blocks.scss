@@ -957,6 +957,24 @@
 }
 
 
+.certificates-page{
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    flex-basis: 21%;
+  }
+
+  .loupe{
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+}
 .certificates{
   &__title{
     text-align: center;

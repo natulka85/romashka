@@ -1,0 +1,65 @@
+doctype html
+html
+    include ../includes/head
+body
+    include ../header
+    .row
+        .columns.medium-3.small-4
+            .sidebar
+                include ../tab-menu.jade
+                include ../block-subscribe-sidebar.jade
+        .columns.medium-9.small-8
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Сертификаты, дипломы, награды
+
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Сертификаты
+            .row
+                .columns.xsmall-12
+                    include ../certificates-page
+            .row
+                .columns.small-12
+                    .btn-full-size.is-corner-b Показать еще
+
+
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h2 Дипломы
+            .row
+                .columns.xsmall-12
+                    include ../certificates-page
+            .row
+                .columns.small-12
+                    .btn-full-size.is-corner-b Показать еще
+
+
+            .row
+
+                .columns.large-12
+                    .main-content__title
+                        h2 Награды
+            .row
+                .columns.xsmall-12
+                    include ../certificates-page
+            .row
+                .columns.small-12
+                    .btn-full-size.is-corner-b Показать еще
+
+            .block-empty-height
+
+    include ../footer
+
+
+
+    include ../includes/footer
+
+
+
+
