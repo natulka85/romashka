@@ -8765,7 +8765,19 @@ table tbody tr:nth-child(even) {
   background: none; }
 
 .small-description {
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  /*50px*/ }
+
+.strong-text {
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.25em;
+  text-align: center;
+  padding: 1.25rem;
+  border: 3px solid transparent; }
+  .strong-text p,
+  .strong-text span {
+    margin: 0; }
 
 .block-empty-height {
   height: 3.125rem; }
@@ -10806,6 +10818,14 @@ label[for="custom-checkbox"] {
 .cleaning-room-wrap {
   margin-top: 3.75rem;
   margin-bottom: 2.5rem; }
+
+.jobs-wrap .columns {
+  position: relative;
+  margin-bottom: 2.5rem; }
+
+.jobs-wrap .block-some-columns__btn {
+  position: absolute;
+  bottom: 0; }
 
 .search-bar-wrap {
   height: 4rem;

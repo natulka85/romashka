@@ -42,6 +42,17 @@
   margin-top: 3.75rem;
   margin-bottom:2.5rem;
 }
+.jobs-wrap{
+  .columns{
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+
+  .block-some-columns__btn{
+    position: absolute;
+    bottom:0;
+  }
+}
 .search-bar-wrap{
   height:4rem;
   padding: 1em 0;

@@ -34,6 +34,7 @@ gulp.task('sass:watch', function () {
     gulp.watch('./sass/components/*.scss', ['concat:scss']);
     gulp.watch('./sass/layout/*.scss', ['concat:scss']);
     gulp.watch('./sass/vendor/**/*.scss', ['concat:scss']);
+    gulp.watch('./sass/wrapps/**/*.scss', ['concat:scss']);
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 

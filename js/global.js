@@ -417,6 +417,7 @@ $(function () {
     /** Проставляем значения колонок по сетки в блоке some-columns END*/
 
 
+
     /** Выпадающее меню*/
     function menuPosition() {
         var secondItem = $('.top-menu__items-second-lvl');
@@ -499,8 +500,36 @@ $(function () {
     elementsMove();
     $(window).resize(elementsMove);
 
-    /** Перемещение элементов DOM*/
+    /** Перемещение элементов DOM END*/
 
+    /** Одна высота у блока вакансий jobs*/
+
+function oneHeightJobsBlock() {
+        $('.jobs-wrap .block-some-columns .row').each(function () {
+            var $max = 0;
+            var columns = $(this).children('.columns');
+
+            columns.each(function () {
+                $(this).css('height', 'auto');
+                var heightColumn = $(this).height();
+                if(heightColumn > $max){
+                    $max = heightColumn;
+                }
+            });
+
+            columns.each(function () {
+                var $buttonHeight = $(this).find('.block-some-columns__btn').outerHeight();
+                $(this).height($max + $buttonHeight);
+            });
+
+        });
+    }
+
+    oneHeightJobsBlock();
+    $(window).resize(oneHeightJobsBlock);
+
+
+    /** Одна высота у блока вакансий jobs END*/
 
 });
 

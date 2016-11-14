@@ -27,6 +27,9 @@ h1, h2 {
 .btn-full-size.is-corner-b:after {
   border-top-color: #32c7ac; }
 
+.strong-text {
+  border-color: #32c7ac; }
+
 .top-height {
   background-color: #32c7ac; }
   .top-height__menu {

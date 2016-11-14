@@ -151,7 +151,21 @@ table tbody tr:nth-child(even) {
 }
 
 .small-description{
-  margin-bottom: 1.875rem ;
+  margin-bottom: 1.875rem ; /*50px*/
+}
+
+.strong-text{
+  font-weight: bold;
+  font-size: 1em;
+  line-height:(20/16)+em;
+  text-align: center;
+  padding: 1.25rem;
+  border: 3px solid transparent;
+
+  p,
+  span{
+    margin:0;
+  }
 }
 
 .block-empty-height{
