@@ -1,10 +1,10 @@
 @import "_mixins";
 
-
-
 .block-price{
   &__button-wrap{
     text-align: center;
+    margin-bottom: 2.1875rem;
+    margin-top: 1.25rem;
 
     .btn-border-color-thin{
       width:166px;

@@ -1,0 +1,60 @@
+.prices-wrap {
+  .block-detail-bigpic__text {
+    padding: 1.875rem 0;
+    @include borT;
+    @include borB;
+  }
+
+  .price-table {
+    margin-bottom: 2.9375rem;
+    @include borB;
+
+
+    &__title{
+      font-size: (14/16)+em;
+    }
+
+    &__title.last{
+      padding-bottom: 2.1875rem;
+    }
+
+    &__param:nth-child(5) {
+      background-size: 100%;
+    }
+
+    &__param:nth-child(4) {
+      background-size: 90%;
+    }
+
+    &__param:nth-child(3) {
+      background-size: 73%;
+    }
+    &__param:nth-child(2) {
+      background-size: 98%;
+    }
+
+    &__param:nth-child(1) {
+      background-size: 80%;
+    }
+
+    .price-table__param:nth-child(5) .price-table__param-name {
+      left: 2%;
+    }
+
+    &__big {
+      font-size: (26/16)+em;
+
+      @media #{$media-phone-landscape} {
+        font-size: (22/16)+em;
+      }
+    }
+
+    .price-table__price span {
+
+      @media #{$media-phone-landscape} {
+        font-size: (10/16)+em;
+      }
+    }
+
+  }
+}

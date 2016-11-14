@@ -1,0 +1,94 @@
+.tab-menu-page{
+  margin-top: 1.875rem;
+  margin-bottom: 2.8175rem;
+
+  a{
+    color: $cl-real-white;
+  }
+
+  &__items{
+    font-size: (14/16)+em;
+    margin:0;
+    margin-top: 1.4375rem;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__item{
+    flex-basis: 50%;
+    text-align: center;
+    position: relative;
+
+    a{
+      display: block;
+      height: 2.6875rem;
+      line-height:2.6875rem;
+      background: $cl-pale-blue;
+    }
+  }
+  &__item.active{
+    @include cornerBottomWhite(7, -16);
+
+  }
+
+  &__item:last-child{
+    margin-left: 2px;
+  }
+
+  &__content{
+    font-size: (14/16)+em;
+    position: relative;
+    margin-top:2px;
+  }
+
+  &__list{
+    display: none;
+    margin:0;
+    text-align: left;
+    padding: 1.0625rem 1.875rem;
+  }
+
+  &__list-item{
+    padding-left: 29%;
+  a{
+    font-family: 'RobotoLight', sans-serif;
+  }
+  }
+
+
+    &__list-item:last-child{
+      border-bottom:none;
+      &:after{
+        display: none;
+      }
+    }
+  
+
+  &__content-item.no-scroller{
+    display: none;
+    
+  }
+
+  &__list.is-opened{
+    display: block;
+    z-index: 1;
+  }
+
+  &__content-item.no-scroller:target + .tab-menu-page__list{
+
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+
+  &__content-item.no-scroller:target + .tab-menu-page__list.is-opened{
+      position: relative;
+    }
+
+  
+}

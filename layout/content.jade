@@ -84,44 +84,11 @@ section.block-price
 
     .row
         .columns.large-12
-            table.price-table(collapse='collapse')
-                tr
-                    td.price-table__title(colspan="5") Площадь помещения, М²
-                tr
-                    td.price-table__param
-                        strong до 40 #[span М²]
-                    td.price-table__param
-                        strong до 41-50 #[span М²]
-                    td.price-table__param
-                        strong 51-60 #[span М²]
-                    td.price-table__param
-                        strong 61-70 #[span М²]
-                    td.price-table__param
-                        strong 71-80 #[span М²]
-                tr
-                    td.price-table__price
-                        span 3 900 Р
-                    td.price-table__price
-                        span 4 900 Р
-                    td.price-table__price
-                        span 5 800 Р
-                    td.price-table__price
-                        span 6 300 Р
-                    td.price-table__price
-                        span 6 900 Р
-                tr
-                    td.price-table__title(colspan="5") Стоимость, руб
+            include price-table.jade
 
 
-section.block-video
-    .row
-        .columns.large-12
-            .block-video__wrap
-                .block-video__item
-                    a.swipebox-video.swipebox(rel="vimeo", href="http://vimeo.com/29193046")
-                        img.block-video__img(src='../img/video/video-pic.png',alt='')
-                    .block-video__item-bg
-                    .button-play
+.main-page-wrap
+    include block-video.jade
 
 section.expirience
     .row

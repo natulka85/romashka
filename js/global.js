@@ -340,7 +340,7 @@ $(function () {
     $(window).resize(activeTabHeigth());
 
 
-    $('.tab-menu__item a').on('click', function () {
+    $('.tab-menu__item a, .tab-menu-page__item a').on('click', function () {
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
     });
@@ -532,6 +532,13 @@ function oneHeightJobsBlock() {
 
 
     /** Одна высота у блока вакансий jobs END*/
+
+
+    /** Убираем нижний отступ у последней таблице в прайсе*/
+
+
+    $(".prices-wrap .price-table").last().css('margin-bottom', '0');
+    /** Убираем нижний отступ у последней таблице в прайсе END*/
 
 });
 

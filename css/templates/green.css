@@ -70,7 +70,7 @@ h1, h2 {
   border-bottom-color: #32c7ac; }
 
 .price-table tr:nth-child(2) {
-  box-shadow: inset 0 -8px 0px -4px #32c7ac; }
+  box-shadow: inset 0 -0.5rem 0px -0.25rem #32c7ac; }
 
 #swipebox-prev,
 #swipebox-next,
@@ -167,6 +167,12 @@ h1, h2 {
 
 .tab-menu__list {
   background-color: #32c7ac; }
+
+.tab-menu-page__item.active a {
+  background-color: #32c7ac; }
+
+.tab-menu-page__list {
+  background-color: #1fb09a; }
 
 .block-subscribe-sidebar__form-wrap {
   border-color: #32c7ac; }
