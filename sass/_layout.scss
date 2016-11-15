@@ -23,16 +23,15 @@
   &__menu {
     margin: 0;
     height: 3.4365rem;
-
-    @media #{$media-phone-landscape} {
       display: flex;
       align-content: center;
       align-items: center;
-    }
+
   }
 
   &__menu-item {
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
     width: 16.6%;
     height: 3.4365rem;

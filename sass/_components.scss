@@ -220,6 +220,78 @@ label[for="custom-checkbox"]{
 
 .custom-checkbox:focus + label:before {
 }
+.form-profile {
+  @extend .form-standart;
+  width: 80% !important;
+
+  &__title{
+    color: $cl-real-white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.5625rem;
+    margin-bottom: 2.1875rem;
+
+    h4{
+      font-size: (30/16)+em;
+      font-weight: bold;
+    }
+  }
+
+
+  input[type='text']{
+    margin-bottom: 2.8165rem!important;
+  }
+
+  .form-standart {
+    &__field {
+      display: block !important;
+      margin-top:0 !important;
+
+      @include nthEven(1,4,2, left);
+      @include nthOdd(1,4,2, right);
+
+      @include nthOdd(6,9,2, left);
+      @include nthEven(6,10,2, right);
+
+    }
+
+    &__field-list + .form-standart__field{
+      margin-left: 10%;
+      float: left;
+    }
+
+    &__field:nth-child(1) {
+      float: left;
+      margin-left: 10%;
+      margin-top: 1.25rem;
+
+      & + .btn-color{
+        margin-top: 0!important;
+      }
+
+      & + .btn-color + .form-standart__comment{
+        margin-bottom: 4.365rem;
+      }
+    }
+
+    &__field:nth-child(10){
+      clear: both;
+    }
+
+    &__field:nth-last-child(3),
+    &__field:nth-last-child(4){
+     input[type='text']{
+       margin-bottom: 1.5625rem !important;
+     }
+    }
+
+    .btn-color:last-child{
+        margin-top: 1.5625rem!important;
+    }
+  }
+}
+
+
 .form-standart{
   width: 50%;
   margin:auto;
@@ -233,10 +305,12 @@ label[for="custom-checkbox"]{
     box-shadow: none;
     border: none;
     border-radius: 0;
-    padding: 1.5rem;
-    margin: 0 0 0 0.7rem;
-
+    margin-bottom: 1.6875rem;
+    padding: 0;
+    padding-left: 1.25rem;
+    color: $cl-motherblackberry;
   }
+
 
   input[type='submit']{
     border-radius: none;
@@ -248,6 +322,22 @@ label[for="custom-checkbox"]{
 
   }
 
+  input[type='text'],
+  input[type='file']{
+    height: 2.375rem;
+    line-height: 2.375rem;
+  }
+
+  input[type='file']{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input[type='file'] + .inputfile
+
   input:focus{
     .form-standart__label{
       display: none;
@@ -256,6 +346,7 @@ label[for="custom-checkbox"]{
 
   &__field{
     position: relative;
+    @include clearfix;
   }
 
   &__field:nth-child(1),
@@ -268,10 +359,6 @@ label[for="custom-checkbox"]{
     margin-right:6%;
   }
 
-  &__field:nth-child(3){
-    margin-top: 1rem;
-  }
-
   &__field:last-child{
     text-align: center;
   }
@@ -282,14 +369,23 @@ label[for="custom-checkbox"]{
     top:0;
     color: $cl-motherblackberry;
     width: 100%;
-    padding: 6px 0 0 25px;
     font-size: (18/16)+em;
-
+    height: 2.375rem;
+    line-height: 2.375rem;
+    padding-left: 1.25rem;
+    transition: top 0.3s;
   }
 
   .btn-color{
-    padding: 8px 20px;
-    margin-top: 2.5rem;
+    padding: 0.25rem 1.125rem;
+    margin-top: 1rem;
+  }
+
+  &__comment{
+    color: $cl-real-white;
+    font-size: (18/16)+em;
+    clear: both;
+    text-align: center;
   }
 }
 .form-subscribe-sidebar {

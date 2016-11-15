@@ -2012,7 +2012,6 @@
   }
 
   &__content{
-    font-size: (14/16)+em;
     position: relative;
     margin-top:2px;
   }
@@ -2022,11 +2021,13 @@
     margin:0;
     text-align: left;
     padding: 1.0625rem 1.875rem;
+
   }
 
   &__list-item{
     padding-left: 29%;
   a{
+    font-size: (14/16)+em;
     font-family: 'RobotoLight', sans-serif;
   }
   }

@@ -1,0 +1,7 @@
+.profile-wrap{
+  @include clearfix;
+
+  .tab-menu-page__list{
+    padding: 2.1875rem 1.875rem;
+  }
+}

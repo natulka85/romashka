@@ -1,0 +1,71 @@
+.form-profile {
+  @extend .form-standart;
+  width: 80% !important;
+
+  &__title{
+    color: $cl-real-white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.5625rem;
+    margin-bottom: 2.1875rem;
+
+    h4{
+      font-size: (30/16)+em;
+      font-weight: bold;
+    }
+  }
+
+
+  input[type='text']{
+    margin-bottom: 2.8165rem!important;
+  }
+
+  .form-standart {
+    &__field {
+      display: block !important;
+      margin-top:0 !important;
+
+      @include nthEven(1,4,2, left);
+      @include nthOdd(1,4,2, right);
+
+      @include nthOdd(6,9,2, left);
+      @include nthEven(6,10,2, right);
+
+    }
+
+    &__field-list + .form-standart__field{
+      margin-left: 10%;
+      float: left;
+    }
+
+    &__field:nth-child(1) {
+      float: left;
+      margin-left: 10%;
+      margin-top: 1.25rem;
+
+      & + .btn-color{
+        margin-top: 0!important;
+      }
+
+      & + .btn-color + .form-standart__comment{
+        margin-bottom: 4.365rem;
+      }
+    }
+
+    &__field:nth-child(10){
+      clear: both;
+    }
+
+    &__field:nth-last-child(3),
+    &__field:nth-last-child(4){
+     input[type='text']{
+       margin-bottom: 1.5625rem !important;
+     }
+    }
+
+    .btn-color:last-child{
+        margin-top: 1.5625rem!important;
+    }
+  }
+}
+

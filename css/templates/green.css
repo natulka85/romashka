@@ -270,3 +270,6 @@ h1, h2 {
     color: #32c7ac; }
   .services-list__item:before {
     border-left-color: #32c7ac; }
+
+.profile-wrap .tab-menu-page__list {
+  background-color: #32c7ac; }

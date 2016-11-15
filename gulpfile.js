@@ -71,7 +71,7 @@ gulp.task('concat:scss', function() {
 });
 
 gulp.task('concat:js', function() {
-    gulp.src(['./js/_sliders.js', './js/_scripts.js'])
+    gulp.src(['./js/_sliders.js', './js/_scripts.js', './js/components/*.js'])
         .pipe(concat('global.js'))
         .pipe(gulp.dest('./js/'));
 
