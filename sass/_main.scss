@@ -121,6 +121,10 @@ div {
   @include borB;
 }
 
+.is-border-t{
+  @include borT;
+}
+
 .yandex-map{
 
   @media #{$media-phone-landscape} {

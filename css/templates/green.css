@@ -116,6 +116,9 @@ h1, h2 {
   .change-sub-wrap:after {
     border-bottom-color: #32c7ac; }
 
+.review-wrap {
+  background-color: #32c7ac; }
+
 .block-subscribe__form-wrap {
   border-color: #32c7ac; }
   .block-subscribe__form-wrap:before {
@@ -283,3 +286,10 @@ h1, h2 {
 
 .account-wrap .tab-menu-page__list {
   background-color: #32c7ac; }
+
+.block-reviews__client-item .block-reviews__contents {
+  border-color: #32c7ac; }
+
+.block-reviews .block-stars__star:hover:before,
+.block-reviews .block-stars__star.is-full:before {
+  color: #32c7ac; }

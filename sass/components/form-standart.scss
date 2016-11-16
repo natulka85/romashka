@@ -35,6 +35,10 @@
     color: $cl-motherblackberry;
     background: $cl-real-white;
     font-size: (18/16)+em;
+
+    &:focus{
+      border: 2px solid $cl-moderate-orange-yellow;
+    }
   }
 
 

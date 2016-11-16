@@ -472,6 +472,109 @@ label[for="custom-checkbox"]{
 }
 
 
+.form-review {
+  @extend .form-standart;
+  width: 100% !important;
+  text-align: center;
+
+  .form-standart {
+
+    &__field {
+      display: block !important;
+      margin-top: 0 !important;
+
+      &:nth-child(2) {
+        width: 100%;
+      }
+      &:nth-child(3) {
+        float: left;
+        width: 48%;
+      }
+
+
+      &:nth-child(4) {
+        float: right;
+        width: 48%;
+
+        & + .form-standart__comment{
+          float: left;
+          position: relative;
+          top: -4px;
+
+          &:before{
+            content: '';
+            width: 3.5625rem;
+            height: 3.5625rem;
+            @include bg2('icon-video.png', no-repeat);
+            background-size: 2.25rem auto;
+            background-position: center center;
+            background-color: $cl-real-white;
+            display: inline-block;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 0.625rem;
+          }
+
+        }
+      }
+
+      &:nth-child(6) {
+        float: right;
+        width: 65%;
+      }
+
+      input[type='text'] {
+        height: 2.9375rem;
+        line-height: 2.9375rem;
+      }
+
+      input[type='textarea'],
+      input[type='text'] {
+        font-size: (14/16)+em;
+        font-weight: bold;
+        color: $cl-grafit-black;
+      }
+
+    }
+
+    &__comment {
+      display: inline-block;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &.star-result{
+        text-transform: none;
+      }
+    }
+
+    &__field:nth-last-child(5) {
+      clear: both;
+    }
+
+    &__label {
+      text-transform: uppercase;
+      font-size: (14/16)+em;
+      line-height: 2.9375rem;
+      height: 2.9375rem;
+    }
+
+    &__field:nth-last-child(5) {
+      input[type='textarea'] {
+        margin-bottom: 1.5625rem !important;
+      }
+    }
+
+    &__field:last-child {
+      .btn-color {
+        padding: 0.5rem 1.125rem;
+        margin-top: 1.5625rem;
+      }
+    }
+
+  }
+}
+
+
 .form-standart{
   width: 50%;
   margin:auto;
@@ -509,6 +612,10 @@ label[for="custom-checkbox"]{
     color: $cl-motherblackberry;
     background: $cl-real-white;
     font-size: (18/16)+em;
+
+    &:focus{
+      border: 2px solid $cl-moderate-orange-yellow;
+    }
   }
 
 

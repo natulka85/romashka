@@ -1,0 +1,34 @@
+.review-wrap
+    .form-standart.form-review.form-color
+        form
+            .form-standart__fields-list
+                .form-standart__title
+                    h4 Написать отзыв
+                .form-standart__field
+                    .form-standart__label Ваше имя #[span *]
+                    .form-standart__item
+                        input.inputtext(type='text', name='')
+                .form-standart__field
+                    .form-standart__label Email #[span *]
+                    .form-standart__item
+                        input.inputtext(type='text', name='' data-fieldname='email')
+                .form-standart__field
+                    .form-standart__label Ваш телефон #[span *]
+                    .form-standart__item
+                        input.inputtext(type='text', name='' data-fieldname='phone')
+                .form-standart__comment Добавить видео:
+                .form-standart__field
+                    .form-standart__label https://www.youtube.com/
+                    .form-standart__item
+                        input.inputtext(type='text', name='' data-fieldname='')
+                .form-standart__field
+                    .form-standart__label Текст отзыва #[span *]
+                    .form-standart__item
+                        input.inputtext(type='textarea', name='' data-fieldname='email')
+                .form-standart__comment Ваша оценка:
+                include block-stars.jade
+                .form-standart__comment.star-result #[strong 4 ]#[span балла]
+                .form-standart__field
+                    .form-standart__item
+                        input.btn-color(type='submit', name='', value='Отправить')
+

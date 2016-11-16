@@ -196,6 +196,10 @@ h1, h2 {
   }
 }
 
+.review-wrap{
+  background-color: $cl-shamrock-crayola;
+}
+
 .block-subscribe {
   &__form-wrap {
     border-color: $cl-shamrock-crayola;
@@ -537,6 +541,21 @@ h1, h2 {
 .account-wrap{
   .tab-menu-page__list{
     background-color: $cl-shamrock-crayola;
+  }
+}
+
+.block-reviews{
+  &__client-item{
+    .block-reviews__contents{
+      border-color: $cl-shamrock-crayola;
+    }
+  }
+
+  .block-stars__star:hover,
+  .block-stars__star.is-full{
+    &:before{
+      color: $cl-shamrock-crayola;
+    }
   }
 }
 

@@ -1,0 +1,27 @@
+.block-stars{
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.75rem;
+ 
+&__star{
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 1.5px;
+  
+  &:before{
+    content: $fa-var-star;
+    font-family:'FontAwesome', sans-serif;
+    color: #000;
+    opacity: 0.2;
+    font-size: (18/16)+em;
+  }
+}
+  &__star:hover,
+  &__star.is-full{
+    &:before{
+      color: $cl-tan;
+      opacity: 1;
+    }
+  }
+  
+}
