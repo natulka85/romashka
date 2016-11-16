@@ -1,0 +1,39 @@
+.form-profile-person {
+  @extend .form-standart;
+  width: 80% !important;
+
+  input[type='text']{
+    margin-bottom: 2.8125rem!important;
+  }
+
+  .form-standart {
+    &__field {
+      display: block !important;
+      margin-top:0 !important;
+
+      @include nthEven(1,3,2, right, 47);
+      @include nthOdd(0,2,2, left, 47);
+
+    }
+
+    &__field-list + .form-standart__field{
+      margin-left: 10%;
+      float: left;
+    }
+
+
+    &__field:nth-last-child(3),
+    &__field:nth-last-child(4){
+     input[type='text']{
+       margin-bottom: 1.5625rem !important;
+     }
+    }
+
+    &__field:last-child{
+      .btn-color{
+        margin-top: 1.5625rem;
+      }
+    }
+  }
+}
+

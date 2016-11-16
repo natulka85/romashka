@@ -264,6 +264,10 @@ h1, h2 {
 .block-social-top__link:hover {
   background-color: #1fb09a; }
 
+.bind-account__link:hover {
+  background-color: #1fb09a;
+  background-image: url("../../img/icon-social-sprite-top.svg"); }
+
 .services-list {
   border-color: #32c7ac; }
   .services-list__title {

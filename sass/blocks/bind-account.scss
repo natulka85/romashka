@@ -1,29 +1,32 @@
-.block-social-top{
+.bind-account{
   padding: 0.625rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-
+  margin-top: 1.125rem;
 
   &__title{
+    text-align: center;
     text-transform: uppercase;
     font-size: (14/16)+em;
-    font-weight: bold;
     margin-right: 7px;
     padding: 0 10px;
+    margin-bottom: 1.25rem;
   }
-  
+
+  &__links{
+    text-align: center;
+    padding-bottom: 0.625rem;
+  }
+
   &__link{
     width: 1.875rem;
     height: 1.875rem;
     margin: 0 4px;
     display: inline-block;
-    background-image: url('../img/icon-social-sprite-top.svg');
+    background-image: url('../img/icon-social-sprite-top-green.svg');
     background-repeat: no-repeat;
     background-position: center 0;
     border-radius: 50%;
     background-size: 1.25rem;
+
   }
 
   .-vk {

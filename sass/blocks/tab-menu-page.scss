@@ -1,6 +1,4 @@
 .tab-menu-page{
-  margin-top: 1.875rem;
-  margin-bottom: 2.8175rem;
 
   a{
     color: $cl-real-white;
@@ -9,7 +7,6 @@
   &__items{
     font-size: (14/16)+em;
     margin:0;
-    margin-top: 1.4375rem;
     display: flex;
     text-transform: uppercase;
     font-weight: bold;

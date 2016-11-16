@@ -95,6 +95,66 @@
 
   }
 }
+.bind-account{
+  padding: 0.625rem 0;
+  margin-top: 1.125rem;
+
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: (14/16)+em;
+    margin-right: 7px;
+    padding: 0 10px;
+    margin-bottom: 1.25rem;
+  }
+
+  &__links{
+    text-align: center;
+    padding-bottom: 0.625rem;
+  }
+
+  &__link{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0 4px;
+    display: inline-block;
+    background-image: url('../img/icon-social-sprite-top-green.svg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    border-radius: 50%;
+    background-size: 1.25rem;
+
+  }
+
+  .-vk {
+    background-position: center -1.8%;
+
+    @media #{$media-phone} {
+      background-position: center -2%;
+    }
+  }
+
+  .-facebook{
+    background-position: center 18.5%;
+  }
+
+  .-odnoklassniki{
+    background-position: center 39.5%;
+  }
+
+  .-twitter{
+    background-position: center 60%;
+  }
+
+  .-youtube{
+    background-position: center 80.3%;
+  }
+
+  .-instagram{
+    background-position: center 101%;
+  }
+
+}
 .block-address{
   padding-left: 1.25rem;
 
@@ -495,7 +555,7 @@
     vertical-align: middle;
 
     img{
-      height: 35px;
+      height: 2.1875rem;
     }
 
 
@@ -725,7 +785,7 @@
   }
 
   .-vk {
-    background-position: center -1.5%;
+    background-position: center -1.8%;
 
     @media #{$media-phone} {
       background-position: center -2%;
@@ -745,7 +805,7 @@
   }
 
   .-youtube{
-    background-position: center 80%;
+    background-position: center 80.3%;
   }
 
   .-instagram{
@@ -848,7 +908,7 @@
   }
 }
 .block-subscribe-sidebar{
-  margin-top: 80px;
+  margin-top: 2.5rem;
 
   &__title{
     text-align: center;
@@ -1883,14 +1943,6 @@
 
 
 }
-.social{
-  a{
-    display: inline-block;
-    width: 18px;
-    height: 27px;
-    @include bgsvg('icon-social-sprite.svg');
-  }
-}
 .staff{
 
   .columns{
@@ -1974,8 +2026,6 @@
 
 }
 .tab-menu-page{
-  margin-top: 1.875rem;
-  margin-bottom: 2.8175rem;
 
   a{
     color: $cl-real-white;
@@ -1984,7 +2034,6 @@
   &__items{
     font-size: (14/16)+em;
     margin:0;
-    margin-top: 1.4375rem;
     display: flex;
     text-transform: uppercase;
     font-weight: bold;

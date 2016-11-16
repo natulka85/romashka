@@ -135,29 +135,6 @@ $(function () {
 
     /** top header slider END*/
 
-    /** Active Tab Height*/
-    function activeTabHeigth() {
-
-
-        var liHeigth = $('.tab-menu__list.is-opened li').outerHeight();
-
-
-        $('.tab-menu__list:not(".is-opened")')
-            .height(liHeigth * $('.tab-menu__list:not(".is-opened") li').length);
-
-
-    }
-
-    activeTabHeigth();
-    $(window).resize(activeTabHeigth());
-
-
-    $('.tab-menu__item a, .tab-menu-page__item a').on('click', function () {
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-    });
-
-    /** Active Tab Height END*/
 
     /**Check is block-products first*/
 

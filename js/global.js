@@ -323,29 +323,6 @@ $(function () {
 
     /** top header slider END*/
 
-    /** Active Tab Height*/
-    function activeTabHeigth() {
-
-
-        var liHeigth = $('.tab-menu__list.is-opened li').outerHeight();
-
-
-        $('.tab-menu__list:not(".is-opened")')
-            .height(liHeigth * $('.tab-menu__list:not(".is-opened") li').length);
-
-
-    }
-
-    activeTabHeigth();
-    $(window).resize(activeTabHeigth());
-
-
-    $('.tab-menu__item a, .tab-menu-page__item a').on('click', function () {
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-    });
-
-    /** Active Tab Height END*/
 
     /**Check is block-products first*/
 
@@ -590,10 +567,10 @@ $(function () {
 });
 $(function () {
 
-    var formAddress =  $('.form-address');
-    var inputType = $('input[type="textarea"]');
+    var $formAddress = $('.form-address');
+    var $inputType = $('input[type="textarea"]');
 
-    formAddress.find(inputType).parent().parent(formField)
+    $formAddress.find($inputType).parent().parent($formField)
         .on('mouseover', function () {
 
             $(this).find($label).css({
@@ -602,25 +579,26 @@ $(function () {
 
         });
 
-    formAddress.find(inputType).parent().parent(formField)
+    $formAddress.find($inputType).parent().parent($formField)
         .on('mouseout', function () {
 
-            if($(this).find('input, textarea').val() == '') {
+            if ($(this).find('input, textarea').val() == '') {
 
                 $(this).find($label).css({
                     'display': 'block'
                 });
                 $('input').blur();
-                $(formErrorText).text('');
+                $($formErrorText).text('');
 
             }
 
         });
 });
 
-var formField = $(".form-standart__field");
-var formErrorText = $('.form-standart__error');
+var $formField = $(".form-standart__field");
+var $formErrorText = $('.form-standart__error');
 var $label = $('.form-standart__label');
+
 $(function () {
     $('.form-standart').livequery(function () {
         var $context = $(this);
@@ -637,29 +615,28 @@ $(function () {
         $($form).on('submit', function () {
 
 
-            if($email.length > 0){
+            if ($email.length > 0) {
 
-                if($email.val().search(pattern) !== 0 && $email.val() != ''){
+                if ($email.val().search(pattern) !== 0 && $email.val() != '') {
 
-                    $email.parent().next().find(formErrorText).text('Ошибка! Введен некорректный адрес email')
+                    $email.parent().next().find($formErrorText).text('Ошибка! Введен некорректный адрес email')
                 }
             }
 
         });
 
 
-
-        $formColor.find(formField).on('mouseover', function () {
+        $formColor.find($formField).on('mouseover', function () {
             $(this).find($label).css({
                 'top': '-2rem',
-                'color':'white'
+                'color': 'white'
 
             });
         });
 
-        $formColor.find(formField).on('mouseout', function () {
+        $formColor.find($formField).on('mouseout', function () {
 
-            if($(this).find('input, textarea').val() == '') {
+            if ($(this).find('input, textarea').val() == '') {
 
                 $(this).find($label).css({
                     'top': '0',
@@ -670,16 +647,16 @@ $(function () {
             }
         });
 
-        $formWhite.find(formField).on('mouseover', function () {
+        $formWhite.find($formField).on('mouseover', function () {
             $(this).find($label).css({
-               'display': 'none'
+                'display': 'none'
 
             });
         });
 
         $formWhite.find(".form-standart__field").on('mouseout', function () {
 
-            if($(this).find('input, textarea').val() == '') {
+            if ($(this).find('input, textarea').val() == '') {
 
                 $(this).find($label).css({
                     'display': 'block'
@@ -689,6 +666,22 @@ $(function () {
             }
         });
 
+
+    });
+
+});
+
+$(function () {
+
+    $('.tab-menu-page__item a, .tab-menu__item a').on('click', function () {
+        var id = $(this).attr('href');
+        var height = $(id).next().outerHeight();
+
+        $(id).next().outerHeight(height);
+        $(this).parent().parent().next().height(height);
+
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
 
     });
 

@@ -1,6 +1,7 @@
-var formField = $(".form-standart__field");
-var formErrorText = $('.form-standart__error');
+var $formField = $(".form-standart__field");
+var $formErrorText = $('.form-standart__error');
 var $label = $('.form-standart__label');
+
 $(function () {
     $('.form-standart').livequery(function () {
         var $context = $(this);
@@ -17,29 +18,28 @@ $(function () {
         $($form).on('submit', function () {
 
 
-            if($email.length > 0){
+            if ($email.length > 0) {
 
-                if($email.val().search(pattern) !== 0 && $email.val() != ''){
+                if ($email.val().search(pattern) !== 0 && $email.val() != '') {
 
-                    $email.parent().next().find(formErrorText).text('Ошибка! Введен некорректный адрес email')
+                    $email.parent().next().find($formErrorText).text('Ошибка! Введен некорректный адрес email')
                 }
             }
 
         });
 
 
-
-        $formColor.find(formField).on('mouseover', function () {
+        $formColor.find($formField).on('mouseover', function () {
             $(this).find($label).css({
                 'top': '-2rem',
-                'color':'white'
+                'color': 'white'
 
             });
         });
 
-        $formColor.find(formField).on('mouseout', function () {
+        $formColor.find($formField).on('mouseout', function () {
 
-            if($(this).find('input, textarea').val() == '') {
+            if ($(this).find('input, textarea').val() == '') {
 
                 $(this).find($label).css({
                     'top': '0',
@@ -50,16 +50,16 @@ $(function () {
             }
         });
 
-        $formWhite.find(formField).on('mouseover', function () {
+        $formWhite.find($formField).on('mouseover', function () {
             $(this).find($label).css({
-               'display': 'none'
+                'display': 'none'
 
             });
         });
 
         $formWhite.find(".form-standart__field").on('mouseout', function () {
 
-            if($(this).find('input, textarea').val() == '') {
+            if ($(this).find('input, textarea').val() == '') {
 
                 $(this).find($label).css({
                     'display': 'block'

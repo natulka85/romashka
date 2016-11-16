@@ -5,16 +5,25 @@
     @include borB;
   }
 
+  .tab-menu-page {
+    margin-top: 1.875rem;
+    margin-bottom: 2.8175rem;
+  }
+
+  .tab-menu-page__items {
+
+    margin-top: 1.4375rem;
+  }
+
   .price-table {
     margin-bottom: 2.9375rem;
     @include borB;
 
-
-    &__title{
+    &__title {
       font-size: (14/16)+em;
     }
 
-    &__title.last{
+    &__title.last {
       padding-bottom: 2.1875rem;
     }
 

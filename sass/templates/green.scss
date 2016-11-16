@@ -516,6 +516,13 @@ h1, h2 {
   }
 }
 
+.bind-account{
+  &__link:hover{
+    background-color: $cl-bright-green-sea;
+    background-image: url('../../img/icon-social-sprite-top.svg');
+  }
+}
+
 .services-list{
   border-color: $cl-shamrock-crayola;
   
