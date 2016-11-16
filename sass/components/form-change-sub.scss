@@ -1,0 +1,77 @@
+.form-change-sub{
+  @extend .form-standart;
+  width: 67% !important;
+
+  @media screen and (max-width: 1215px) {
+    width:80% !important;
+  }
+
+  @media #{$media-phone-landscape} {
+    width:95% !important;
+  }
+
+  .form-standart {
+
+    &__field:nth-child(1) {
+      float: left;
+      width: 47%;
+    }
+
+    &__field:nth-child(2) {
+      float: right;
+      width: 47%;
+
+      .form-standart__label-checkbox {
+        float: left;
+
+          @media #{$media-phone-landscape}{
+            float: none;
+          }
+      }
+    }
+
+    &__field {
+      @include nthEven(2, 3, 2, left, 47);
+      @include nthOdd(2, 3, 2, right, 47);
+    }
+
+    &__field:not(:nth-child(2)) {
+      .inputcheckbox-label {
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+        line-height: 1rem;
+      }
+      .inputcheckbox-comment{
+        margin-bottom:1.6875rem;
+      }
+
+    }
+
+    &__field:last-child {
+      .btn-color {
+        margin-top: 1.5625rem;
+      }
+    }
+
+    input[type='checkbox'] + label {
+      &:before,
+      &:after{
+        top: 43%;
+
+      }
+    }
+
+    &__field:nth-last-child(3),
+    &__field:nth-last-child(4){
+      .inputcheckbox-comment{
+        margin-bottom: 3.4375rem;
+      }
+    }
+
+    &__comment{
+      border: 1px solid $cl-real-white;
+      line-height: 2.25rem;
+      margin-bottom: 0.3125rem;
+    }
+  }
+}

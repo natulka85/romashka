@@ -187,23 +187,22 @@ h1, h2 {
   color: $cl-shamrock-crayola;
 }
 
-.block-order {
-
-  &__form-wrap {
+.block-order-wrap,
+.change-pass-wrap,
+.change-sub-wrap {
     background-color: $cl-shamrock-crayola;
+  &:after{
+    border-bottom-color: $cl-shamrock-crayola;
   }
 }
 
 .block-subscribe {
-
   &__form-wrap {
     border-color: $cl-shamrock-crayola;
-
     &:before {
       border-bottom-color: $cl-shamrock-crayola;
     }
   }
-
 }
 
 .form-standart.form-subscribe {

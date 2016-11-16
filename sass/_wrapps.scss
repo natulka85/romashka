@@ -12,13 +12,16 @@
 }
 .account-wrap{
   @include clearfix;
+  .tab-menu-page{
 
-  .tab-menu-page__list{
-    padding: 2.1875rem 1.875rem;
-  }
+    &__list{
+      padding: 2.1875rem 1.875rem;
+    }
 
-  .tab-menu-page__items{
-    margin-top: 0;
+    &__items{
+      margin-top: 0;
+    }
+
   }
 }
 .block-address-wrap {
@@ -48,6 +51,39 @@
 
 .block-address-wrap:not(:last-child) {
   @include borB;
+}
+.block-order-wrap{
+  padding: 3.125rem 0;
+  position: relative;
+  background:  url('../img/bubble-white-icon.svg') no-repeat 22% 86%,
+  url('../img/bubble-white-icon-2.svg') no-repeat 84% 24%;
+  background-size: 170px, 70px;
+  @include cornerTopWhite(10,-20);
+
+  @media #{$media-tablet}{
+    background-position: 22% 86%, 86% 24%;
+    background-size: 136px, 56px;
+
+  }
+
+  @media #{$media-phone-landscape}{
+    background-position: 9% 86%, 98% 24%;
+    background-size: 120px, 50px;
+  }
+}
+.change-pass-wrap{
+  padding: 3.125rem 3.125rem 1.875rem 3.125rem;
+  position: relative;
+  @include cornerTopWhite(10,-20);
+  margin-bottom: 3.125rem;
+
+}
+.change-sub-wrap{
+  padding: 3.125rem 3.125rem 1.875rem 3.125rem;
+  position: relative;
+  @include cornerTopWhite(10,-20);
+  margin-bottom: 3.125rem;
+
 }
 .cleaning-price-wrap{
   .price-big-table{

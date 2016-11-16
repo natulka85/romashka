@@ -10,6 +10,7 @@
   &__title{
     text-align: center;
     text-transform: uppercase;
+    clear: both;
 
     h4{
       font-size: (30/16)+em;
@@ -63,6 +64,52 @@
     z-index: -1;
   }
 
+  input[type='checkbox'] + label {
+    cursor: pointer;
+    position: relative; 
+    padding: 0 0 0 1.875rem;
+    color: $cl-real-white;
+    font-family: "RobotoLight", sans-serif;
+    font-size: (18/16)+em;
+    margin-left: 0;
+    
+    &:before{
+      content: '';
+      position: absolute;
+      top:50%;
+      left:0;
+      margin-top: -0.40625rem;
+      width: 0.8125rem;
+      height: 0.8125rem;
+      background-color: $cl-real-white;
+    }
+    
+    &:after{
+      content: $fa-var-check;
+      font-family: 'FontAwesome', sans-serif;
+      color: $cl-moderate-orange-yellow;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      font-size: (12/16)+em;
+      line-height: 2rem;
+      opacity: 0;
+      margin-top: -1rem;
+    }
+  }
+
+  input[type='checkbox']:checked + label{
+    &:after{
+      opacity: 1;
+    }
+  }
+
+  input[type='checkbox']:not(checked){
+    position: absolute;
+    opacity: 0;
+  }
+
+
   .inputfile__text{
     cursor: pointer;
   }
@@ -86,6 +133,16 @@
   &__field:last-child{
     text-align: center;
   }
+
+  &__label-checkbox{
+    font-size: (18/16)+em;
+    font-weight: bold;
+    color: $cl-real-white;
+    height: 2rem;
+    line-height: 2rem;
+    margin-right: 1.5625rem;
+  }
+
 
   &__label{
     font-family: 'RobotoLight', sans-serif;
@@ -111,5 +168,13 @@
     font-size: (18/16)+em;
     clear: both;
     text-align: center;
+  }
+
+  .inputcheckbox-comment{
+    color: $cl-real-white;
+    font-size: (18/16)+em;
+    padding-left: 1.875rem;
+    font-family: "RobotoLight", sans-serif;
+    line-height:1rem;
   }
 }

@@ -1,0 +1,19 @@
+.form-change-pass{
+  @extend .form-standart;
+  width: 35% !important;
+
+  @media #{$media-phone-landscape} {
+    width: 85%!important;
+  }
+
+  .form-standart{
+    &__field{
+      width: 100% !important;
+    }
+    &__field:last-child{
+      .btn-color{
+        margin-top: 1.5625rem;
+      }
+    }
+  }
+}

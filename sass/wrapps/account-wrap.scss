@@ -1,11 +1,14 @@
 .account-wrap{
   @include clearfix;
+  .tab-menu-page{
 
-  .tab-menu-page__list{
-    padding: 2.1875rem 1.875rem;
-  }
+    &__list{
+      padding: 2.1875rem 1.875rem;
+    }
 
-  .tab-menu-page__items{
-    margin-top: 0;
+    &__items{
+      margin-top: 0;
+    }
+
   }
 }

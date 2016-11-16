@@ -107,8 +107,14 @@ h1, h2 {
 .slick-dots li:hover button::before {
   color: #32c7ac; }
 
-.block-order__form-wrap {
+.block-order-wrap,
+.change-pass-wrap,
+.change-sub-wrap {
   background-color: #32c7ac; }
+  .block-order-wrap:after,
+  .change-pass-wrap:after,
+  .change-sub-wrap:after {
+    border-bottom-color: #32c7ac; }
 
 .block-subscribe__form-wrap {
   border-color: #32c7ac; }
