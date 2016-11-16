@@ -301,7 +301,8 @@ label[for="custom-checkbox"]{
   }
 
   input[type='textarea'],
-  input[type='text']{
+  input[type='text'],
+  .inputfile__text{
     box-shadow: none;
     border: none;
     border-radius: 0;
@@ -309,6 +310,8 @@ label[for="custom-checkbox"]{
     padding: 0;
     padding-left: 1.25rem;
     color: $cl-motherblackberry;
+    background: $cl-real-white;
+    font-size: (18/16)+em;
   }
 
 
@@ -323,7 +326,8 @@ label[for="custom-checkbox"]{
   }
 
   input[type='text'],
-  input[type='file']{
+  input[type='file'],
+  .inputfile__text{
     height: 2.375rem;
     line-height: 2.375rem;
   }
@@ -334,15 +338,13 @@ label[for="custom-checkbox"]{
     right: 0;
     opacity: 0;
     cursor: pointer;
+    z-index: -1;
   }
 
-  input[type='file'] + .inputfile
-
-  input:focus{
-    .form-standart__label{
-      display: none;
-    }
+  .inputfile__text{
+    cursor: pointer;
   }
+
 
   &__field{
     position: relative;
