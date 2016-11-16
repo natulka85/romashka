@@ -6,6 +6,22 @@
     width: 60%;
   }
 
+
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+
+    h4{
+      font-size: (30/16)+em;
+      font-weight: bold;
+      margin-top: 1rem;
+      margin-bottom: 2.1875rem;
+      color: $cl-real-white;
+    }
+
+  }
+
+
   input[type='textarea'],
   input[type='text'],
   .inputfile__text{
@@ -74,6 +90,7 @@
   &__label{
     font-family: 'RobotoLight', sans-serif;
     position: absolute;
+    text-align: left;
     top:0;
     color: $cl-motherblackberry;
     width: 100%;

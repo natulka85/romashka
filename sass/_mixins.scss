@@ -489,22 +489,31 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
     padding: 0; }
 }
 
-@mixin nthEven($start,$n-columns,$step,$dir){
+@mixin nthEven($start,$n-columns,$step,$dir, $width){
   @for $i from $start through $n-columns {
     &:nth-child(#{$i * $step}) {
       float: $dir;
-      width: 47%;
+      width: #{$width + '%'};
     }
   }
 }
 
 
 
-@mixin nthOdd($start,$n-columns, $step,$dir){
+@mixin nthOdd($start,$n-columns, $step,$dir, $width){
   @for $i from $start through $n-columns {
     &:nth-child(#{$i * $step + 1}) {
       float: $dir;
-      width: 47%;
+      width: #{$width + '%'};
+    }
+  }
+}
+
+@mixin nthEvery($start,$n-columns,$dir, $width){
+  @for $i from $start through $n-columns {
+    &:nth-child(#{$i}) {
+      float: $dir;
+      width: #{$width + '%'};
     }
   }
 }

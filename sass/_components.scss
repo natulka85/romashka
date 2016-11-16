@@ -220,26 +220,60 @@ label[for="custom-checkbox"]{
 
 .custom-checkbox:focus + label:before {
 }
+.form-address {
+  @extend .form-standart;
+  width: 91% !important;
+
+  input[type='text']{
+    margin-bottom: 2.8125rem!important;
+  }
+
+  .form-standart {
+    &__field {
+      display: block !important;
+      margin-top:0 !important;
+      margin-right: 0 !important;
+      @include nthOdd(0,0,2, left, 47);
+      @include nthEven(1,1,2, right, 47);
+
+    }
+
+    &__flex-wrap{
+      display: flex;
+      justify-content: space-between;
+      clear: both;
+
+      .form-standart__field{
+        flex-basis: 20%;
+      }
+    }
+
+    
+    &__field:nth-child(10){
+      clear: both;
+    }
+
+    &__field:nth-last-child(2){
+      input[type='text']{
+        margin-bottom: 1.5625rem !important;
+      }
+    }
+
+    &__field:last-child{
+      .btn-color{
+        margin-top: 1.5625rem;
+      }
+    }
+  }
+}
+
+
 .form-profile {
   @extend .form-standart;
   width: 80% !important;
 
-  &__title{
-    color: $cl-real-white;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 1.5625rem;
-    margin-bottom: 2.1875rem;
-
-    h4{
-      font-size: (30/16)+em;
-      font-weight: bold;
-    }
-  }
-
-
   input[type='text']{
-    margin-bottom: 2.8165rem!important;
+    margin-bottom: 2.8125rem!important;
   }
 
   .form-standart {
@@ -247,11 +281,11 @@ label[for="custom-checkbox"]{
       display: block !important;
       margin-top:0 !important;
 
-      @include nthEven(1,4,2, left);
-      @include nthOdd(1,4,2, right);
+      @include nthEven(1,4,2, left, 47);
+      @include nthOdd(1,4,2, right, 47);
 
-      @include nthOdd(6,9,2, left);
-      @include nthEven(6,10,2, right);
+      @include nthOdd(7,9,2, left, 47);
+      @include nthEven(7,10,2, right, 47);
 
     }
 
@@ -263,15 +297,21 @@ label[for="custom-checkbox"]{
     &__field:nth-child(1) {
       float: left;
       margin-left: 10%;
-      margin-top: 1.25rem;
+      margin-top: 1.25rem !important;
 
       & + .btn-color{
-        margin-top: 0!important;
+        margin-top: 1.25rem !important;
       }
 
       & + .btn-color + .form-standart__comment{
         margin-bottom: 4.365rem;
       }
+
+      .inputfile__text,
+      input[type='file']{
+        margin-bottom:0.9375rem;
+      }
+
     }
 
     &__field:nth-child(10){
@@ -285,8 +325,10 @@ label[for="custom-checkbox"]{
      }
     }
 
-    .btn-color:last-child{
-        margin-top: 1.5625rem!important;
+    &__field:last-child{
+      .btn-color{
+        margin-top: 1.5625rem;
+      }
     }
   }
 }
@@ -299,6 +341,22 @@ label[for="custom-checkbox"]{
   @media #{$media-phone-landscape}{
     width: 60%;
   }
+
+
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+
+    h4{
+      font-size: (30/16)+em;
+      font-weight: bold;
+      margin-top: 1rem;
+      margin-bottom: 2.1875rem;
+      color: $cl-real-white;
+    }
+
+  }
+
 
   input[type='textarea'],
   input[type='text'],
@@ -368,6 +426,7 @@ label[for="custom-checkbox"]{
   &__label{
     font-family: 'RobotoLight', sans-serif;
     position: absolute;
+    text-align: left;
     top:0;
     color: $cl-motherblackberry;
     width: 100%;

@@ -10,6 +10,13 @@
     }
   }
 }
+.account-wrap{
+  @include clearfix;
+
+  .tab-menu-page__list{
+    padding: 2.1875rem 1.875rem;
+  }
+}
 .block-address-wrap {
   margin-bottom: 2.1875rem;
   padding-bottom: 2.1875rem;
@@ -132,13 +139,6 @@
   }
 }
 
-.profile-wrap{
-  @include clearfix;
-
-  .tab-menu-page__list{
-    padding: 2.1875rem 1.875rem;
-  }
-}
 .search-bar-wrap{
   height:4rem;
   padding: 1em 0;

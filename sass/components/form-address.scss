@@ -1,0 +1,47 @@
+.form-address {
+  @extend .form-standart;
+  width: 91% !important;
+
+  input[type='text']{
+    margin-bottom: 2.8125rem!important;
+  }
+
+  .form-standart {
+    &__field {
+      display: block !important;
+      margin-top:0 !important;
+      margin-right: 0 !important;
+      @include nthOdd(0,0,2, left, 47);
+      @include nthEven(1,1,2, right, 47);
+
+    }
+
+    &__flex-wrap{
+      display: flex;
+      justify-content: space-between;
+      clear: both;
+
+      .form-standart__field{
+        flex-basis: 20%;
+      }
+    }
+
+    
+    &__field:nth-child(10){
+      clear: both;
+    }
+
+    &__field:nth-last-child(2){
+      input[type='text']{
+        margin-bottom: 1.5625rem !important;
+      }
+    }
+
+    &__field:last-child{
+      .btn-color{
+        margin-top: 1.5625rem;
+      }
+    }
+  }
+}
+
