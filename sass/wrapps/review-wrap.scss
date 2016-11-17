@@ -1,3 +1,18 @@
 .review-wrap{
+  position: relative;
   padding: 2.1875rem 4.375rem;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  max-height: 700px;
+}
+
+.review-wrap.is-closed{
+  max-height: 3.75rem;
+  padding: 0;
+  .form-standart__field,
+  .form-standart__comment,
+  .block-stars {
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
 }

@@ -559,4 +559,17 @@ h1, h2 {
   }
 }
 
+.block-bonus-accumulation{
+  &__img{
+    background-image: url('../../img/bonus-modal-icon.png')
+  }
+  &__name{
+    color: $cl-shamrock-crayola;
+  }
+
+}
+
+.btn-close-review{
+  background-image: url('../../img/review-close-bg.png');
+}
 

@@ -293,3 +293,12 @@ h1, h2 {
 .block-reviews .block-stars__star:hover:before,
 .block-reviews .block-stars__star.is-full:before {
   color: #32c7ac; }
+
+.block-bonus-accumulation__img {
+  background-image: url("../../img/bonus-modal-icon.png"); }
+
+.block-bonus-accumulation__name {
+  color: #32c7ac; }
+
+.btn-close-review {
+  background-image: url("../../img/review-close-bg.png"); }

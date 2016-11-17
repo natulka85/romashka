@@ -1,0 +1,12 @@
+.modal-custom{
+  position: relative;
+  background-color: transparent;
+}
+
+.modal-custom.round{
+  width: 20.31rem;
+  height: 20.31rem;
+  border-radius: 50%;
+  overflow: visible;
+  background-color: $cl-real-white;
+}

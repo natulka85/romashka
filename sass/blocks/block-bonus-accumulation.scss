@@ -1,0 +1,46 @@
+.block-bonus-accumulation {
+  position: absolute;
+  padding: 10px 0;
+
+  &__items {
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    margin-left: -5.0625rem;
+    text-align: center;
+  }
+
+  &__name {
+    display: block;
+    font-weight: bold;
+    font-size: (18/16)+em;
+    line-height: 1em;
+    margin: 1rem 0 0 0;
+  }
+
+  &__score,
+  &__num {
+    display: block;
+    font-weight: bold;
+  }
+
+  &__score {
+    font-size: (18/16)+em;
+    line-height: 1em;
+    color: $cl-moderate-orange-yellow;
+  }
+
+  &__num {
+    font-size: (48/16)+em;
+    line-height: 1em;
+    font-family: "Arial Black", sans-serif;
+    color: $cl-moderate-orange-yellow;
+  }
+
+  &__img {
+    @include bg('bonus-modal-icon.png', auto, 0.625rem center, no-repeat);
+    width: 10.75rem;
+    height: 9.0625rem;
+  }
+
+}

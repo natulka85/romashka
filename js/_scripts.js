@@ -1,6 +1,27 @@
 $(function () {
     $(document).foundation();
 
+    var balls = new Foundation.Reveal($('#balls'), {
+        animationspeed: 300,
+        closeonbackgroundclick: false
+    });
+
+    $('.form-review .btn-color').on('click', function () {
+        balls.open();
+    });
+
+    var formReview = $('.form-review');
+
+    var uploadVideo = new Foundation.Reveal($('#upload-video'), {
+        animationspeed: 300,
+        closeonbackgroundclick: false
+    });
+
+    formReview.find('.form-standart__comment').eq(0).click(function () {
+        uploadVideo.open();
+    })
+
+
 
 //equalheight - одинаковая высота колонок
 //Пример списка элементов:
@@ -323,11 +344,19 @@ function oneHeightJobsBlock() {
     /** Одна высота у блока вакансий jobs END*/
 
 
-    /** Убираем нижний отступ у последней таблице в прайсе*/
+    /** Убираем нижний отступ у последней таблицы в прайсе*/
 
 
     $(".prices-wrap .price-table").last().css('margin-bottom', '0');
-    /** Убираем нижний отступ у последней таблице в прайсе END*/
+    /** Убираем нижний отступ у последней таблицы в прайсе END*/
+
+    /** Сворачивание формы отзыва*/
+
+    $('.btn-close-review').on('click', function () {
+        $(this).parent().toggleClass('is-closed');
+    })
+    /** Сворачивание формы отзыва END*/
+
 
 });
 

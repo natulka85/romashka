@@ -24,6 +24,14 @@ body
             .row
                 .columns.small-12
                     include ../review.jade
+
+                    .reveal.modal-custom.round(id='balls' data-reveal)
+                        include ../modal-widows/balls.jade
+                        button.btn-close-modal(data-close aria-label="Close modal" type="button")
+                    .reveal.modal-custom(id='upload-video' data-reveal)
+                        include ../modal-widows/upload-video.jade
+                        button.close-button-m(data-close aria-label="Close modal" type="button")
+
             .row
                 .columns.small-12
                     include ../block-reviews.jade

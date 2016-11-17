@@ -1,0 +1,21 @@
+.form-order{
+ @extend .form-standart;
+ width: 50% !important;
+
+  @media #{$media-phone-landscape}{
+    width: 60%;
+  }
+  .form-standart {
+
+    &__field:nth-child(1),
+    &__field:nth-child(2) {
+      display: inline-block;
+      width: 47%;
+    }
+
+    &__field:nth-child(1) {
+      margin-right: 6%;
+    }
+
+  }
+}

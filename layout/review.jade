@@ -1,4 +1,5 @@
 .review-wrap
+    .btn-close-review
     .form-standart.form-review.form-color
         form
             .form-standart__fields-list
@@ -27,8 +28,10 @@
                         input.inputtext(type='textarea', name='' data-fieldname='email')
                 .form-standart__comment Ваша оценка:
                 include block-stars.jade
-                .form-standart__comment.star-result #[strong 4 ]#[span балла]
+                .form-standart__comment.star-result #[strong 5 ]#[span баллов]
                 .form-standart__field
                     .form-standart__item
-                        input.btn-color(type='submit', name='', value='Отправить')
+                        input.btn-color(type='submit', name='' value='Отправить')
+
+
 

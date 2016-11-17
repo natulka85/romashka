@@ -16,7 +16,6 @@
 
   &__item-pic{
     flex-basis: 15%;
-    text-align: center;
   }
 
   &__item-review{
@@ -51,6 +50,7 @@
 
     .block-reviews__item-pic{
       margin-right: 1.375rem;
+      text-align: left;
     }
   }
 
@@ -60,6 +60,7 @@
 
     .block-reviews__item-pic{
       margin-left: 1.375rem;
+      text-align: right;
     }
   }
 }

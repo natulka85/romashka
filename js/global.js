@@ -189,6 +189,27 @@ $(function () {
 $(function () {
     $(document).foundation();
 
+    var balls = new Foundation.Reveal($('#balls'), {
+        animationspeed: 300,
+        closeonbackgroundclick: false
+    });
+
+    $('.form-review .btn-color').on('click', function () {
+        balls.open();
+    });
+
+    var formReview = $('.form-review');
+
+    var uploadVideo = new Foundation.Reveal($('#upload-video'), {
+        animationspeed: 300,
+        closeonbackgroundclick: false
+    });
+
+    formReview.find('.form-standart__comment').eq(0).click(function () {
+        uploadVideo.open();
+    })
+
+
 
 //equalheight - одинаковая высота колонок
 //Пример списка элементов:
@@ -511,11 +532,19 @@ function oneHeightJobsBlock() {
     /** Одна высота у блока вакансий jobs END*/
 
 
-    /** Убираем нижний отступ у последней таблице в прайсе*/
+    /** Убираем нижний отступ у последней таблицы в прайсе*/
 
 
     $(".prices-wrap .price-table").last().css('margin-bottom', '0');
-    /** Убираем нижний отступ у последней таблице в прайсе END*/
+    /** Убираем нижний отступ у последней таблицы в прайсе END*/
+
+    /** Сворачивание формы отзыва*/
+
+    $('.btn-close-review').on('click', function () {
+        $(this).parent().toggleClass('is-closed');
+    })
+    /** Сворачивание формы отзыва END*/
+
 
 });
 
@@ -548,6 +577,35 @@ jQuery(function ($) {
 });
 
 
+
+$('.form-review .block-stars__star').on('click', function () {
+
+    $(this).toggleClass('is-full');
+
+    var starResult =  $(this).parent().next('.star-result');
+    var placeBalls =  starResult.find('span');
+    var quantStars = ($(this).parent().find('.is-full')).length;
+
+    starResult.find('strong').text(quantStars);
+
+    switch (quantStars){
+        case 0:
+            placeBalls.text(' баллов');
+            break;
+
+        case 1:
+            placeBalls.text(' балл');
+            break;
+
+        case 5:
+            placeBalls.text(' баллов');
+            break;
+
+        default:
+            placeBalls.text(' балла');
+
+    }
+})
 
 $(function () {
     $('.inputfile__text').on('click', function () {
@@ -594,6 +652,10 @@ $(function () {
 
         });
 });
+
+$(function () {
+
+})
 
 var $formField = $(".form-standart__field");
 var $formErrorText = $('.form-standart__error');

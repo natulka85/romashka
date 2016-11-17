@@ -1,11 +1,6 @@
 .form-standart{
-  width: 50%;
+  width: 90%;
   margin:auto;
-
-  @media #{$media-phone-landscape}{
-    width: 60%;
-  }
-
 
   &__title{
     text-align: center;
@@ -21,7 +16,6 @@
     }
 
   }
-
 
   input[type='textarea'],
   input[type='text'],
@@ -122,16 +116,6 @@
   &__field{
     position: relative;
     @include clearfix;
-  }
-
-  &__field:nth-child(1),
-  &__field:nth-child(2){
-    display: inline-block;
-    width: 47%;
-  }
-
-  &__field:nth-child(1){
-    margin-right:6%;
   }
 
   &__field:last-child{

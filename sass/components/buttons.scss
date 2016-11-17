@@ -79,11 +79,40 @@
 .close-button-m{
   display: inline-block;
   position: absolute;
+  cursor: pointer;
+  color: $cl-real-white;
+  right: 0.625rem;
+  top: 0.625rem;
   &:after{
-    content: 'x';
-    font-family:'RobotoLight', sans-serif;
-    font-size: 26px;
+    content: '\00d7';
+    font-size: (26/16)+em;
   }
+}
+
+.btn-close-modal{
+  width: 3.625rem;
+  height: 3.625rem;
+  border-radius: 50%;
+  background-color: $cl-moderate-orange-yellow;
+  color: $cl-real-white;
+  position: absolute;
+  right: 1.625rem;
+  top: 0.8125rem;
+  cursor: pointer;
+  &:after{
+    content: '\00d7';
+    font-size: (50/16)+em;
+  }
+}
+
+.btn-close-review{
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: 0.625rem;
+  top:0.625rem;
+  cursor: pointer;
+  @include bg('review-close-bg.png', 100%, center center, no-repeat);
 }
 
 

@@ -154,11 +154,40 @@
 .close-button-m{
   display: inline-block;
   position: absolute;
+  cursor: pointer;
+  color: $cl-real-white;
+  right: 0.625rem;
+  top: 0.625rem;
   &:after{
-    content: 'x';
-    font-family:'RobotoLight', sans-serif;
-    font-size: 26px;
+    content: '\00d7';
+    font-size: (26/16)+em;
   }
+}
+
+.btn-close-modal{
+  width: 3.625rem;
+  height: 3.625rem;
+  border-radius: 50%;
+  background-color: $cl-moderate-orange-yellow;
+  color: $cl-real-white;
+  position: absolute;
+  right: 1.625rem;
+  top: 0.8125rem;
+  cursor: pointer;
+  &:after{
+    content: '\00d7';
+    font-size: (50/16)+em;
+  }
+}
+
+.btn-close-review{
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: 0.625rem;
+  top:0.625rem;
+  cursor: pointer;
+  @include bg('review-close-bg.png', 100%, center center, no-repeat);
 }
 
 
@@ -364,6 +393,27 @@ label[for="custom-checkbox"]{
     }
   }
 }
+.form-order{
+ @extend .form-standart;
+ width: 50% !important;
+
+  @media #{$media-phone-landscape}{
+    width: 60%;
+  }
+  .form-standart {
+
+    &__field:nth-child(1),
+    &__field:nth-child(2) {
+      display: inline-block;
+      width: 47%;
+    }
+
+    &__field:nth-child(1) {
+      margin-right: 6%;
+    }
+
+  }
+}
 .form-profile-companies {
   @extend .form-standart;
   width: 80% !important;
@@ -513,6 +563,7 @@ label[for="custom-checkbox"]{
             border-radius: 50%;
             vertical-align: middle;
             margin-right: 0.625rem;
+            cursor: pointer;
           }
 
         }
@@ -576,13 +627,8 @@ label[for="custom-checkbox"]{
 
 
 .form-standart{
-  width: 50%;
+  width: 90%;
   margin:auto;
-
-  @media #{$media-phone-landscape}{
-    width: 60%;
-  }
-
 
   &__title{
     text-align: center;
@@ -598,7 +644,6 @@ label[for="custom-checkbox"]{
     }
 
   }
-
 
   input[type='textarea'],
   input[type='text'],
@@ -699,16 +744,6 @@ label[for="custom-checkbox"]{
   &__field{
     position: relative;
     @include clearfix;
-  }
-
-  &__field:nth-child(1),
-  &__field:nth-child(2){
-    display: inline-block;
-    width: 47%;
-  }
-
-  &__field:nth-child(1){
-    margin-right:6%;
   }
 
   &__field:last-child{
@@ -851,6 +886,18 @@ label[for="custom-checkbox"]{
   display: none;
 }
 
+.modal-custom{
+  position: relative;
+  background-color: transparent;
+}
+
+.modal-custom.round{
+  width: 20.31rem;
+  height: 20.31rem;
+  border-radius: 50%;
+  overflow: visible;
+  background-color: $cl-real-white;
+}
 .pagination-m {
   margin:1rem 0;
 
