@@ -328,8 +328,8 @@ $(function () {
     itemsHeader.each(function () {
         var x = $(this).attr('data-x');
         var y = $(this).attr('data-y');
-        var imgWidth = 1560;
-        var imgHeight = 580;
+        var imgWidth = $('.header-slider__items').width();
+        var imgHeight = $('.header-slider__items').height();
         var left = (x / imgWidth * 100) + '%';
         var top = (y / imgHeight * 100) + '%';
 

@@ -166,6 +166,17 @@ table tbody tr:nth-child(even) {
   margin-bottom: 1.875rem ; /*50px*/
 }
 
+.big-description{
+  font-size: 1em;
+  line-height:(18/16)+em;
+  text-align: center;
+
+  p,
+  span{
+    margin:0;
+  }
+}
+
 .strong-text{
   font-weight: bold;
   font-size: 1em;

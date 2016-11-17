@@ -12601,6 +12601,14 @@ table tbody tr:nth-child(even) {
   margin-bottom: 1.875rem;
   /*50px*/ }
 
+.big-description {
+  font-size: 1em;
+  line-height: 1.125em;
+  text-align: center; }
+  .big-description p,
+  .big-description span {
+    margin: 0; }
+
 .strong-text {
   font-weight: bold;
   font-size: 1em;
@@ -14542,7 +14550,7 @@ label[for="custom-checkbox"] {
   margin-top: 16px; }
 
 .header-slider__items {
-  max-width: 1560px;
+  max-width: 1380px;
   margin: auto;
   overflow: hidden; }
 
@@ -14550,13 +14558,13 @@ label[for="custom-checkbox"] {
   width: 100%;
   margin: auto;
   display: none;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   @media (max-width: 1280px) {
     .header-slider__item {
       width: 100%;
       overflow: hidden; } }
   .header-slider__item img {
-    width: 100%;
     overflow: hidden; }
 
 .header-slider__item.active {
@@ -14575,7 +14583,7 @@ label[for="custom-checkbox"] {
   .header-slider__menu-item a {
     position: absolute;
     top: 0;
-    left: 24px;
+    left: 1.5rem;
     z-index: 1;
     height: 2.8125rem;
     font-size: 0.875em;
@@ -14585,7 +14593,8 @@ label[for="custom-checkbox"] {
     background-color: #f9a61b;
     width: 11.3125rem;
     visibility: hidden;
-    display: table; }
+    display: table;
+    text-align: left; }
   .header-slider__menu-item span {
     display: table-cell;
     vertical-align: middle; }
@@ -15502,6 +15511,9 @@ label[for="custom-checkbox"] {
 
 .main-page-wrap .block-video {
   margin-top: 2.625rem; }
+
+.my-orders-wrap .tab-menu-page {
+  margin-bottom: 1.5625rem; }
 
 .my-orders-wrap .tab-menu-page__list {
   background-color: #ffffff;
