@@ -2,12 +2,12 @@ doctype html
 html
     include ../includes/head
 body
-    include ../header
+    include ../blocks/header
     .row
         .columns.medium-3.small-4
             .sidebar
-                include ../tab-menu.jade
-                include ../block-subscribe-sidebar.jade
+                include ../blocks/tab-menu.jade
+                include ../blocks/block-subscribe-sidebar.jade
         .columns.medium-9.small-8
             .breadcrumbs
                 ul.breadcrumbs__items
@@ -24,14 +24,14 @@ body
                 .row
                     .columns.medium-6
                         .yandex-map
-                            include ../api-yandex.jade
+                            include ../blocks/api-yandex.jade
                     .columns.medium-6
-                        include ../block-address.jade
+                        include ../blocks/block-address.jade
             .block-address-wrap
                 .row
                     .columns.medium-6
                         .yandex-map
-                            include ../api-yandex.jade
+                            include ../blocks/api-yandex.jade
                     .columns.medium-6
                         h5 Проезд на общественном транспорте:
                         .small-text
@@ -60,24 +60,11 @@ body
                 .block-order__title
                     .main-content__title
                         h2 Связаться с нами
-        include ../block-order.jade
+        include ../blocks/block-order.jade
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    include ../footer
+    include ../blocks/footer
 
 
 

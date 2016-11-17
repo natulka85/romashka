@@ -2,14 +2,14 @@ doctype html
 html
     include ../includes/head
 body
-    include ../header
+    include ../blocks/header
     .row
         .columns.medium-3.small-4
             .sidebar
-                include ../tab-menu.jade
-                include ../block-subscribe-sidebar.jade
+                include ../blocks/tab-menu.jade
+                include ../blocks/block-subscribe-sidebar.jade
         .columns.medium-9.small-8
-            include ../breadcrumbs.jade
+            include ../blocks/breadcrumbs.jade
             .row
                 .columns.large-12
                     .main-content__title
@@ -115,10 +115,10 @@ body
 
             .row
                 .columns.large-9.large-offset-3
-                    include ../pagination.jade
+                    include ../blocks/pagination
 
-    include ../block-order.jade
-    include ../footer
+    include ../blocks/block-order
+    include ../blocks/footer
 
 
 

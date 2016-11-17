@@ -581,3 +581,9 @@ h1, h2 {
   background-image: url('../../img/review-close-bg.png');
 }
 
+.my-orders-wrap{
+  .tab-menu-page__item:after{
+    border-top-color: $cl-shamrock-crayola;
+  }
+}
+

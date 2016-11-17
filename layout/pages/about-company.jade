@@ -2,12 +2,12 @@ doctype html
 html
     include ../includes/head
 body
-    include ../header
+    include ../blocks/header
     .row
         .columns.medium-3.small-4
             .sidebar
-                include ../tab-menu.jade
-                include ../block-subscribe-sidebar.jade
+                include ../blocks/tab-menu.jade
+                include ../blocks/block-subscribe-sidebar.jade
         .columns.medium-9.small-8
             .breadcrumbs
                 ul.breadcrumbs__items
@@ -80,7 +80,7 @@ body
                 .columns.large-12
                     .main-content__title
                         h2 Фото сотрудников
-            include ../staff
+            include ../blocks/staff
 
 
 
@@ -88,7 +88,7 @@ body
 
 
 
-    include ../footer
+    include ../blocks/footer
 
 
 

@@ -81,11 +81,10 @@
     margin-left:0;
   }
 
-  iframe{
-    margin-bottom: 0.625rem;
+
+  &__iframe{
+    margin-top: 0.625rem;
     height:14.6885rem;
     width: 70%;
-    frameborder: 0;
-
   }
 }

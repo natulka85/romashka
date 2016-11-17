@@ -17,17 +17,16 @@
         width: 48%;
       }
 
-
       &:nth-child(4) {
         float: right;
         width: 48%;
 
-        & + .form-standart__comment{
+        & + .form-standart__comment {
           float: left;
           position: relative;
           top: -4px;
 
-          &:before{
+          &:before {
             content: '';
             width: 3.5625rem;
             height: 3.5625rem;
@@ -69,7 +68,7 @@
       font-weight: bold;
       text-transform: uppercase;
 
-      &.star-result{
+      &.star-result {
         text-transform: none;
       }
     }
@@ -99,5 +98,10 @@
     }
 
   }
+
+  .star-result {
+    width: 5.6875rem;
+  }
+
 }
 

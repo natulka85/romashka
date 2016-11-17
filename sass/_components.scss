@@ -541,17 +541,16 @@ label[for="custom-checkbox"]{
         width: 48%;
       }
 
-
       &:nth-child(4) {
         float: right;
         width: 48%;
 
-        & + .form-standart__comment{
+        & + .form-standart__comment {
           float: left;
           position: relative;
           top: -4px;
 
-          &:before{
+          &:before {
             content: '';
             width: 3.5625rem;
             height: 3.5625rem;
@@ -593,7 +592,7 @@ label[for="custom-checkbox"]{
       font-weight: bold;
       text-transform: uppercase;
 
-      &.star-result{
+      &.star-result {
         text-transform: none;
       }
     }
@@ -623,6 +622,11 @@ label[for="custom-checkbox"]{
     }
 
   }
+
+  .star-result {
+    width: 5.6875rem;
+  }
+
 }
 
 

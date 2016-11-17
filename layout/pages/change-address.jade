@@ -2,7 +2,7 @@ doctype html
 html
     include ../includes/head
 body
-    include ../header
+    include ../blocks/header
     .row
         .columns.medium-12
             .breadcrumbs
@@ -32,13 +32,13 @@ body
                     .tab-menu-page__content
                         .tab-menu-page__content-item.no-scroller(id='persons-page-accaunt')
                         .tab-menu-page__list.is-opened
-                            include ../user-address.jade
+                            include ../blocks/user-address.jade
                         .tab-menu-page__content-item.no-scroller(id='companies-page-accaunt')
                         .tab-menu-page__list
-                            include ../user-address.jade
+                            include ../blocks/user-address.jade
 
 
-    include ../footer
+    include ../blocks/footer
 
 
 

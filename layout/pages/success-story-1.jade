@@ -2,12 +2,12 @@ doctype html
 html
     include ../includes/head
 body
-    include ../header
+    include ../blocks/header
     .row
         .columns.medium-3.small-4
             .sidebar
-                include ../tab-menu.jade
-                include ../block-subscribe-sidebar.jade
+                include ../blocks/tab-menu.jade
+                include ../blocks/block-subscribe-sidebar.jade
         .columns.medium-9.small-8
             .breadcrumbs
                 ul.breadcrumbs__items
@@ -37,7 +37,7 @@ body
                                     p Именно качество исполнения, приемлемые цены, аккуратность и&nbsp;исполнительность работников, а&nbsp;у&nbsp;нас трудятся в&nbsp;основном граждане Российской Федерации, интересуют клиентов при выборе клининговой компании. Все вышеперечисленные показатели вы&nbsp;найдёте у&nbsp;нас. При приёме на&nbsp;работу мы&nbsp;ведём строгий отбор кадров, случайных людей у&nbsp;нас нет.
             .row
                 .columns-12
-                    include ../block-social-page.jade
+                    include ../blocks/block-social-page.jade
             section.block-detail-slider <!--обрезание текста предполагается серверное-->
                 .row
                     .columns.medium-12
@@ -70,7 +70,7 @@ body
                                     a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-8.png', style='background-image: url(../img/portfolio/pic-8.png)')
                                         .block-detail-slider__loupe
 
-    include ../footer
+    include ../blocks/footer
 
 
 

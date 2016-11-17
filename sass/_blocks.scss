@@ -815,12 +815,11 @@
     margin-left:0;
   }
 
-  iframe{
-    margin-bottom: 0.625rem;
+
+  &__iframe{
+    margin-top: 0.625rem;
     height:14.6885rem;
     width: 70%;
-    frameborder: 0;
-
   }
 }
 .block-social-page{
@@ -2070,6 +2069,31 @@
 
   &__data-scores{
     font-weight: bold;
+  }
+
+  &__link-item{
+    font-family: 'RobotoLight', sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid $cl-light-grey;
+    font-size: (14/16)+em;
+    color: $cl-black-brown !important;
+  }
+
+  &__link-item:hover{
+    border-bottom: 1px solid transparent;
+  }
+
+  &__link{
+    @include borL;
+    @include borR;
+  }
+
+  &__link:last-child{
+    text-align: center;
+
+    .simple-table__link-item{
+      margin: 0 1.25rem;
+    }
   }
 
   &__row{

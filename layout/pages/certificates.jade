@@ -2,12 +2,12 @@ doctype html
 html
     include ../includes/head
 body
-    include ../header
+    include ../blocks/header
     .row
         .columns.medium-3.small-4
             .sidebar
-                include ../tab-menu.jade
-                include ../block-subscribe-sidebar.jade
+                include ../blocks/tab-menu.jade
+                include ../blocks/block-subscribe-sidebar.jade
         .columns.medium-9.small-8
             .breadcrumbs
                 ul.breadcrumbs__items
@@ -22,7 +22,7 @@ body
                         h1 Сертификаты
             .row
                 .columns.xsmall-12
-                    include ../certificates-page
+                    include ../blocks/certificates-page
             .row
                 .columns.small-12
                     .btn-full-size.is-corner-b Показать еще
@@ -34,7 +34,7 @@ body
                         h2 Дипломы
             .row
                 .columns.xsmall-12
-                    include ../certificates-page
+                    include ../blocks/certificates-page
             .row
                 .columns.small-12
                     .btn-full-size.is-corner-b Показать еще
@@ -47,14 +47,14 @@ body
                         h2 Награды
             .row
                 .columns.xsmall-12
-                    include ../certificates-page
+                    include ../blocks/certificates-page
             .row
                 .columns.small-12
                     .btn-full-size.is-corner-b Показать еще
 
             .block-empty-height
 
-    include ../footer
+    include ../blocks/footer
 
 
 

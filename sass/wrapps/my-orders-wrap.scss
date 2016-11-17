@@ -1,0 +1,33 @@
+.my-orders-wrap{
+  .tab-menu-page__list{
+    background-color:$cl-real-white;
+    padding: 0;
+  }
+
+  .tab-menu-page__item a {
+    height: 3.125rem;
+    line-height: 3.125rem;
+  }
+
+  .tab-menu-page__item {
+    margin-left: 2px;
+  }
+
+  .tab-menu-page__item:first-child {
+    margin-left: 0;
+  }
+
+  .tab-menu-page__item.active:after{
+    bottom:-14px;
+  }
+
+  .simple-table__head-name{
+    background-color: $cl-real-white;
+    text-align: center;
+    color: $cl-black-brown;
+    @include borL;
+    @include borR;
+    @include borB;
+
+  }
+}
