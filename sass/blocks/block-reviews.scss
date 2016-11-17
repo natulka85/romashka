@@ -8,6 +8,7 @@
     color: $cl-motherblackberry;
     border: 3px solid $cl-pale-blue;
     padding: 0.9375rem 2.8125rem 0.9375rem 1.5625rem;
+    position: relative;
 
     p:last-child{
       margin: 0;
@@ -19,7 +20,7 @@
   }
 
   &__item-review{
-    width: 90%;
+    width: 100%;
   }
 
   &__img{
@@ -45,22 +46,46 @@
 
 
   &__client-item{
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: left;
 
     .block-reviews__item-pic{
+      padding-top: 1.625rem;
       margin-right: 1.375rem;
       text-align: left;
+    }
+
+    .block-reviews__contents{
+      @include cornerDir(-19,-24, 12, right);
     }
   }
 
   &__admin-item{
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: right;
 
     .block-reviews__item-pic{
       margin-left: 1.375rem;
       text-align: right;
     }
+    .block-reviews__contents{
+      @include cornerDir(-19,-24, 12, left);
+      
+      &:before{
+        border-left-color: $cl-pale-blue;
+      }
+    }
+  }
+
+  .block-stars{
+    margin-left:0;
+  }
+
+  iframe{
+    margin-bottom: 0.625rem;
+    height:14.6885rem;
+    width: 70%;
+    frameborder: 0;
+
   }
 }

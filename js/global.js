@@ -546,6 +546,7 @@ function oneHeightJobsBlock() {
     /** Сворачивание формы отзыва END*/
 
 
+
 });
 
 jQuery(function ($) {
@@ -652,10 +653,6 @@ $(function () {
 
         });
 });
-
-$(function () {
-
-})
 
 var $formField = $(".form-standart__field");
 var $formErrorText = $('.form-standart__error');

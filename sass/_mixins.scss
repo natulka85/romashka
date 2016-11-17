@@ -403,6 +403,46 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
   }
 }
 
+@mixin cornerDir($left1,$left2, $size, $dir){
+  &:after,
+  &:before{
+    content: ' ';
+
+    @if($dir == 'left'){
+      right: $left1 + px;
+    }
+
+    @else if($dir == 'right'){
+      left: $left1 + px;
+    }
+
+    top: 50%;
+    margin-top: - $size + px;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+
+  &:after{
+    border: $size + px solid transparent;
+    border-#{$dir}: $size +px solid white;
+  }
+
+  &:before{
+    border: $size + px solid transparent;
+    border-#{$dir}: $size + px solid black;
+
+    @if($dir == 'left'){
+      right: $left2 + px;
+    }
+
+    @else if($dir == 'right'){
+      left: $left2 + px;
+    }
+  }
+}
+
 
 @mixin cornerBottomWhite($width, $bottom){
   &:after{

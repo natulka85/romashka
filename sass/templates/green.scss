@@ -545,9 +545,15 @@ h1, h2 {
 }
 
 .block-reviews{
+
   &__client-item{
     .block-reviews__contents{
       border-color: $cl-shamrock-crayola;
+    }
+    .block-reviews__contents{
+     &:before{
+       border-right-color: $cl-shamrock-crayola;
+     }
     }
   }
 
@@ -557,6 +563,8 @@ h1, h2 {
       color: $cl-shamrock-crayola;
     }
   }
+
+
 }
 
 .block-bonus-accumulation{

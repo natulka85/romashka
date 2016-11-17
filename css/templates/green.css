@@ -290,6 +290,9 @@ h1, h2 {
 .block-reviews__client-item .block-reviews__contents {
   border-color: #32c7ac; }
 
+.block-reviews__client-item .block-reviews__contents:before {
+  border-right-color: #32c7ac; }
+
 .block-reviews .block-stars__star:hover:before,
 .block-reviews .block-stars__star.is-full:before {
   color: #32c7ac; }
