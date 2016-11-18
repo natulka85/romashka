@@ -12931,10 +12931,9 @@ ul.mark-list li:before {
   right: 0.625rem;
   top: 0.625rem;
   cursor: pointer;
-  background-image: url("../img/review-close-bg.png");
-  background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center center;
-  background-size: 100%; }
+  background-repeat: no-repeat; }
 
 .custom-checkbox {
   vertical-align: top;

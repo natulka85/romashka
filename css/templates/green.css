@@ -330,7 +330,7 @@ h1, h2 {
   color: #5fbb28; }
 
 .btn-close-review {
-  background-image: url("../../img/review-close-bg.png"); }
+  background-image: url("../../img/icons-others/close-review-button-green.svg"); }
 
 .my-orders-wrap .tab-menu-page__item:after {
   border-top-color: #5fbb28; }
