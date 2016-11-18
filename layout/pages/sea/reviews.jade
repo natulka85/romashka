@@ -1,0 +1,48 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/sea
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-3.small-4
+            .sidebar
+                include ../../blocks/tab-menu
+                include ../../blocks/block-subscribe-sidebar
+        .columns.medium-9.small-8
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Отзывы
+
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Отзывы
+
+            .row
+                .columns.small-12
+                    include ../../blocks/review
+
+                    .reveal.modal-custom.round(id='balls' data-reveal)
+                        include ../../modal-widows/balls
+                        button.btn-close-modal(data-close aria-label="Close modal" type="button")
+                    .reveal.modal-custom(id='upload-video' data-reveal)
+                        include ../../modal-widows/upload-video
+                        button.close-button-m(data-close aria-label="Close modal" type="button")
+
+            .row
+                .columns.small-12
+                    include ../../blocks/block-reviews
+
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

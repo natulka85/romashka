@@ -1,0 +1,50 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/siz
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-12
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Личный кабинет
+                    li.breadcrumbs__item
+                        a(href='/index.html') Изменить контактную информацию
+
+    .row
+        .columns.small-6.small-centered
+            .main-content__title.centered
+                h1 Изменить контактную информацию
+    .account-wrap
+        .row
+            .columns.large-12
+                .tab-menu-page
+                    ul.tab-menu-page__items
+                        li.tab-menu-page__item.active
+                            .tab-menu-page__icon-per
+                            a(href='#persons-page-accaunt') Для физических лиц
+                        li.tab-menu-page__item
+                            .tab-menu-page__icon-comp
+                            a(href='#companies-page-accaunt') Для юридических лиц
+                    .tab-menu-page__content
+                        .tab-menu-page__content-item.no-scroller(id='persons-page-accaunt')
+                        .tab-menu-page__list.is-opened
+                            include ../../blocks/user-address
+                        .tab-menu-page__content-item.no-scroller(id='companies-page-accaunt')
+                        .tab-menu-page__list
+                            include ../../blocks/user-address
+
+
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

@@ -1,0 +1,130 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/green
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-3.small-4
+            .sidebar
+                include ../../blocks/tab-menu
+                include ../../blocks/block-subscribe-sidebar
+        .columns.medium-9.small-8
+            include ../../blocks/breadcrumbs
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Услуги
+            .row
+                .columns.large-12
+                    .menu-pictures
+                        ul.menu-pictures__items
+                            li.menu-pictures__item
+                                img(class='menu-pictures__img',src='../img/services/kl-icon-4.svg')
+                                a(class='menu-pictures__link',href='#') Уборка
+                            li.menu-pictures__item
+                                img(class='menu-pictures__img',src='../img/services/kl-icon-5.svg')
+                                a(class='menu-pictures__link', href='#') Мойка #[br]окон и фасадов
+                            li.menu-pictures__item
+                                img(class='menu-pictures__img',src='../img/services/kl-icon-1.svg')
+                                a(class='menu-pictures__link', href='#') Химчистка
+                            li.menu-pictures__item
+                                img(class='menu-pictures__img',src='../img/services/kl-icon-7.svg')
+                                a(class='menu-pictures__link', href='#') Шлифовка
+
+            section.block-products
+                .block-products__item
+                    .row
+                        .columns.medium-6
+                                .block-products__pic
+                                    img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.medium-6
+                                .block-products__description
+                                    .block-products__name
+                                        a.block-products__link(href='#') Уборка
+                                    .block-products__text
+                                        .small-text
+                                            p Lorem ipsum dolor sit amet, consectetur
+                                                |adipiscing elit. Aenean euismod bibendum
+                                                |laoreet. Proin gravida dolor sit amet lacus
+                                                |accumsan et viverra justo commodo
+                                    .block-products__price
+                                        strong Цена от
+                                        span 3 900 Р
+                                    .block-products__btn
+                                        .btn-border-color Заказать
+                .block-products__item
+                    .row
+                        .columns.medium-6
+                            .block-products__pic
+                                img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.medium-6
+                            .block-products__description
+                                .block-products__name
+                                    a.block-products__link(href='#') Мойка окон и фасадов
+                                .block-products__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo
+                                .block-products__price
+                                    strong Цена от
+                                    span 3 900 Р
+                                .block-products__btn
+                                    .btn-border-color Заказать
+                .block-products__item
+                    .row
+                        .columns.medium-6
+                            .block-products__pic
+                                img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.medium-6
+                            .block-products__description
+                                .block-products__name
+                                    a.block-products__link(href='#') Химчистка
+                                .block-products__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo
+                                .block-products__price
+                                    strong Цена от
+                                    span 3 900 Р
+                                .block-products__btn
+                                    .btn-border-color Заказать
+                .block-products__item
+                    .row
+                        .columns.medium-6
+                            .block-products__pic
+                                img.block-products__img(src='../img/products/pic-1.png')
+                        .columns.medium-6
+                            .block-products__description
+                                .block-products__name
+                                    a.block-products__link(href='#') Шлифовка и полировка
+                                .block-products__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo
+                                .block-products__price
+                                    strong Цена от
+                                    span 3 900 Р
+                                .block-products__btn
+                                    .btn-border-color Заказать
+
+            .row
+                .columns.large-9.large-offset-3
+                    include ../../blocks/pagination
+
+    include ../../blocks/block-order
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

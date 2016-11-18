@@ -1,0 +1,152 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/sea
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-3.small-4
+            .sidebar
+                include ../../blocks/tab-menu
+                include ../../blocks/block-subscribe-sidebar
+        .columns.medium-9.small-8
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Опыт работы и портфолио
+
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Опыт работы и портфолио
+
+            section.block-detail-bigpic
+                    .row
+                        .columns.large-12
+                            .block-detail-bigpic__pic
+                                img.block-detail-bigpic__img(src='../img/portfolio/big-pic-1.png',alt='')
+                            .block-detail-bigpic__text.two-columns
+                                .small-text
+                                    p Несколько лет назад слово &laquo;клининг&raquo; было мало кому известно, а&nbsp;сегодня каждый знает, что оно означает профессиональную уборку помещений разного типа, будь&nbsp;то дом, квартира, коттедж, офис и&nbsp;так далее. Вот и&nbsp;мы, когда задумывали открыть свой бизнес, решили остановиться именно на&nbsp;этом благом деле, приносящем людям огромную пользу, освобождающем их&nbsp;от&nbsp;хлопот по&nbsp;уборке жилища. Клининговая компания &laquo;О, Чисто!&raquo; действует сравнительно недавно, но&nbsp;уже успела зарекомендовать себя с&nbsp;самой лучшей стороны. У&nbsp;нас есть постоянные клиенты, которые доверяют нам. Их&nbsp;число постоянно растёт.
+
+                                    P Мы&nbsp;осуществляем профессиональную уборку не&nbsp;только в&nbsp;Москве, но&nbsp;и&nbsp;в&nbsp;Московской области. Мобильные бригады прибудут на&nbsp;место в&nbsp;удобное для вас время и&nbsp;выполнят ваш заказ качественно и&nbsp;в&nbsp;сжатый срок.
+
+                                    p Именно качество исполнения, приемлемые цены, аккуратность и&nbsp;исполнительность работников, а&nbsp;у&nbsp;нас трудятся в&nbsp;основном граждане Российской Федерации, интересуют клиентов при выборе клининговой компании. Все вышеперечисленные показатели вы&nbsp;найдёте у&nbsp;нас. При приёме на&nbsp;работу мы&nbsp;ведём строгий отбор кадров, случайных людей у&nbsp;нас нет.
+            .row
+                .columns-12
+                    include ../../blocks/block-social-page
+            section.block-detail-slider <!--обрезание текста предполагается серверное-->
+                .row
+                    .columns.medium-12
+                        ul.block-detail-slider__carousel.is-dots
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-6.png', style='background-image: url(../img/portfolio/pic-6.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-7.png', style='background-image: url(../img/portfolio/pic-7.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-8.png', style='background-image: url(../img/portfolio/pic-8.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-6.png', style='background-image: url(../img/portfolio/pic-6.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-7.png', style='background-image: url(../img/portfolio/pic-7.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-8.png', style='background-image: url(../img/portfolio/pic-8.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-6.png', style='background-image: url(../img/portfolio/pic-6.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-7.png', style='background-image: url(../img/portfolio/pic-7.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+                            li.block-detail-slider__carousel-item
+                                a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-8.png', style='background-image: url(../img/portfolio/pic-8.png)')
+                                .block-detail-slider__name
+                                    span Название проекта
+                                .block-detail-slider__text
+                                    .small-text
+                                        p Lorem ipsum dolor sit amet, consectetur
+                                            | adipiscing elit. Aenean euismod bibendum
+                                            | laoreet. Proin gravida dolor sit amet lacus
+                                            | accumsan et viverra justo commodo...
+                                .btn-border-color-thin Подробнее
+
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

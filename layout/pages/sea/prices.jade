@@ -1,0 +1,180 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/sea
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-3.small-4
+            .sidebar
+                include ../../blocks/tab-menu
+                include ../../blocks/block-subscribe-sidebar
+        .columns.medium-9.small-8
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Цены
+
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Цены
+            .prices-wrap
+                section.block-detail-bigpic
+                    .row
+                        .columns.large-12
+                            .block-detail-bigpic__pic
+                                img.block-detail-bigpic__img(src='../img/price/pic-1.png',alt='')
+                            .block-detail-bigpic__text
+                                h5 Клининг - цены и услуги
+                                .small-text
+                                    p Мы находим индивидуальный подход к каждому Заказчику и адаптируем цены и услуги в зависимости от поставленных задач. В удобное для Вас время специалист  нашей компании готов выехать на Ваш объект и абсолютно бесплатно определить состав и объем необходимых работ. По результату, Вам будет предоставлена предварительная смета со всеми статьями расходов.
+
+                                    p На услуги клининга цены рассчитываются индивидуально. Окончательная стоимость клининговых услуг зависит от следующих факторов:
+                                    ul.mark-list
+                                        li площадь помещения;
+                                        li специфика объекта;
+                                        li сложность поставленных задач;
+                                        li объемы и регулярность проведения работ и т. д.
+
+
+                                    p Цены на клининговые услуги могут отличаться в зависимости от видов уборочных работ. Так, услуга по уборке промышленного объекта будет дороже по сравнению с услугой по уборке офиса ввиду того, что на производстве проводить уборочные работы гораздо сложнее из-за наличия оборудования и различных специфических загрязнений.
+
+                                    p Стоит учитывать, что на стоимость клининговых работ влияет количество используемых моющих средств и расходных материалов, применение специализированного оборудования и инвентаря, а также необходимые для работы трудозатраты.
+
+                                    p Мы составим для Вас индивидуальное коммерческое предложение, если Вы свяжетесь с нами по телефону +7(495) 357-36-92, доб.414 или воспользуйтесь формой обратной связи. Вы получите подробные консультации наших менеджеров по всем интересующим Вас вопросам.
+            .prices-wrap
+                .row
+                    .columns.large-12
+                        .tab-menu-page
+                            .main-content__small-title
+                                 h5 Стоимость проведения ежедневных уборочных работ
+                            ul.tab-menu-page__items
+                                li.tab-menu-page__item.active
+                                    .tab-menu-page__icon-per
+                                    a(href='#persons-page') Для физических лиц
+                                li.tab-menu-page__item
+                                    .tab-menu-page__icon-comp
+                                    a(href='#companies-page') Для юридических лиц
+                            .tab-menu-page__content
+                                .tab-menu-page__content-item.no-scroller(id='persons-page')
+                                ul.tab-menu-page__list.is-opened.two-columns
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка снега
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка квартир
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка частных домов
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка территории
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка коттеджей
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка таунхаусов
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка после ремонта
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка мусора
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка кладбищ и могил
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка снега
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка квартир
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка частных домов
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка территории
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка коттеджей
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка таунхаусов
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка после ремонта
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка мусора
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка кладбищ и могил
+
+
+                                .tab-menu-page__content-item.no-scroller(id='companies-page')
+                                ul.tab-menu-page__list.two-columns
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис снега
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис квартир
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис частных домов
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис территории
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис коттеджей
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис таунхаусов
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис после ремонта
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис мусора
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис кладбищ и могил
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис снега
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис квартир
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис частных домов
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис территории
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис коттеджей
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис таунхаусов
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис после ремонта
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис мусора
+                                    li.tab-menu-page__list-item
+                                        a.tab-menu-page__link(href='') Уборка офис кладбищ и могил
+            .row
+                .columns.large-12
+                    .main-content__small-title
+                        h5 Уборка офисов и помещений
+            .prices-wrap
+                .row
+                    .columns.large-12
+                        include ../../blocks/price-table
+            .row
+                .columns.large-12
+                    .main-content__small-title
+                        h5 Ежедневная комплексная уборка помещений
+            .prices-wrap
+                .row
+                    .columns.large-12
+                        include ../../blocks/price-table
+            .row
+                .columns.large-12
+                    .main-content__small-title
+                        h5 Уборка прилегающих территорий
+            .prices-wrap
+                .row
+                    .columns.large-12
+                        include ../../blocks/price-table
+
+    section.block-order
+        .row
+            .columns.medium-12
+                .main-content__title.centered
+                    h2 Заказать услугу
+        include ../../blocks/block-order
+
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

@@ -1,0 +1,62 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/blue
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-12
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Личный кабинет
+
+    .row
+        .columns.large-12
+            .main-content__title.centered
+                h1 Личный кабинет
+    .row
+        .columns.medium-12
+            .small-description
+                span В личном кабинете Вы можете проверить текущее состояние и ход выполнения Ваших заказов, просмотреть или изменить личную информацию, а также подписаться на новости и другие информационные рассылки.
+
+    section.block-some-columns(data-col-class='small')
+        .row
+            .columns.sm
+                .block-some-columns__title
+                    span Моя учетная запись
+                .block-some-columns__link
+                    a.block-some-columns__link-item(href='#', title='') Изменить контакную информацию
+                .block-some-columns__link
+                    a.block-some-columns__link-item(href='#', title='') Изменить адрес
+                .block-some-columns__link
+                    a.block-some-columns__link-item(href='#', title='') Изменить пароль
+
+            .columns.sm
+                .block-some-columns__title
+                    span Мои заказы
+                .block-some-columns__link
+                    a.block-some-columns__link-item(href='#', title='') Мои заказы
+                .block-some-columns__link
+                    a.block-some-columns__link-item(href='#', title='') Бонусные баллы
+            .columns.sm
+                .block-some-columns__title
+                    span Подписка
+                .block-some-columns__link
+                    a.block-some-columns__link-item(href='#', title='') Мои заказы
+    .block-empty-height
+
+
+
+
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

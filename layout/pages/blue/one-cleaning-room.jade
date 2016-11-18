@@ -1,0 +1,136 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/blue
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-3.small-4
+            .sidebar
+                include ../../blocks/tab-menu
+                include ../../blocks/block-subscribe-sidebar
+        .columns.medium-9.small-8
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Услуги
+                    li.breadcrumbs__item
+                        a(href='/index.html') Уборка
+                    li.breadcrumbs__item
+                        a(href='/index.html') Уборка квартир
+                    li.breadcrumbs__item
+                        a(href='/index.html') Разовая уборка квартир
+
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Разовая уборка квартир
+
+            section.block-detail-bigpic
+                    .row
+                        .columns.large-12
+                            .block-detail-bigpic__pic
+                                img.block-detail-bigpic__img(src='../img/cleaning-room/pic-1.png',alt='')
+                            .block-detail-bigpic__btn-wrap
+                                .btn-border-color Заказать
+            .cleaning-price-wrap
+                section.price-big-table
+                    table.price-big-table__table
+                        tr.price-big-table__row
+                            th.price-big-table__head-name
+                            th(colspan='7').price-big-table__head-name Площадь помещения, М²
+                        tr.price-big-table__row
+                            th.price-big-table__head
+                            th(colspan='7').price-big-table__head Стоимость, руб.
+                        tr.price-big-table__row
+                            td.price-big-table__name Разовая уборка квартир
+                            td.price-big-table__data 1 500
+                            td.price-big-table__data 3 900
+                            td.price-big-table__data 3 900
+                            td.price-big-table__data 3 900
+                            td.price-big-table__data 3 900
+                            td.price-big-table__data 3 900
+                            td.price-big-table__data 3 900
+            .row
+                .columns
+                    .small-text.is-border-b
+                        p Поддержание чистоты в доме изо дня в день займет не так уж много времени. Но чтобы достичь этого, необходимо провести генеральную уборку помещений. Добираться до самых дальних уголков дома нужно как минимум дважды в год. Потратить на генеральную уборку квартиры иногда приходится несколько дней, т. к. в данном случае не обойтись работой простым пылесосом и стиральной машиной. Нужно помыть окна, почистить мебель и много чего еще. Одно дело, если вы живете в маленькой квартирке одна, а если жилплощадь и семья большая? А Москва — это город, в котором время действительно деньги. Справиться с комплексной уборкой может только домохозяйка и то не всегда.
+
+
+            .row
+                .columns-12
+                    include ../../blocks/block-social-page
+            section.block-detail-slider
+                .row
+                    .columns.medium-12
+                            ul.block-detail-slider__carousel.is-nodots
+                                li.block-detail-slider__carousel-item
+                                    a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-6.png', style='background-image: url(../img/portfolio/pic-6.png)')
+                                        .block-detail-slider__loupe
+                                li.block-detail-slider__carousel-item
+                                    a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-7.png', style='background-image: url(../img/portfolio/pic-7.png)')
+                                        .block-detail-slider__loupe
+                                li.block-detail-slider__carousel-item
+                                    a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-8.png', style='background-image: url(../img/portfolio/pic-8.png)')
+                                        .block-detail-slider__loupe
+            .row
+                .columns.small-12
+                    .services-list
+                        .services-list__title
+                            h6 Перечен услуг, входящих в разовую уборку
+                        ul.services-list__items
+                            li.services-list__item Удаление пыли с потолка.
+                            li.services-list__item Удаление пыли со стен, карнизов, кондиционеров.
+                            li.services-list__item Удаление загрязнений со всех осветительных приборов.
+                            li.services-list__item Мытьё зеркал и стеклянных поверхностей.
+                            li.services-list__item Сухая и влажная уборка всех поверхностей мебели, бытовой техники, предметов интерьера, имеющих свободный доступ.
+                            li.services-list__item Влажная уборка внутренних поверхностей мебели (при отсутствии наполнения).
+                            li.services-list__item Влажная уборка дверей и фурнитуры.
+                            li.services-list__item Полировка деревянных поверхностей мебели и дверных блоков.
+                            li.services-list__item Влажная уборка отопительных приборов и подоконников.
+                            li.services-list__item Чистка мягкой мебели пылесосом.
+                            li.services-list__item Сухая чистка пылесосом ковров и ковровых покрытий.
+                            li.services-list__item Влажная уборка полов и плинтусов с помощью бактерицидных и ухаживающих средств.
+                            li.services-list__item Замена постельного белья.
+                            li.services-list__item Удаление пыли с потолка.
+                            li.services-list__item Удаление пыли со стен, карнизов, кондиционеров.
+                            li.services-list__item Удаление загрязнений со всех осветительных приборов.
+                            li.services-list__item Мытьё зеркал и стеклянных поверхностей.
+                            li.services-list__item Сухая и влажная уборка всех поверхностей мебели, бытовой техники, предметов интерьера, имеющих свободный доступ.
+                            li.services-list__item Влажная уборка внутренних поверхностей мебели (при отсутствии наполнения).
+                            li.services-list__item Влажная уборка дверей и фурнитуры.
+                            li.services-list__item Полировка деревянных поверхностей мебели и дверных блоков.
+                            li.services-list__item Влажная уборка отопительных приборов и подоконников.
+                            li.services-list__item Чистка мягкой мебели пылесосом.
+                            li.services-list__item Сухая чистка пылесосом ковров и ковровых покрытий.
+                            li.services-list__item Влажная уборка полов и плинтусов с помощью бактерицидных и ухаживающих средств.
+                            li.services-list__item Замена постельного белья.
+
+            .cleaning-room-wrap
+                include ../../blocks/block-video
+    .row
+        .columns.medium-12
+            .btn-full-size.is-corner-b С этой услугой также заказывают
+
+
+
+    include ../../blocks/top-slider
+
+    section.block-order
+        .row
+            .columns.medium-12
+                .main-content__title.centered
+                    h2 Заказать услугу
+        include ../../blocks/block-order
+
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

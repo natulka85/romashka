@@ -1,0 +1,228 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/green
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-3.small-4
+            .sidebar
+                include ../../blocks/tab-menu
+                include ../../blocks/block-subscribe-sidebar
+        .columns.medium-9.small-8
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Услуги
+                    li.breadcrumbs__item
+                        a(href='/index.html') Уборка
+                    li.breadcrumbs__item
+                        a(href='/index.html') Уборка квартир
+
+            .row
+                .columns.large-12
+                    .main-content__title
+                        h1 Уборка квартир
+
+            section.block-detail-bigpic
+                    .row
+                        .columns.large-12
+                            .block-detail-bigpic__pic
+                                img.block-detail-bigpic__img(src='../img/cleaning-room/pic-1.png',alt='')
+                            .block-detail-bigpic__btn-wrap
+                                .btn-border-color Заказать
+                            .block-detail-bigpic__text.two-columns
+                                .small-text
+                                    p Несколько лет назад слово &laquo;клининг&raquo; было мало кому известно, а&nbsp;сегодня каждый знает, что оно означает профессиональную уборку помещений разного типа, будь&nbsp;то дом, квартира, коттедж, офис и&nbsp;так далее. Вот и&nbsp;мы, когда задумывали открыть свой бизнес, решили остановиться именно на&nbsp;этом благом деле, приносящем людям огромную пользу, освобождающем их&nbsp;от&nbsp;хлопот по&nbsp;уборке жилища. Клининговая компания &laquo;О, Чисто!&raquo; действует сравнительно недавно, но&nbsp;уже успела зарекомендовать себя с&nbsp;самой лучшей стороны. У&nbsp;нас есть постоянные клиенты, которые доверяют нам. Их&nbsp;число постоянно растёт.
+
+                                    P Мы&nbsp;осуществляем профессиональную уборку не&nbsp;только в&nbsp;Москве, но&nbsp;и&nbsp;в&nbsp;Московской области. Мобильные бригады прибудут на&nbsp;место в&nbsp;удобное для вас время и&nbsp;выполнят ваш заказ качественно и&nbsp;в&nbsp;сжатый срок.
+
+                                    p Именно качество исполнения, приемлемые цены, аккуратность и&nbsp;исполнительность работников, а&nbsp;у&nbsp;нас трудятся в&nbsp;основном граждане Российской Федерации, интересуют клиентов при выборе клининговой компании. Все вышеперечисленные показатели вы&nbsp;найдёте у&nbsp;нас. При приёме на&nbsp;работу мы&nbsp;ведём строгий отбор кадров, случайных людей у&nbsp;нас нет.
+
+            .row
+                .columns-12
+                    include ../../blocks/block-social-page
+            section.block-detail-slider <!--обрезание текста предполагается серверное-->
+                .row
+                    .columns.medium-12
+                            ul.block-detail-slider__carousel.is-nodots.is-border-b
+                                li.block-detail-slider__carousel-item
+                                    a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-6.png', style='background-image: url(../img/portfolio/pic-6.png)')
+                                        .block-detail-slider__loupe
+                                li.block-detail-slider__carousel-item
+                                    a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-7.png', style='background-image: url(../img/portfolio/pic-7.png)')
+                                        .block-detail-slider__loupe
+                                li.block-detail-slider__carousel-item
+                                    a.swipebox.block-detail-slider__link(href='../img/portfolio/pic-8.png', style='background-image: url(../img/portfolio/pic-8.png)')
+                                        .block-detail-slider__loupe
+            section.price-big-table
+                table.price-big-table__table
+                    tr.price-big-table__row
+                        th.price-big-table__head-name
+                        th(colspan='7').price-big-table__head-name Площадь помещения, М²
+                    tr.price-big-table__row
+                        th.price-big-table__head
+                        th(colspan='7').price-big-table__head Стоимость, руб.
+                    tr.price-big-table__row
+                        td.price-big-table__name Разовая уборка квартир
+                        td.price-big-table__data 1 500
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Регулярная уборка квартир
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка кухни
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Мойка люстр
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка ванной и туалета
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка квартир после ремонта
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Генеральная уборка квартир
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка квартир после пожара
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка квартир перед новым годом
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка квартир после смерти
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка 1 комнатных квартир
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка 2 комнатных квартир
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка 3 комнатных квартир
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Уборка многокомнатных квартир
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                    tr.price-big-table__row
+                        td.price-big-table__name Поддерживающая уборка квартир
+                        td.price-big-table__data 1 350
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+                        td.price-big-table__data 3 900
+            .cleaning-room-wrap
+                include ../../blocks/block-video
+    .row
+        .columns.medium-12
+            .btn-full-size.is-corner-b С этой услугой также заказывают
+
+
+
+    include ../../blocks/top-slider
+
+    section.block-order
+        .row
+            .columns.medium-12
+                .main-content__title.centered
+                    h2 Заказать услугу
+        include ../../blocks/block-order
+
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

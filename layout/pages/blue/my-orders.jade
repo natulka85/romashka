@@ -1,0 +1,75 @@
+doctype html
+html
+    include ../../includes/head
+    include ../../templates/blue
+body
+    include ../../blocks/header
+    .row
+        .columns.medium-12
+            .breadcrumbs
+                ul.breadcrumbs__items
+                    li.breadcrumbs__item
+                        a(href='/index.html') Главная
+                    li.breadcrumbs__item
+                        a(href='/index.html') Личный кабинет
+                    li.breadcrumbs__item
+                        a(href='/index.html') Мои заказы
+
+    .row
+        .columns.large-12
+            .main-content__title.centered
+                h1 Мои заказы
+
+
+
+    .my-orders-wrap
+        .row
+            .columns.large-12
+                .tab-menu-page
+                    ul.tab-menu-page__items
+                        li.tab-menu-page__item.active
+                            .tab-menu-page__icon-per
+                            a(href='#orders-active') Активные
+                        li.tab-menu-page__item
+                            .tab-menu-page__icon-comp
+                            a(href='#orders-all') Все
+                        li.tab-menu-page__item
+                            .tab-menu-page__icon-comp
+                            a(href='#orders-complete') Выполненные
+                        li.tab-menu-page__item
+                            .tab-menu-page__icon-comp
+                            a(href='#orders-refused') Отмененные
+                    .tab-menu-page__content
+                        .tab-menu-page__content-item.no-scroller(id='orders-active')
+                        .tab-menu-page__list.is-opened
+                            include ../../blocks/orders-table
+                        .tab-menu-page__content-item.no-scroller(id='orders-all')
+                        .tab-menu-page__list
+                            include ../../blocks/orders-table
+                        .tab-menu-page__content-item.no-scroller(id='orders-complete')
+                        .tab-menu-page__list
+                            include ../../blocks/orders-table-refused
+                        .tab-menu-page__content-item.no-scroller(id='orders-refused')
+                        .tab-menu-page__list
+                            include ../../blocks/orders-table
+    .row
+        .columns.small-12
+            .big-description
+                span На вашем бонусном счете есть 75 баллов, Вы можете использовать их для оплаты заказа.
+    .row
+        .columns.large-12.centered
+            .main-content__title
+                h2 Начисление балов
+    .row
+        .columns.large-12
+            include ../../blocks/block-bonus
+
+    include ../../blocks/footer
+
+
+
+    include ../../includes/footer
+
+
+
+

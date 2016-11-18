@@ -5,7 +5,9 @@ var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var runSequence = require('run-sequence');
 var concat = require('gulp-concat');
-var autoprefixer = require('gulp-autoprefixer')
+var autoprefixer = require('gulp-autoprefixer');
+var rename      = require('gulp-rename');
+var notify = require("gulp-notify");
 
 
 
@@ -24,9 +26,25 @@ gulp.task('sass', function () {
 });
 
 gulp.task('jade', function() {
-    return gulp.src('./layout/pages/*.jade')
+    gulp.src('./layout/pages/sea/*.jade')
         .pipe(jade()) // pip to jade plugin
-        .pipe(gulp.dest('./html_pages'));
+        .pipe(rename({prefix: 'sea-'}))
+        .pipe(gulp.dest('./html_pages/'));
+
+    gulp.src('./layout/pages/green/*.jade')
+        .pipe(jade()) // pip to jade plugin
+        .pipe(rename({prefix: 'green-'}))
+        .pipe(gulp.dest('./html_pages/'));
+
+    gulp.src('./layout/pages/siz/*.jade')
+        .pipe(jade()) // pip to jade plugin
+        .pipe(rename({prefix: 'siz-'}))
+        .pipe(gulp.dest('./html_pages/'));
+
+    gulp.src('./layout/pages/blue/*.jade')
+        .pipe(jade()) // pip to jade plugin
+        .pipe(rename({prefix: 'blue-'}))
+        .pipe(gulp.dest('./html_pages/'));
 });
 
 gulp.task('sass:watch', function () {
@@ -105,5 +123,6 @@ gulp.task('default', function(callback) {
 
 
         callback);
+
 });
 
