@@ -67,7 +67,7 @@
 
   &__items{
     margin:0;
-    padding: 0.6875rem 0;
+    line-height: 2.875rem;
   }
 
   &__item {
@@ -79,20 +79,39 @@
         font-size: 1.4em;
       }
     }
-
   }
 
+
   &__item:first-child {
-    border-right: 1px solid transparent;
+
     a{
-      margin-right: 18px;
+      border-right: 1px solid transparent;
+      padding-right: 1.125rem;
     }
   }
   &__item:last-child {
     a{
-      margin-left: 18px;
+      padding-left: 1.125rem;
     }
 
+  }
+
+  &__item.is-authorized {
+
+    &:after{
+      content: '';
+      width: 1.875rem;
+      height: 1.875rem;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    a{
+      border-right: none;
+    }
   }
 }
 .bind-account{

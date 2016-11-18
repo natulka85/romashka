@@ -13569,7 +13569,7 @@ label[for="custom-checkbox"] {
   font-size: 95%; }
   .authorization__items {
     margin: 0;
-    padding: 0.6875rem 0; }
+    line-height: 2.875rem; }
   .authorization__item {
     display: inline-block; }
     .authorization__item a {
@@ -13577,12 +13577,22 @@ label[for="custom-checkbox"] {
       @media screen and (max-width: 479px) {
         .authorization__item a {
           font-size: 1.4em; } }
-  .authorization__item:first-child {
-    border-right: 1px solid transparent; }
-    .authorization__item:first-child a {
-      margin-right: 18px; }
+  .authorization__item:first-child a {
+    border-right: 1px solid transparent;
+    padding-right: 1.125rem; }
   .authorization__item:last-child a {
-    margin-left: 18px; }
+    padding-left: 1.125rem; }
+  .authorization__item.is-authorized:after {
+    content: '';
+    width: 1.875rem;
+    height: 1.875rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: inline-block;
+    vertical-align: middle; }
+  .authorization__item.is-authorized a {
+    border-right: none; }
 
 .bind-account__title {
   text-align: center;

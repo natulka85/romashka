@@ -165,11 +165,14 @@ h1, h2 {
   .footer-height__menu-item.active, .footer-height__menu-item:hover {
     background-color: #00a1e1; }
 
-.authorization__item:first-child {
+.authorization__item:first-child a {
   border-right-color: #1fb8ea; }
 
 .authorization__item a {
   color: #1fb8ea; }
+
+.authorization__item.is-authorized:after {
+  background-image: url("../../img/services/per-comp-icon-sprite-blue.svg"); }
 
 .block-gallery__picture:hover {
   outline-color: #1fb8ea; }

@@ -278,7 +278,9 @@ h1, h2 {
 .authorization {
 
   &__item:first-child {
-    border-right-color: $cl-herbal;
+    a{
+      border-right-color: $cl-herbal;
+    }
   }
 
   &__item {

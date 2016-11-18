@@ -279,7 +279,10 @@ h1, h2 {
 .authorization {
 
   &__item:first-child {
-    border-right-color: $cl-blue-crayola;
+    a{
+      border-right-color: $cl-blue-crayola;
+    }
+
   }
 
   &__item {
@@ -287,6 +290,10 @@ h1, h2 {
     a {
       color: $cl-blue-crayola;
     }
+  }
+
+  &__item.is-authorized:after{
+    background-image: url('../../img/services/per-comp-icon-sprite-blue.svg');
   }
 }
 

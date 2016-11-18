@@ -165,7 +165,7 @@ h1, h2 {
   .footer-height__menu-item.active, .footer-height__menu-item:hover {
     background-color: #1fb09a; }
 
-.authorization__item:first-child {
+.authorization__item:first-child a {
   border-right-color: #32c7ac; }
 
 .authorization__item a {
