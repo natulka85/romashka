@@ -285,7 +285,7 @@ h1, h2 {
   border-bottom-color: #1fb8ea; }
 
 .cleaning-price-wrap .price-big-table__head:nth-child(2) {
-  background-image: url("../../img/price/price-big-table-layer-wp-green.png"); }
+  background-image: url("../../img/price/price-big-table-layer-wp-blue.png"); }
 
 .simple-table__head-name {
   background-color: #1fb8ea; }
@@ -330,7 +330,7 @@ h1, h2 {
   color: #1fb8ea; }
 
 .btn-close-review {
-  background-image: url("../../img/review-close-bg.png"); }
+  background-image: url("../../img/icons-others/close-review-button-blue.svg"); }
 
 .my-orders-wrap .tab-menu-page__item:after {
   border-top-color: #1fb8ea; }
