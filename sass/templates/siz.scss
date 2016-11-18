@@ -330,7 +330,7 @@ h1, h2 {
 
   .tab-menu__icon-per,
   .tab-menu__icon-comp {
-    background-image: url('../../img/services/per-comp-icon-sprite.svg');
+    background-image: url('../../img/services/per-comp-icon-sprite-siz.svg');
   }
 
   &__item.active {
@@ -489,7 +489,7 @@ h1, h2 {
     }
 
   &__head:nth-child(2){
-    background-image: url("../../img/price-big-table-layer-green.png");
+    background-image: url("../../img/price/price-big-table-layer-siz.png");
   }
 
   &__name{
@@ -525,7 +525,7 @@ h1, h2 {
 
 .cleaning-price-wrap{
   .price-big-table__head:nth-child(2) {
-    background-image: url("../../img/price-big-table-layer-wp-green.png");
+    background-image: url("../../img/price/price-big-table-layer-wp-green.png");
   }
 }
 
@@ -548,9 +548,12 @@ h1, h2 {
 }
 
 .bind-account{
+  &__link{
+    background-image: url('../../img/social/icon-social-sprite-top-siz.svg');
+  }
   &__link:hover{
     background-color: $cl-blue-steel;
-    background-image: url('../../img/icon-social-sprite-top.svg');
+    background-image: url('../../img/social/icon-social-sprite-top.svg');
   }
 }
 

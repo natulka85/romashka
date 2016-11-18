@@ -189,7 +189,7 @@ h1, h2 {
 
 .tab-menu .tab-menu__icon-per,
 .tab-menu .tab-menu__icon-comp {
-  background-image: url("../../img/services/per-comp-icon-sprite.svg"); }
+  background-image: url("../../img/services/per-comp-icon-sprite-green.svg"); }
 
 .tab-menu__item.active a {
   background-color: #5fbb28; }
@@ -263,7 +263,7 @@ h1, h2 {
   color: #5fbb28; }
 
 .price-big-table__head:nth-child(2) {
-  background-image: url("../../img/price-big-table-layer-green.png"); }
+  background-image: url("../../img/price/price-big-table-layer-green.png"); }
 
 .price-big-table__name {
   background-color: #5fbb28; }
@@ -285,7 +285,7 @@ h1, h2 {
   border-bottom-color: #5fbb28; }
 
 .cleaning-price-wrap .price-big-table__head:nth-child(2) {
-  background-image: url("../../img/price-big-table-layer-wp-green.png"); }
+  background-image: url("../../img/price/price-big-table-layer-wp-green.png"); }
 
 .simple-table__head-name {
   background-color: #5fbb28; }
@@ -296,9 +296,12 @@ h1, h2 {
 .block-social-top__link:hover {
   background-color: #2c9d05; }
 
+.bind-account__link {
+  background-image: url("../../img/social/icon-social-sprite-top-green.svg"); }
+
 .bind-account__link:hover {
   background-color: #2c9d05;
-  background-image: url("../../img/icon-social-sprite-top.svg"); }
+  background-image: url("../../img/social/icon-social-sprite-top.svg"); }
 
 .services-list {
   border-color: #5fbb28; }

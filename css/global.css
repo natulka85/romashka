@@ -13602,13 +13602,10 @@ label[for="custom-checkbox"] {
   height: 1.875rem;
   margin: 0 4px;
   display: inline-block;
-  background-image: url("../img/icon-social-sprite-top.svg");
   background-repeat: no-repeat;
   background-position: center 0;
   border-radius: 50%;
   background-size: 1.25rem; }
-  .bind-account__link__link:hover {
-    background-image: url("../img/social/icon-social-sprite-top.svg"); }
 
 .bind-account .-vk {
   background-position: center -1.8%; }
@@ -13629,7 +13626,7 @@ label[for="custom-checkbox"] {
   background-position: center 80.3%; }
 
 .bind-account .-instagram {
-  background-position: center 101%; }
+  background-position: center 101.3%; }
 
 .block-address {
   padding-left: 1.25rem; }
