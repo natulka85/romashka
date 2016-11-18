@@ -53,6 +53,9 @@
   }
 
   #cash{
+    height: 2.625rem;
+    padding-top: 2.375rem;
+    @include bg('/payment/pic-1.svg', 100%, top, no-repeat);
 
     img{
       margin-top: 24px;

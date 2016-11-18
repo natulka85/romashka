@@ -614,6 +614,9 @@
   }
 
   #cash{
+    height: 2.625rem;
+    padding-top: 2.375rem;
+    @include bg('/payment/pic-1.svg', 100%, top, no-repeat);
 
     img{
       margin-top: 24px;
@@ -1210,7 +1213,7 @@
 
   &__contacts{
     padding-left: 3.9375rem;
-    @include bgsvg('icon-email.svg');
+    @include bgsvg('footer/icon-email.svg');
     background-size: 2.875rem;
     cursor: pointer;
   }

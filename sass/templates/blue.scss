@@ -129,23 +129,23 @@ h1, h2 {
   }
 
   &__param:nth-child(1) {
-    background-image: url('../img/price/price-icon-1-blue.svg');
+    background-image: url('../../img/price/price-icon-1-blue.svg');
   }
 
   &__param:nth-child(2) {
-    background-image: url('../img/price/price-icon-2-blue.svg');
+    background-image: url('../../img/price/price-icon-2-blue.svg');
   }
 
   &__param:nth-child(3) {
-    background-image: url('../img/price/price-icon-3-blue.svg');
+    background-image: url('../../img/price/price-icon-3-blue.svg');
   }
 
   &__param:nth-child(4) {
-    background-image: url('../img/price/price-icon-4-blue.svg');
+    background-image: url('../../img/price/price-icon-4-blue.svg');
   }
 
   &__param:nth-child(5) {
-    background-image: url('../img/price/price-icon-5-blue.svg');
+    background-image: url('../../img/price/price-icon-5-blue.svg');
   }
 
 }
@@ -199,7 +199,7 @@ h1, h2 {
 }
 
 .loupe {
-  @include bgsvg-theme('loupe-green.svg');
+  @include bgsvg-theme('loupe-blue.svg');
 }
 
 .slick-dots li.slick-active button:before,
@@ -237,6 +237,10 @@ h1, h2 {
 }
 
 .block-payment {
+  #cash{
+    background-image: url('../../img/payment/icon-cash-blue.svg');
+  }
+
   &__items {
     border-top-color: $cl-blue-crayola;
     border-bottom-color: $cl-blue-crayola;
@@ -256,6 +260,9 @@ h1, h2 {
 
   &__link {
     color: $cl-blue-crayola;
+    &:before{
+      background-image: url('../../footer/icon-present-blue.svg');
+    }
   }
 }
 
@@ -616,6 +623,12 @@ h1, h2 {
   &__item.dz,
   &__item.ex{
     display: none;
+  }
+}
+
+.copyright{
+  &__contacts{
+    background-image: url('../../img/footer/icon-email-blue.svg');
   }
 }
 

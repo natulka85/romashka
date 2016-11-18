@@ -13921,9 +13921,16 @@ label[for="custom-checkbox"] {
     height: 22px; }
   .block-payment #qiwi img {
     height: 66px; }
-  .block-payment #cash img {
-    margin-top: 24px;
-    margin-bottom: 4px; }
+  .block-payment #cash {
+    height: 2.625rem;
+    padding-top: 2.375rem;
+    background-image: url("../img//payment/pic-1.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%; }
+    .block-payment #cash img {
+      margin-top: 24px;
+      margin-bottom: 4px; }
 
 .block-products .columns:first-child {
   padding-right: 30px; }
@@ -14393,7 +14400,7 @@ label[for="custom-checkbox"] {
     margin-bottom: 38px; }
   .copyright__contacts {
     padding-left: 3.9375rem;
-    background-image: url("../img/icon-email.svg");
+    background-image: url("../img/footer/icon-email.svg");
     background-repeat: no-repeat;
     -webkit-background-size: 100%;
     background-size: 100%;

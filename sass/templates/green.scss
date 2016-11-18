@@ -127,6 +127,26 @@ h1, h2 {
     box-shadow: inset 0 -0.5rem 0px -0.25rem $cl-herbal;
   }
 
+  &__param:nth-child(1) {
+    background-image: url('../../img/price/price-icon-1-green.svg');
+  }
+
+  &__param:nth-child(2) {
+    background-image: url('../../img/price/price-icon-2-green.svg');
+  }
+
+  &__param:nth-child(3) {
+    background-image: url('../../img/price/price-icon-3-green.svg');
+  }
+
+  &__param:nth-child(4) {
+    background-image: url('../../img/price/price-icon-4-green.svg');
+  }
+
+  &__param:nth-child(5) {
+    background-image: url('../../img/price/price-icon-5-green.svg');
+  }
+
 }
 
 #swipebox-prev,
@@ -216,6 +236,10 @@ h1, h2 {
 }
 
 .block-payment {
+  #cash{
+    background-image: url('../../img/payment/icon-cash-green.svg');
+  }
+
   &__items {
     border-top-color: $cl-herbal;
     border-bottom-color: $cl-herbal;
@@ -235,6 +259,9 @@ h1, h2 {
 
   &__link {
     color: $cl-herbal;
+    &:before{
+      background-image: url('../../footer/icon-present-green.svg');
+    }
   }
 }
 
@@ -590,6 +617,12 @@ h1, h2 {
   &__item.kt,
   &__item.ex {
     display: none;
+  }
+}
+
+.copyright{
+  &__contacts{
+    background-image: url('../../img/footer/icon-email-green.svg');
   }
 }
 

@@ -72,6 +72,21 @@ h1, h2 {
 .price-table tr:nth-child(2) {
   box-shadow: inset 0 -0.5rem 0px -0.25rem #7a9ec8; }
 
+.price-table__param:nth-child(1) {
+  background-image: url("../../img/price/price-icon-1-siz.svg"); }
+
+.price-table__param:nth-child(2) {
+  background-image: url("../../img/price/price-icon-2-siz.svg"); }
+
+.price-table__param:nth-child(3) {
+  background-image: url("../../img/price/price-icon-3-siz.svg"); }
+
+.price-table__param:nth-child(4) {
+  background-image: url("../../img/price/price-icon-4-siz.svg"); }
+
+.price-table__param:nth-child(5) {
+  background-image: url("../../img/price/price-icon-5-siz.svg"); }
+
 #swipebox-prev,
 #swipebox-next,
 #swipebox-close {
@@ -98,7 +113,7 @@ h1, h2 {
   background: #7a9ec8; }
 
 .loupe {
-  background-image: url("../../img/loupe-green.svg");
+  background-image: url("../../img/loupe-siz.svg");
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%; }
@@ -128,6 +143,9 @@ h1, h2 {
 .form-standart.form-subscribe input[type='text'] {
   border-color: #7a9ec8; }
 
+.block-payment #cash {
+  background-image: url("../../img/payment/icon-cash-siz.svg"); }
+
 .block-payment__items {
   border-top-color: #7a9ec8;
   border-bottom-color: #7a9ec8; }
@@ -139,6 +157,8 @@ h1, h2 {
 
 .footer-main-menu__link {
   color: #7a9ec8; }
+  .footer-main-menu__link:before {
+    background-image: url("../../footer/icon-present-siz.svg"); }
 
 .footer-height {
   background-color: #7a9ec8; }
@@ -314,3 +334,6 @@ h1, h2 {
 
 .header-slider__item.kt, .header-slider__item.dz, .header-slider__item.kl {
   display: none; }
+
+.copyright__contacts {
+  background-image: url("../../img/footer/icon-email-siz.svg"); }
