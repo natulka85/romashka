@@ -158,7 +158,7 @@ h1, h2 {
 .footer-main-menu__link {
   color: #1fb8ea; }
   .footer-main-menu__link:before {
-    background-image: url("../../footer/icon-present-blue.svg"); }
+    background-image: url("../../img/footer/icon-present-blue.svg"); }
 
 .footer-height {
   background-color: #1fb8ea; }
@@ -296,9 +296,10 @@ h1, h2 {
 .block-social-top__link:hover {
   background-color: #00a1e1; }
 
-.bind-account__link:hover {
-  background-color: #00a1e1;
-  background-image: url("../../img/icon-social-sprite-top.svg"); }
+.bind-account {
+  background-image: url("../../img/icon-social-sprite-top-color.svg"); }
+  .bind-account__link:hover {
+    background-color: #00a1e1; }
 
 .services-list {
   border-color: #1fb8ea; }

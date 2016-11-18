@@ -261,7 +261,7 @@ h1, h2 {
   &__link {
     color: $cl-blue-crayola;
     &:before{
-      background-image: url('../../footer/icon-present-blue.svg');
+      background-image: url('../../img/footer/icon-present-blue.svg');
     }
   }
 }
@@ -551,9 +551,9 @@ h1, h2 {
 }
 
 .bind-account{
+  background-image: url('../../img/icon-social-sprite-top-color.svg');
   &__link:hover{
     background-color: $cl-color-twitter;
-    background-image: url('../../img/icon-social-sprite-top.svg');
   }
 }
 

@@ -444,6 +444,12 @@ label[for="custom-checkbox"]{
       float: left;
       margin-left: 10%;
       margin-top: 1.25rem !important;
+      margin-right: 4.4365rem;
+      width: 55%;
+
+      @media #{$media-phone-landscape} {
+        margin-left:0;
+      }
 
       & + .btn-color{
         margin-top: 1.25rem !important;

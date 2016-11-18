@@ -158,7 +158,7 @@ h1, h2 {
 .footer-main-menu__link {
   color: #32c7ac; }
   .footer-main-menu__link:before {
-    background-image: url("../../footer/icon-present-sea.svg"); }
+    background-image: url("../../img/footer/icon-present-sea.svg"); }
 
 .footer-height {
   background-color: #32c7ac; }

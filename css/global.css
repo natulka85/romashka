@@ -13134,7 +13134,12 @@ label[for="custom-checkbox"] {
   .form-profile-companies .form-standart__field:nth-child(1) {
     float: left;
     margin-left: 10%;
-    margin-top: 1.25rem !important; }
+    margin-top: 1.25rem !important;
+    margin-right: 4.4365rem;
+    width: 55%; }
+    @media screen and (max-width: 767px) {
+      .form-profile-companies .form-standart__field:nth-child(1) {
+        margin-left: 0; } }
     .form-profile-companies .form-standart__field:nth-child(1) + .btn-color {
       margin-top: 1.25rem !important; }
     .form-profile-companies .form-standart__field:nth-child(1) + .btn-color + .form-standart__comment {
@@ -13597,11 +13602,13 @@ label[for="custom-checkbox"] {
   height: 1.875rem;
   margin: 0 4px;
   display: inline-block;
-  background-image: url("../img/icon-social-sprite-top-green.svg");
+  background-image: url("../img/icon-social-sprite-top.svg");
   background-repeat: no-repeat;
   background-position: center 0;
   border-radius: 50%;
   background-size: 1.25rem; }
+  .bind-account__link__link:hover {
+    background-image: url("../img/social/icon-social-sprite-top.svg"); }
 
 .bind-account .-vk {
   background-position: center -1.8%; }
@@ -14405,7 +14412,8 @@ label[for="custom-checkbox"] {
     -webkit-background-size: 100%;
     background-size: 100%;
     background-size: 2.875rem;
-    cursor: pointer; }
+    cursor: pointer;
+    background-position: left center; }
   .copyright a {
     color: #231f20; }
 

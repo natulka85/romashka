@@ -116,11 +116,15 @@
     height: 1.875rem;
     margin: 0 4px;
     display: inline-block;
-    background-image: url('../img/icon-social-sprite-top-green.svg');
+    background-image: url('../img/icon-social-sprite-top.svg');
     background-repeat: no-repeat;
     background-position: center 0;
     border-radius: 50%;
     background-size: 1.25rem;
+
+    &__link:hover{
+      background-image: url('../img/social/icon-social-sprite-top.svg');
+    }
 
   }
 
@@ -1216,6 +1220,7 @@
     @include bgsvg('footer/icon-email.svg');
     background-size: 2.875rem;
     cursor: pointer;
+    background-position: left center;
   }
   
   a{
