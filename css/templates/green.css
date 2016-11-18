@@ -60,7 +60,7 @@ h1, h2 {
     border-bottom-color: #5fbb28; }
 
 .about__block-item-counts:after {
-  background-image: url("../../img/about/about-icon-sprite.svg");
+  background-image: url("../../img/about/about-icon-sprite-green.svg");
   color: #5fbb28; }
 
 .about__block-item-description {
@@ -160,7 +160,10 @@ h1, h2 {
 .top-slider__carousel-item img:hover {
   border-color: #5fbb28; }
 
-.top-slider__carousel-item:hover {
+.top-slider__carousel-item.active img {
+  border-color: #5fbb28; }
+
+.top-slider__carousel-item:hover, .top-slider__carousel-item.active {
   background: url("../../img/top-slider/bubble-green.svg") 0% 9% no-repeat, url("../../img/top-slider/bubble-grey.svg") 12% 2% no-repeat, url("../../img/top-slider/bubble-grey.svg") 90% 55% no-repeat;
   background-size: 33px, 18px, 23px; }
 
@@ -308,3 +311,6 @@ h1, h2 {
 
 .my-orders-wrap .tab-menu-page__item:after {
   border-top-color: #5fbb28; }
+
+.header-slider__item.kl, .header-slider__item.kt, .header-slider__item.ex {
+  display: none; }

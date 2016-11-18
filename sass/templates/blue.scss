@@ -108,7 +108,7 @@ h1, h2 {
   &__block-item-counts {
 
     &:after {
-      background-image: url('../../img/about/about-icon-sprite.svg');
+      background-image: url('../../img/about/about-icon-sprite-blue.svg');
       color: $cl-blue-crayola;
     }
 
@@ -126,6 +126,26 @@ h1, h2 {
 
   tr:nth-child(2) {
     box-shadow: inset 0 -0.5rem 0px -0.25rem $cl-blue-crayola;
+  }
+
+  &__param:nth-child(1) {
+    background-image: url('../img/price/price-icon-1-blue.svg');
+  }
+
+  &__param:nth-child(2) {
+    background-image: url('../img/price/price-icon-2-blue.svg');
+  }
+
+  &__param:nth-child(3) {
+    background-image: url('../img/price/price-icon-3-blue.svg');
+  }
+
+  &__param:nth-child(4) {
+    background-image: url('../img/price/price-icon-4-blue.svg');
+  }
+
+  &__param:nth-child(5) {
+    background-image: url('../img/price/price-icon-5-blue.svg');
   }
 
 }
@@ -279,18 +299,22 @@ h1, h2 {
 
 .top-slider {
 
-  &__carousel-item {
-
+  &__carousel-item
+  {
     img:hover {
-
       border-color: $cl-blue-crayola;
-
     }
-
+  }
+  &__carousel-item.active
+  {
+    img {
+      border-color: $cl-blue-crayola;
+    }
   }
 
-  &__carousel-item:hover {
-    background: url('../../img/top-slider/bubble-green.svg') 0% 9% no-repeat,
+  &__carousel-item:hover,
+  &__carousel-item.active {
+    background: url('../../img/top-slider/bubble-blue.svg') 0% 9% no-repeat,
     url('../../img/top-slider/bubble-grey.svg') 12% 2% no-repeat,
     url('../../img/top-slider/bubble-grey.svg') 90% 55% no-repeat;
     background-size: 33px, 18px, 23px;
@@ -584,6 +608,14 @@ h1, h2 {
 .my-orders-wrap{
   .tab-menu-page__item:after{
     border-top-color: $cl-blue-crayola;
+  }
+}
+
+.header-slider{
+  &__item.kl,
+  &__item.dz,
+  &__item.ex{
+    display: none;
   }
 }
 

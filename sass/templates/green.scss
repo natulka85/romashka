@@ -37,21 +37,21 @@ h1, h2 {
   }
 
 }
-.btn-full-size.is-corner-b{
-  &:after{
-    border-top-color:$cl-herbal ;
+
+.btn-full-size.is-corner-b {
+  &:after {
+    border-top-color: $cl-herbal;
   }
 }
 
-.strong-text{
+.strong-text {
   border-color: $cl-herbal;
 }
-
 
 .top-height {
   background-color: $cl-herbal;
 
-  &__menu{
+  &__menu {
     background-color: $cl-herbal;
   }
 
@@ -66,7 +66,7 @@ h1, h2 {
   border-top-color: $cl-herbal;
   border-bottom-color: $cl-herbal;
 
-  &__items-second-lvl{
+  &__items-second-lvl {
     background-color: $cl-herbal;
   }
 
@@ -74,19 +74,18 @@ h1, h2 {
     box-shadow: inset 0 0.375rem 0 0 $cl-herbal;
   }
 
-  .button-menu-lines{
-    &__line{
+  .button-menu-lines {
+    &__line {
       background-color: $cl-herbal;
     }
   }
 
 }
 
-
 .mobile-menu {
   border-bottom-color: $cl-herbal;
 
-  &__items-second-lvl{
+  &__items-second-lvl {
     background-color: $cl-herbal;
   }
 
@@ -108,7 +107,7 @@ h1, h2 {
   &__block-item-counts {
 
     &:after {
-      background-image: url('../../img/about/about-icon-sprite.svg');
+      background-image: url('../../img/about/about-icon-sprite-green.svg');
       color: $cl-herbal;
     }
 
@@ -190,13 +189,13 @@ h1, h2 {
 .block-order-wrap,
 .change-pass-wrap,
 .change-sub-wrap {
-    background-color: $cl-herbal;
-  &:after{
+  background-color: $cl-herbal;
+  &:after {
     border-bottom-color: $cl-herbal;
   }
 }
 
-.review-wrap{
+.review-wrap {
   background-color: $cl-herbal;
 }
 
@@ -280,16 +279,18 @@ h1, h2 {
 .top-slider {
 
   &__carousel-item {
-
     img:hover {
-
       border-color: $cl-herbal;
-
     }
-
+  }
+  &__carousel-item.active {
+    img {
+      border-color: $cl-herbal;
+    }
   }
 
-  &__carousel-item:hover {
+  &__carousel-item:hover,
+  &__carousel-item.active {
     background: url('../../img/top-slider/bubble-green.svg') 0% 9% no-repeat,
     url('../../img/top-slider/bubble-grey.svg') 12% 2% no-repeat,
     url('../../img/top-slider/bubble-grey.svg') 90% 55% no-repeat;
@@ -383,7 +384,7 @@ h1, h2 {
   &__link {
 
     &:hover {
-     outline-color: $cl-herbal,
+      outline-color: $cl-herbal,
     }
   }
 
@@ -420,170 +421,176 @@ h1, h2 {
   }
 }
 
-.block-products{
-  &__date{
+.block-products {
+  &__date {
     background-color: $cl-herbal;
   }
 }
 
-.block-bonus{
+.block-bonus {
   border-color: $cl-herbal;
 
   &:before {
     border-bottom-color: $cl-herbal;
   }
 
-  &__name{
+  &__name {
     color: $cl-herbal;
   }
 }
 
-.block-some-columns{
-  &__title{
+.block-some-columns {
+  &__title {
     background-color: $cl-herbal;
-    &:after{
+    &:after {
       border-top-color: $cl-herbal;
     }
   }
 }
 
-.block-address{
+.block-address {
   &__name,
-  &__name-mail{
+  &__name-mail {
     color: $cl-herbal;
   }
 }
 
-.price-big-table{
+.price-big-table {
 
-  &__head-name{
-      color: $cl-herbal;
-    }
+  &__head-name {
+    color: $cl-herbal;
+  }
 
-  &__head:nth-child(2){
+  &__head:nth-child(2) {
     background-image: url("../../img/price-big-table-layer-green.png");
   }
 
-  &__name{
+  &__name {
     background-color: $cl-herbal;
   }
 
-  &__data{
+  &__data {
     border-color: $cl-herbal;
   }
 
-  &__data:last-child{
+  &__data:last-child {
     border-right-color: $cl-herbal;
   }
 
-  &__data:nth-child(2){
+  &__data:nth-child(2) {
     border-left-color: $cl-herbal;
   }
 
-  &__row:nth-child(2){
-    .price-big-table__data{
+  &__row:nth-child(2) {
+    .price-big-table__data {
       border-top-color: $cl-herbal;
     }
   }
 
-  &__row:last-child{
+  &__row:last-child {
     .price-big-table__data,
-    .price-big-table__name{
+    .price-big-table__name {
       border-bottom-color: $cl-herbal;
     }
   }
 
 }
 
-.cleaning-price-wrap{
+.cleaning-price-wrap {
   .price-big-table__head:nth-child(2) {
     background-image: url("../../img/price-big-table-layer-wp-green.png");
   }
 }
 
-.simple-table{
-  &__head-name{
+.simple-table {
+  &__head-name {
     background-color: $cl-herbal;
   }
 }
 
-
-
-.block-social-top{
-  &__link{
+.block-social-top {
+  &__link {
     background-color: $cl-herbal;
   }
 
-  &__link:hover{
+  &__link:hover {
     background-color: $cl-indian-green;
   }
 }
 
-.bind-account{
-  &__link:hover{
+.bind-account {
+  &__link:hover {
     background-color: $cl-indian-green;
     background-image: url('../../img/icon-social-sprite-top.svg');
   }
 }
 
-.services-list{
+.services-list {
   border-color: $cl-herbal;
 
-  &__title{
+  &__title {
     color: $cl-herbal;
   }
 
-  &__item:before{
+  &__item:before {
     border-left-color: $cl-herbal;
-}
+  }
 }
 
-.account-wrap{
-  .tab-menu-page__list{
+.account-wrap {
+  .tab-menu-page__list {
     background-color: $cl-herbal;
   }
 }
 
-.block-reviews{
+.block-reviews {
 
-  &__client-item{
-    .block-reviews__contents{
+  &__client-item {
+    .block-reviews__contents {
       border-color: $cl-herbal;
     }
-    .block-reviews__contents{
-     &:before{
-       border-right-color: $cl-herbal;
-     }
+    .block-reviews__contents {
+      &:before {
+        border-right-color: $cl-herbal;
+      }
     }
   }
 
   .block-stars__star:hover,
-  .block-stars__star.is-full{
-    &:before{
+  .block-stars__star.is-full {
+    &:before {
       color: $cl-herbal;
     }
   }
 
-
 }
 
-.block-bonus-accumulation{
-  &__img{
+.block-bonus-accumulation {
+  &__img {
     background-image: url('../../img/bonus-modal-icon.png')
   }
-  &__name{
+  &__name {
     color: $cl-herbal;
   }
 
 }
 
-.btn-close-review{
+.btn-close-review {
   background-image: url('../../img/review-close-bg.png');
 }
 
-.my-orders-wrap{
-  .tab-menu-page__item:after{
+.my-orders-wrap {
+  .tab-menu-page__item:after {
     border-top-color: $cl-herbal;
   }
 }
+
+.header-slider {
+  &__item.kl,
+  &__item.kt,
+  &__item.ex {
+    display: none;
+  }
+}
+
 

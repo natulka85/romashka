@@ -60,7 +60,7 @@ h1, h2 {
     border-bottom-color: #7a9ec8; }
 
 .about__block-item-counts:after {
-  background-image: url("../../img/about/about-icon-sprite.svg");
+  background-image: url("../../img/about/about-icon-sprite-siz.svg");
   color: #7a9ec8; }
 
 .about__block-item-description {
@@ -160,8 +160,11 @@ h1, h2 {
 .top-slider__carousel-item img:hover {
   border-color: #7a9ec8; }
 
-.top-slider__carousel-item:hover {
-  background: url("../../img/top-slider/bubble-green.svg") 0% 9% no-repeat, url("../../img/top-slider/bubble-grey.svg") 12% 2% no-repeat, url("../../img/top-slider/bubble-grey.svg") 90% 55% no-repeat;
+.top-slider__carousel-item.active img {
+  border-color: #7a9ec8; }
+
+.top-slider__carousel-item:hover, .top-slider__carousel-item.active {
+  background: url("../../img/top-slider/bubble-siz.svg") 0% 9% no-repeat, url("../../img/top-slider/bubble-grey.svg") 12% 2% no-repeat, url("../../img/top-slider/bubble-grey.svg") 90% 55% no-repeat;
   background-size: 33px, 18px, 23px; }
 
 .tab-menu .tab-menu__icon-per,
@@ -308,3 +311,6 @@ h1, h2 {
 
 .my-orders-wrap .tab-menu-page__item:after {
   border-top-color: #7a9ec8; }
+
+.header-slider__item.kt, .header-slider__item.dz, .header-slider__item.kl {
+  display: none; }

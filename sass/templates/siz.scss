@@ -108,7 +108,7 @@ h1, h2 {
   &__block-item-counts {
 
     &:after {
-      background-image: url('../../img/about/about-icon-sprite.svg');
+      background-image: url('../../img/about/about-icon-sprite-siz.svg');
       color: $cl-siz;
     }
 
@@ -276,21 +276,22 @@ h1, h2 {
     background-color: $cl-siz;
   }
 }
-
 .top-slider {
 
   &__carousel-item {
-
     img:hover {
-
       border-color: $cl-siz;
-
     }
-
+  }
+  &__carousel-item.active {
+    img {
+      border-color: $cl-siz;
+    }
   }
 
-  &__carousel-item:hover {
-    background: url('../../img/top-slider/bubble-green.svg') 0% 9% no-repeat,
+  &__carousel-item:hover,
+  &__carousel-item.active {
+    background: url('../../img/top-slider/bubble-siz.svg') 0% 9% no-repeat,
     url('../../img/top-slider/bubble-grey.svg') 12% 2% no-repeat,
     url('../../img/top-slider/bubble-grey.svg') 90% 55% no-repeat;
     background-size: 33px, 18px, 23px;
@@ -586,4 +587,14 @@ h1, h2 {
     border-top-color: $cl-siz;
   }
 }
+
+
+.header-slider{
+  &__item.kt,
+  &__item.dz,
+  &__item.kl{
+    display: none;
+  }
+}
+
 
