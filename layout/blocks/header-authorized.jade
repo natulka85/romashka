@@ -91,64 +91,17 @@ header
                             li.top-menu__item
                                 a(href="#") Контакты
                                 span
-                        ul.button-menu-lines
-                            li.button-menu-lines__line
-                            li.button-menu-lines__line
-                            li.button-menu-lines__line
-                            li.button-menu-lines__line
-                        .mobile-menu
-                            ul.mobile-menu__items
-                                li.mobile-menu__item
-                                    a(href="#") Главная
-                                    span
-                                li.mobile-menu__item
-                                    a(href="#") О компании
-                                    span
-                                    ul.mobile-menu__items-second-lvl
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Истории успеха
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Истории успеха
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Истории успеха
-                                li.mobile-menu__item
-                                    a(href="#") Услуги
-                                    span
-                                li.mobile-menu__item
-                                    a(href="#") Цены
-                                    span
-                                    ul.mobile-menu__items-second-lvl
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Квартиры
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Дома
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Загородные дома
-                                li.mobile-menu__item
-                                    a(href="#") Отзывы
-                                    span
-                                li.mobile-menu__item
-                                    a(href="#") Акциии
-                                    span
-                                    ul.mobile-menu__items-second-lvl
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Истории успеха
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Истории успеха
-                                        li.mobile-menu__item-second-lvl
-                                            a(href='#') Истории успеха
-                                li.mobile-menu__item
-                                    a(href="#") Вакансии
-                                    span
-                                li.mobile-menu__item
-                                    a(href="#") Контакты
-                                    span
+                        include ../blocks/button-menu-lines
+                        include ../blocks/mobile-menu
                     .columns.medium-3.small-12.xsmall-6
                         .authorization-wrap
                             .authorization
                                 ul.authorization__items
                                     li.authorization__item.is-authorized
                                         a(href='') Личный кабинет
+                                        ul.authorization__items-second-lvl
+                                            li.authorization__item-second-lvl
+                                                a(href='#') Выход
 
 
 

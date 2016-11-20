@@ -401,7 +401,7 @@ label[for="custom-checkbox"]{
  width: 50% !important;
 
   @media #{$media-phone-landscape}{
-    width: 60%;
+    width: 60% !important;
   }
   .form-standart {
 

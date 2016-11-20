@@ -62,12 +62,11 @@
 }
 .authorization {
   text-align: right;
-  font-size: 95%;
 
 
   &__items{
     margin:0;
-    line-height: 2.875rem;
+    line-height: 2.9375rem;
   }
 
   &__item {
@@ -97,20 +96,69 @@
   }
 
   &__item.is-authorized {
+    position: relative;
 
     &:after{
       content: '';
       width: 1.875rem;
       height: 1.875rem;
-      background-size: 100%;
+      background-size: 98%;
       background-repeat: no-repeat;
       background-position: center top;
       display: inline-block;
       vertical-align: middle;
+
+      @media #{$media-phone-landscape} {
+        background-position: center -2px;
+      }
+
+      @media #{$media-phone} {
+        background-position: center top;
+      }
+
     }
 
     a{
       border-right: none;
+    }
+  }
+
+  &__item.is-authorized:hover > .authorization__items-second-lvl{
+    display: block;
+  }
+
+  &__items-second-lvl{
+    position: absolute;
+    margin: 0;
+    min-width: 8.125rem;
+    z-index: 3;
+    text-align: center;
+    display: none;
+    right: 0;
+
+    @media #{$media-phone-landscape} {
+      right: inherit;
+    }
+
+    @media #{$media-phone} {
+      right: 0;
+    }
+  }
+
+  &__item-second-lvl{
+    position: relative;
+    @include cornerTopWhite(8, 0);
+
+    &:after{
+      border-top: 8px solid white;
+      border-bottom: 0;
+    }
+
+    a{
+      color: $cl-real-white !important;
+      font-weight: bold;
+      font-size: (14/16)+em;
+      line-height: 2.5rem;
     }
   }
 }
@@ -910,7 +958,7 @@
     height: 1.875rem;
     margin: 0 4px;
     display: inline-block;
-    background-image: url('../img/icon-social-sprite-top.svg');
+    background-image: url('../img/social/icon-social-sprite-top.svg');
     background-repeat: no-repeat;
     background-position: center 0;
     border-radius: 50%;
@@ -1012,7 +1060,7 @@
     font-size: (14/16)+em;
 
     &:hover{
-      bottom: 1px solid transparent;
+      border-bottom: 1px solid transparent;
     }
   }
 
@@ -2565,6 +2613,7 @@
   &__item-second-lvl
   {
     padding: 0.625rem;
+    cursor: pointer;
 
     a{
       color: $cl-real-white;
