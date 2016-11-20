@@ -3,6 +3,10 @@
   margin: 0 0 2rem 0;
   position: relative;
 
+  @media #{$media-phone}{
+    height: 2.5rem;
+  }
+
 &__items{
   margin: 0;
   position: absolute;

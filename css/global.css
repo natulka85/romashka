@@ -12779,14 +12779,20 @@ ul.mark-list li:before {
 
 .sidebar {
   padding-right: 1.5625rem; }
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     .sidebar {
       padding-right: initial; } }
+  @media screen and (max-width: 479px) {
+    .sidebar {
+      display: none; } }
 
 .breadcrumbs {
   height: 65px;
   margin: 0 0 2rem 0;
   position: relative; }
+  @media screen and (max-width: 479px) {
+    .breadcrumbs {
+      height: 2.5rem; } }
   .breadcrumbs__items {
     margin: 0;
     position: absolute;
@@ -12805,7 +12811,7 @@ ul.mark-list li:before {
 
 .button-menu-lines {
   width: 43px;
-  padding: 5px;
+  padding: 5px 5px 5px 0;
   margin: 0;
   cursor: pointer;
   display: none; }
@@ -13401,20 +13407,34 @@ label[for="custom-checkbox"] {
     font-size: 1em; }
 
 .form-subscribe {
-  margin-left: 30px; }
+  margin-left: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 2.5rem;
+  display: block; }
+  .form-subscribe:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    margin: 0;
+    padding: 0; }
   .form-subscribe .form-standart__field input[type='textarea'],
   .form-subscribe .form-standart__field input[type='text'] {
-    border: 1px solid transparent; }
-  .form-subscribe .form-standart__field:nth-child(1), .form-subscribe .form-standart__field:nth-child(2), .form-subscribe .form-standart__field:nth-child(3) {
-    display: inline-block;
-    width: 28%; }
+    border: 1px solid transparent;
+    margin: 0; }
   .form-subscribe .form-standart__field:nth-child(1), .form-subscribe .form-standart__field:nth-child(2) {
-    display: inline-block;
-    width: 38%;
-    margin-right: 4%;
-    margin-bottom: 27px; }
-  .form-subscribe .form-standart__field:nth-child(3) {
-    width: 15%; }
+    float: left;
+    width: 33%;
+    margin-right: 4%; }
+  .form-subscribe .form-standart__field:last-child {
+    width: 15%;
+    float: right; }
+    .form-subscribe .form-standart__field:last-child input {
+      margin: 0; }
 
 .loupe {
   width: 25px;

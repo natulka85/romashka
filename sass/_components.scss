@@ -3,6 +3,10 @@
   margin: 0 0 2rem 0;
   position: relative;
 
+  @media #{$media-phone}{
+    height: 2.5rem;
+  }
+
 &__items{
   margin: 0;
   position: absolute;
@@ -32,7 +36,7 @@
 }
 .button-menu-lines{
   width: 43px;
-  padding: 5px;
+  padding: 5px 5px 5px 0;
   margin:0;
   cursor: pointer;
   display: none;
@@ -844,6 +848,11 @@ label[for="custom-checkbox"]{
 .form-subscribe {
   @extend .form-standart;
   margin-left: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 2.5rem;
+  @include clearfix;
 
   .form-standart {
 
@@ -851,26 +860,24 @@ label[for="custom-checkbox"]{
      input[type='textarea'],
      input[type='text'] {
        border: 1px solid transparent;
+       margin: 0;
      }
    }
 
     &__field:nth-child(1),
-    &__field:nth-child(2),
-    &__field:nth-child(3) {
-      display: inline-block;
-      width: 28%;
-    }
-
-    &__field:nth-child(1),
     &__field:nth-child(2) {
-      display: inline-block;
-      width: 38%;
+      float: left;
+      width: 33%;
       margin-right: 4%;
-      margin-bottom: 27px;
     }
 
-    &__field:nth-child(3) {
+    &__field:last-child {
       width: 15%;
+      float: right;
+
+      input{
+        margin:0;
+      }
     }
 
   }

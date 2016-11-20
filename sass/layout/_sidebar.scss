@@ -1,7 +1,11 @@
 .sidebar{
   padding-right: 1.5625rem;
 
-  @media #{$media-phone} {
+  @media #{$media-phone-landscape} {
     padding-right:initial;
+  }
+
+  @media #{$media-phone} {
+    display: none;
   }
 }
